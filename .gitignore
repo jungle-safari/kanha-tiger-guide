@@ -22,7 +22,7 @@ pnpm-debug.log*
 .astro/
 
 # Built files
-dist/
+
 
 # Astro cache
 .astro/
