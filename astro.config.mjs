@@ -10,7 +10,8 @@ export default defineConfig({
     tailwind(),
     sitemap({
       changefreq: 'weekly',
-      priority: 0.7
+      priority: 0.7,
+      filter: (page) => page !== 'https://jungle-safari.github.io/kanha-tiger-guide'
     }),
     mdx()
   ],
