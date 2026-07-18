@@ -1,0 +1,291 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Resorts', href: '/resorts/' },
+  { label: 'Near Khatia Gate', href: '/resorts/near-khatia-gate/' }
+];
+
+const faqs = [
+  {
+    question: "Which resort is closest to Khatia Gate?",
+    answer: "Wildmark Resort is one of the closest resorts to Khatia Gate, located less than 1 km away in Khatiya village. Several other resorts cluster within 1-2 km of the gate, including Tuli Tiger Resort and Sun N Sand Kanha. Staying near Khatia Gate minimizes travel time for early morning safaris and provides easy access to the park's main entry."
+  },
+  {
+    question: "Why stay near Khatia Gate instead of other gates?",
+    answer: "Khatia Gate is the main entry to Kanha and Kisli zones — the park's two most popular safari zones. Staying nearby offers: 5-minute drive to gate, flexible safari timing, access to more resort amenities and restaurants, easier permit arrangement, and proximity to multiple safari operators. Mukki and Sarhi zones are still accessible via 1-2 hour drives for those wanting multi-zone safaris."
+  },
+  {
+    question: "Can I walk from Khatia Gate area resorts to the gate?",
+    answer: "Some resorts like Wildmark Resort (less than 1 km) are walkable from Khatia Gate. However, early morning safaris start at 5:30-6:00 AM in darkness, so most resorts provide jeep transfers to the gate as part of their service. Walking in the dark is not recommended due to wildlife and safety concerns."
+  },
+  {
+    question: "How many resorts are near Khatia Gate?",
+    answer: "There are 30+ resorts within 1-3 km of Khatia Gate, ranging from budget homestays to luxury properties. The concentration includes budget, mid-range, and premium options within walking distance. Khatia village (Khatiya) is the main settlement near the gate with the largest resort cluster."
+  }
+];
+
+const relatedPages = [
+  { title: 'Best Resort', description: 'Top overall picks', href: '/kanha-tiger-guide/resorts/best-resort/' },
+  { title: 'Luxury Resort', description: 'Premium properties', href: '/kanha-tiger-guide/resorts/luxury-resort/' },
+  { title: 'Budget Resort', description: 'Affordable options', href: '/kanha-tiger-guide/resorts/budget-resort/' },
+  { title: 'Safari Guide', description: 'Safari planning', href: '/kanha-tiger-guide/safari-guide/' }
+];
+---
+
+<BaseLayout
+  title="Resorts Near Khatia Gate Kanha 2026 - Closest Accommodation"
+  description="Resorts closest to Khatia Gate at Kanha National Park. Find accommodation within walking distance of the main safari entry for maximum convenience."
+  keywords="resorts near khatia gate kanha, khatia gate resort, kanha gate hotel, kanha main gate resort, khatiya village resort"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/resorts/near-khatia-gate/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Resorts Near Khatia Gate Kanha 2026 — Closest Accommodation to Main Entry</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        Khatia Gate is the main entry point to Kanha National Park, accessing the core Kanha and Kisli
+        zones with their iconic meadows, tiger territories, and Barasingha herds. Over 30 resorts cluster
+        within 1-3 km of the gate in Khatiya village and surrounding areas. <strong>Wildmark Resort</strong>
+        is one of the closest mid-range options at less than 1 km from the gate, offering AC rooms,
+        multi-cuisine restaurant, swimming pool, and complete safari packages. Staying near Khatia Gate
+        minimizes travel time for early morning safaris (5-10 minute drive versus 30+ minutes from
+        farther properties) and provides flexibility to adjust safari timing based on weather and
+        wildlife sightings.
+      </p>
+    </section>
+
+    <Backlink       title="Book Kanha Tiger Safari Stay at Khatia Gate"
+      description="For the best Kanha tiger safari packages near Khatia Gate — including AC accommodation, all meals, forest permits, and guided jeep tours — check Kanha Safari Stay at Wildmark Resort."
+      anchorText="Book Kanha Tiger Safari Package"
+      ctaText="Reserve Kanha Resort Stay"
+      primaryUrl="https://kanhasafaristay.com/"
+      primaryAnchor="Book Kanha Resort Near Khatia Gate"
+      secondaryUrl="https://kanhasafaristay.com/blog/where-to-stay-near-kanha-national-park/"
+      secondaryAnchor="Kanha Gate Accommodation Guide"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Khatia Gate Resort FAQ"
+    />
+
+    <h2>Why Stay Near Khatia Gate?</h2>
+
+    <h3>Proximity Advantages</h3>
+    <ul>
+      <li><strong>5-10 minute drive to gate:</strong> Versus 30+ minutes from farther properties</li>
+      <li><strong>Quick early morning departures:</strong> Critical for catching wildlife at dawn</li>
+      <li><strong>Flexibility on timing:</strong> Easy to adjust safari start based on weather/sightings</li>
+      <li><strong>Less pre-safari stress:</strong> No rushing through early morning traffic</li>
+      <li><strong>Return for meals:</strong> Can return to resort between morning and afternoon safaris</li>
+    </ul>
+
+    <h3>Zone Access</h3>
+    <p>
+      Khatia Gate is the main entry to two of Kanha's four zones:
+    </p>
+
+    <ul>
+      <li><strong>Kanha Zone:</strong> Core meadows (Hallon, Banjar, Sonph, Maasahi) — 0-15 km from gate</li>
+      <li><strong>Kisli Zone:</strong> Dense Sal forest with waterholes — 15-30 km from gate</li>
+      <li><strong>Mukki Zone:</strong> Accessible via 60 km drive (separate permit)</li>
+      <li><strong>Sarhi Zone:</strong> Accessible via 30 km drive (separate permit)</li>
+    </ul>
+
+    <h3>Resort Cluster Benefits</h3>
+    <ul>
+      <li>Wide range of options at every price point</li>
+      <li>Competition drives quality and service standards</li>
+      <li>Restaurants and shops nearby</li>
+      <li>Multiple safari operators for permit booking</li>
+      <li>Emergency services and supplies accessible</li>
+    </ul>
+
+    <h2>Closest Resorts to Khatia Gate</h2>
+
+    <h3>Less than 1 km from Gate</h3>
+
+    <h4>Wildmark Resort (Khatiya Village)</h4>
+    <ul>
+      <li><strong>Distance:</strong> Less than 1 km (5-minute drive)</li>
+      <li><strong>Category:</strong> Mid-range (₹3,000-₹7,000/night)</li>
+      <li><strong>Rooms:</strong> Super Deluxe and Family Rooms</li>
+      <li><strong>Amenities:</strong> AC, 24-hour power backup, multi-cuisine restaurant, swimming pool, lawn, parking, doctor on call</li>
+      <li><strong>Safari Packages:</strong> Complete with permits, jeep, guide coordination</li>
+      <li><strong>Best For:</strong> Families, mid-range travelers, convenience seekers</li>
+      <li><strong>Contact:</strong> +91 77198 06444, kanhawildmark@gmail.com</li>
+    </ul>
+
+    <h3>1-2 km from Gate</h3>
+
+    <h4>Tuli Tiger Resort</h4>
+    <ul>
+      <li><strong>Distance:</strong> 1 km</li>
+      <li><strong>Category:</strong> Premium mid-range</li>
+      <li><strong>Amenities:</strong> AC rooms, restaurant, pool, safari packages</li>
+      <li><strong>Best For:</strong> Brand-conscious travelers</li>
+    </ul>
+
+    <h4>Sun N Sand Kanha</h4>
+    <ul>
+      <li><strong>Distance:</strong> 2 km</li>
+      <li><strong>Category:</strong> Established mid-range</li>
+      <li><strong>Amenities:</strong> AC rooms, mature gardens, restaurant</li>
+      <li><strong>Best For:</strong> Garden lovers, repeat visitors</li>
+    </ul>
+
+    <h4>Kanha Jungle Camp</h4>
+    <ul>
+      <li><strong>Distance:</strong> 1.5 km</li>
+      <li><strong>Category:</strong> Eco-friendly mid-range</li>
+      <li><strong>Amenities:</strong> AC cottages, nature activities</li>
+      <li><strong>Best For:</strong> Eco-conscious travelers</li>
+    </ul>
+
+    <h3>2-3 km from Gate (Budget Options)</h3>
+
+    <ul>
+      <li><strong>Various homestays:</strong> ₹1,500-₹2,500/night, basic amenities</li>
+      <li><strong>Budget lodges:</strong> ₹2,000-₹3,000/night, AC option available</li>
+      <li><strong>Forest Department rest houses:</strong> Basic accommodation, government-run</li>
+    </ul>
+
+    <Backlink       title="Book Wildmark Resort - Closest to Gate"
+      description="Wildmark Resort at less than 1 km from Khatia Gate offers complete safari packages with AC rooms, multi-cuisine dining, and swimming pool. Best location for early morning safaris."
+      primaryUrl="https://kanhasafaristay.com/"
+      primaryAnchor="Book Kanha Resort Near Khatia Gate"
+      secondaryUrl="https://kanhasafaristay.com/blog/where-to-stay-near-kanha-national-park/"
+      secondaryAnchor="Kanha Gate Accommodation Guide"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Khatia Gate Resort FAQ"
+    />
+
+    <h2>How Khatia Gate Proximity Affects Safari Experience</h2>
+
+    <table>
+      <thead>
+        <tr><th>Aspect</th><th>Within 1 km (Wildmark)</th><th>2-3 km (Budget)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Drive to Gate</td><td>5-10 minutes</td><td>15-25 minutes</td></tr>
+        <tr><td>Wake-up Time</td><td>5:00 AM</td><td>4:30-4:45 AM</td></tr>
+        <tr><td>Early Morning Safari Success</td><td>Higher (less rushed)</td><td>Moderate (time pressure)</td></tr>
+        <tr><li>Return for Breakfast</li><td>Quick (10 min)</td><td>Slower (20 min)</td></tr>
+        <tr><td>Afternoon Safari Preparation</td><td>Easy (relaxing break)</td><td>Limited rest time</td></tr>
+        <tr><td>Flexibility on Weather</td><td>High</td><td>Low</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Khatia Gate vs Other Gates</h2>
+
+    <h3>Why Khatia Gate is Most Popular</h3>
+    <ul>
+      <li><strong>Largest resort cluster:</strong> 30+ options within walking distance</li>
+      <li><strong>Access to two zones:</strong> Kanha and Kisli zones from one location</li>
+      <li><strong>Best amenities:</strong> Most restaurants, shops, and services</li>
+      <li><strong>Main entry:</strong> Primary administrative and safari operations hub</li>
+      <li><strong>Multi-zone access:</strong> Day trips to Mukki and Sarhi zones possible</li>
+    </ul>
+
+    <h3>Other Gates (Mukki and Sarhi)</h3>
+    <ul>
+      <li><strong>Mukki Gate:</strong> 60 km from Khatia, limited accommodation, direct Mukki Zone access</li>
+      <li><strong>Sarhi Gate:</strong> 30 km from Khatia, minimal accommodation, direct Sarhi Zone access</li>
+      <li><strong>Trade-off:</strong> Closer to specific zone but fewer amenities and options</li>
+    </ul>
+
+    <h2>Booking Tips for Khatia Gate Area</h2>
+
+    <ol>
+      <li><strong>Book early for peak season:</strong> Resorts near gate fill up first (December-February)</li>
+      <li><strong>Confirm gate proximity:</strong> Verify actual distance from gate before booking</li>
+      <li><strong>Check safari arrangement:</strong> Confirm if resort provides gate transfers</li>
+      <li><strong>Read recent reviews:</strong> Quality can vary even among nearby properties</li>
+      <li><strong>Consider package deals:</strong> Resorts near gate often offer competitive packages</li>
+    </ol>
+
+    <h2>Wildmark Resort — Best Choice Near Khatia Gate</h2>
+
+    <p>
+      Among the resorts near Khatia Gate, Wildmark Resort stands out for several reasons:
+    </p>
+
+    <h3>Prime Location</h3>
+    <ul>
+      <li>Less than 1 km from gate (5-minute drive)</li>
+      <li>Easy walking distance for non-safari hours</li>
+      <li>Quiet setting despite proximity to village</li>
+    </ul>
+
+    <h3>Complete Amenities</h3>
+    <ul>
+      <li>AC rooms with 24-hour power backup</li>
+      <li>Swimming pool for relaxation</li>
+      <li>Multi-cuisine restaurant</li>
+      <li>Doctor on call for emergencies</li>
+      <li>Parking for self-drivers</li>
+    </ul>
+
+    <h3>Safari Convenience</h3>
+    <ul>
+      <li>Complete packages with permits, jeep, guide</li>
+      <li>Quick gate transfers in safari jeeps</li>
+      <li>Experienced safari coordination</li>
+      <li>Multi-zone packages available</li>
+    </ul>
+
+    <h3>Family-Friendly</h3>
+    <ul>
+      <li>Family Room options</li>
+      <li>Swimming pool for children</li>
+      <li>Lawn areas for relaxation</li>
+      <li>Customizable meal options</li>
+    </ul>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

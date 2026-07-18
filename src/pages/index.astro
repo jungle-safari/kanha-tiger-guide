@@ -1,0 +1,274 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Backlink from '../components/Backlink.astro';
+import FAQ from '../components/FAQ.astro';
+import RelatedPages from '../components/RelatedPages.astro';
+import ResourcesHub from '../components/ResourcesHub.astro';
+import Hero from '../components/Hero.astro';
+import AuthorBox from '../components/AuthorBox.astro';
+import TrustBar from '../components/TrustBar.astro';
+import Newsletter from '../components/Newsletter.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Testimonials from '../components/Testimonials.astro';
+
+const faqs = [
+  {
+    question: "Where is Kanha National Park located?",
+    answer: "Kanha National Park is located in Madhya Pradesh, India, spanning Mandla and Balaghat districts in the Maikal hill range of central India. The nearest major city is Jabalpur, 165 km away, with the nearest airport at Jabalpur (JLR) and the closest railway station at Jabalpur Junction."
+  },
+  {
+    question: "What is Kanha National Park famous for?",
+    answer: "Kanha is internationally famous for two conservation achievements: its healthy Bengal tiger population (approximately 125 tigers as of the 2024 census) and the revival of the hard-ground Barasingha (swamp deer), which was saved from extinction here. The park's 940 sq km landscape of Sal forests, bamboo thickets, and meadows also inspired Rudyard Kipling's 'The Jungle Book.'"
+  },
+  {
+    question: "How many tigers are there in Kanha National Park?",
+    answer: "According to the 2024 All India Tiger Estimation, Kanha National Park has approximately 125 tigers distributed across its four safari zones: Kanha, Kisli, Mukki, and Sarhi. Mukki Zone has the highest density with 40-50 tigers, followed by Kanha Zone with 35-40."
+  },
+  {
+    question: "When is the best time to visit Kanha National Park?",
+    answer: "The best time to visit Kanha for tiger sightings is March through May, when summer heat (35-45°C) draws wildlife to water sources, making tigers more visible. Winter months (November-February) offer pleasant weather (10-25°C) with moderate sighting chances. The park is closed during monsoon from July 1 to September 30."
+  },
+  {
+    question: "How much does a Kanha safari package cost?",
+    answer: "Kanha safari packages typically cost ₹X,XXX to ₹XX,XXX per person depending on duration and inclusions. A 2-night/3-day package with 3 jeep safaris, accommodation, and meals starts from ₹X,XXX per person at mid-range resorts like Wildmark Resort near Khatia Gate. Premium and luxury packages range higher."
+  },
+  {
+    question: "How do I book a Kanha safari online?",
+    answer: "You can book a Kanha safari through the Madhya Pradesh Forest Department's official portal, or more conveniently through resort packages that handle permit allocation, jeep arrangement, and guide coordination. Most mid-range and luxury resorts near Khatia Gate offer complete packages with all bookings included."
+  }
+];
+
+const relatedPages = [
+  { title: 'Safari Guide', description: 'Complete guide to jungle safaris at Kanha', href: '/kanha-tiger-guide/safari-guide/' },
+  { title: 'Safari Zones', description: 'Detailed zone-by-zone breakdown', href: '/kanha-tiger-guide/safari-zones/' },
+  { title: 'Resorts & Stays', description: 'Best accommodation near Khatia Gate', href: '/kanha-tiger-guide/resorts/' },
+  { title: 'Wildlife', description: 'Tigers, Barasingha, and bird species', href: '/kanha-tiger-guide/wildlife/' },
+  { title: 'Travel Info', description: 'How to reach, best time, and tips', href: '/kanha-tiger-guide/travel-info/' },
+  { title: 'Park History', description: 'From royal hunting ground to tiger reserve', href: '/kanha-tiger-guide/kanha-national-park/history/' }
+];
+---
+
+<BaseLayout
+  title="Kanha National Park - Complete Wildlife, Safari & Travel Guide 2026"
+  description="Complete 2026 guide to Kanha National Park, Madhya Pradesh. Wildlife, safari zones, resorts, tiger sightings, and booking information for travelers."
+  keywords="kanha national park, kanha tiger reserve, kanha safari, madhya pradesh wildlife, kanha zones, kanha resort"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/"
+  pageType="website"
+  readingTime={12}
+  category="Park Overview"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <!-- Main Content -->
+      <div class="lg:col-span-2">
+
+        <h1>Kanha National Park — Complete Wildlife, Safari & Travel Guide (2026)</h1>
+
+        <TrustBar category="Park Overview" readingTime={12} />
+
+        <p class="text-lg italic text-gray-600 mb-4">
+          Last updated: July 18, 2026 — Your comprehensive resource for planning your Kanha tiger safari
+        </p>
+
+        <Hero
+          src="/images/kanha-national-park-india.webp"
+          alt="Kanha National Park - scenic view of Sal forests and meadows in Madhya Pradesh, India"
+          caption="Kanha National Park spans 940 sq km of Sal forests, meadows, and bamboo thickets in Madhya Pradesh"
+        />
+
+        <section class="answer-block">
+          <p>
+            <strong>Kanha National Park</strong> is a 940-square-kilometer tiger reserve located in Madhya Pradesh, central India.
+            Established as a national park in 1955 and designated a tiger reserve in 1973 under Project Tiger, Kanha is one
+            of India's premier wildlife destinations. The park hosts approximately <strong>125 Bengal tigers</strong>,
+            Indian leopards, gaur, sloth bears, and the rare hard-ground <strong>Barasingha (swamp deer)</strong> —
+            a subspecies saved from extinction at Kanha. Divided into four safari zones (Kanha, Kisli, Mukki, Sarhi) and
+            accessed through three gates (Khatia, Mukki, Sarhi), the park remains open from October 1 to June 30 annually.
+            Wildmark Resort, located less than 1 km from the main Khatia Gate, serves as a base for safari packages combining
+            accommodation, permits, meals, and guided jeep tours.
+          </p>
+        </section>
+
+        <Backlink       title="Book Kanha Tiger Safari Stay at Khatia Gate"
+      description="For the best Kanha tiger safari packages near Khatia Gate — including AC accommodation, all meals, forest permits, and guided jeep tours — check Kanha Safari Stay at Wildmark Resort."
+      anchorText="Book Kanha Tiger Safari Package"
+      ctaText="Reserve Kanha Resort Stay"
+      primaryUrl="https://kanhasafaristay.com/"
+      primaryAnchor="Book Kanha Tiger Safari Package"
+      secondaryUrl="https://kanhasafaristay.com/faq/"
+      secondaryAnchor="Kanha Safari FAQ"
+      tertiaryUrl="https://kanhasafaristay.com/blog/"
+      tertiaryAnchor="Kanha Safari Booking Guide"
+    />
+
+        <h2>Why Kanha National Park Is Famous</h2>
+
+        <p>
+          Kanha's reputation rests on three pillars: tiger conservation, Barasingha revival, and cinematic landscapes.
+          The park was among the first nine tiger reserves established under Project Tiger in 1973, when India's wild
+          tiger population had dwindled to crisis levels. Today, Kanha stands as a global conservation success story.
+        </p>
+
+        <h3>The Barasingha Conservation Story</h3>
+        <p>
+          The hard-ground Barasingha (Rucervus duvaucelii branderi) is a subspecies found only at Kanha. By 1970, the
+          population had crashed to just 66 animals due to habitat loss and disease. Through dedicated conservation
+          efforts — including habitat management, veterinary care, and breeding programs — the population has recovered
+          to over 800 individuals. Visitors to Kanha today can see herds of Barasingha grazing in the meadows of
+          Kanha Zone, particularly around the Sonph meadows and the Maasahi zone.
+        </p>
+
+        <h3>The Jungle Book Connection</h3>
+        <p>
+          The broader forests of the Satpura-Maikal landscape, including areas adjacent to Kanha, are believed to have
+          inspired Rudyard Kipling's 1894 novel "The Jungle Book." The Seoni forests near Kanha are widely associated
+          with Mowgli's jungle, lending the park cultural recognition beyond its ecological importance.
+        </p>
+
+        <h2>Kanha National Park at a Glance</h2>
+
+        <table>
+          <tbody>
+            <tr><td><strong>Location</strong></td><td>Mandla & Balaghat districts, Madhya Pradesh, India</td></tr>
+            <tr><td><strong>Total Area</strong></td><td>940 sq km (core) + 1,067 sq km (buffer)</td></tr>
+            <tr><td><strong>Established</strong></td><td>National Park: 1955 | Tiger Reserve: 1973</td></tr>
+            <tr><td><strong>Tiger Population</strong></td><td>~125 tigers (2024 census)</td></tr>
+            <tr><td><strong>Other Key Species</strong></td><td>Barasingha, leopard, gaur, sloth bear, wild dog</td></tr>
+            <tr><td><strong>Bird Species</strong></td><td>300+ recorded species</td></tr>
+            <tr><td><strong>Safari Zones</strong></td><td>4 zones (Kanha, Kisli, Mukki, Sarhi)</td></tr>
+            <tr><td><strong>Entry Gates</strong></td><td>3 gates (Khatia, Mukki, Sarhi)</td></tr>
+            <tr><td><strong>Open Season</strong></td><td>October 1 – June 30 (closed July-Sep)</td></tr>
+            <tr><td><strong>Nearest Airport</strong></td><td>Jabalpur (JLR), 165 km</td></tr>
+            <tr><td><strong>Nearest Railway Station</strong></td><td>Jabalpur Junction, 165 km</td></tr>
+            <tr><td><strong>Altitude Range</strong></td><td>600–900 meters above sea level</td></tr>
+          </tbody>
+        </table>
+
+        <Backlink           title="Book Your Kanha Safari Stay"
+          description="Wildmark Resort near Khatia Gate offers 1N/2D to 6N/7D Kanha safari packages with AC rooms, multi-cuisine restaurant, swimming pool, and complete permit arrangements."
+      primaryUrl="https://kanhasafaristay.com/"
+      primaryAnchor="Book Kanha Tiger Safari Package"
+      secondaryUrl="https://kanhasafaristay.com/faq/"
+      secondaryAnchor="Kanha Safari FAQ"
+      tertiaryUrl="https://kanhasafaristay.com/blog/"
+      tertiaryAnchor="Kanha Safari Booking Guide"
+    />
+
+        <h2>Kanha Safari Zones</h2>
+
+        <p>
+          The park is divided into four safari zones, each with distinct terrain, wildlife density, and access routes.
+          Most visitors experience two zones during a 3-day stay.
+        </p>
+
+        <h3>Kanha Zone (Accessed via Khatia Gate)</h3>
+        <p>
+          The most popular zone, covering the core Hallon and Banjar meadows. Famous for Barasingha sightings and reliable
+          tiger activity near waterholes. Distance from Khatia Gate: 0-15 km inside the park.
+        </p>
+
+        <h3>Kisli Zone (Accessed via Khatia Gate)</h3>
+        <p>
+          Dense Sal forests with multiple water sources. Known for tiger and leopard sightings along the Kisli road.
+          Distance from Khatia Gate: 15-30 km inside the park.
+        </p>
+
+        <h3>Mukki Zone (Accessed via Mukki Gate)</h3>
+        <p>
+          Highest tiger density among all zones. Mukki is 60 km south of Khatia Gate, requiring a separate permit.
+          Known for consistent tiger sightings, particularly around the Alikatta and Bhaisanghat areas.
+        </p>
+
+        <h3>Sarhi Zone (Accessed via Sarhi Gate)</h3>
+        <p>
+          The smallest and least-visited zone, ideal for birdwatching and quieter experiences. Sarhi Gate is 30 km
+          east of Khatia Gate.
+        </p>
+
+        <h2>Geography and Terrain</h2>
+
+        <p>
+          Kanha sits on the Maikal Range at the edge of the Deccan plateau. The terrain combines flat-bottomed valleys
+          (locally called "dadars") with gentle hills. The elevation ranges from 600 to 900 meters above sea level, with
+          the highest point at Sulkum Dongar (924m). The park's landscape includes:
+        </p>
+
+        <ul>
+          <li><strong>Sal forests</strong> — Dominant tree cover across all zones</li>
+          <li><strong>Bamboo thickets</strong> — Especially in Kanha and Mukki zones</li>
+          <li><strong>Meadows (Dadars)</strong> — Iconic grasslands like Hallon, Banjar, Sonph, Maasahi</li>
+          <li><strong>Rivers and streams</strong> — Banjar, Sulkum, Sonph are key water sources</li>
+          <li><strong>Plateau highlands</strong> — Sulkum Dongar and other elevated areas</li>
+        </ul>
+
+        <Newsletter />
+
+        <h2>Climate and Best Time to Visit</h2>
+
+        <p>
+          Kanha experiences three distinct seasons. The park is closed during the southwest monsoon (July-September)
+          when heavy rainfall makes safari tracks impassable and coincides with tiger breeding cycles.
+        </p>
+
+        <table>
+          <thead>
+            <tr><th>Season</th><th>Months</th><th>Temperature</th><th>Tiger Sightings</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Winter</td><td>Nov–Feb</td><td>10°C–25°C</td><td>Moderate</td></tr>
+            <tr><td>Summer</td><td>Mar–May</td><td>25°C–45°C</td><td>High</td></tr>
+            <tr><td>Monsoon</td><td>Jun–Sep</td><td>25°C–35°C</td><td>Park Closed</td></tr>
+            <tr><td>Post-Monsoon</td><td>Oct</td><td>20°C–30°C</td><td>Good</td></tr>
+          </tbody>
+        </table>
+
+        <h2>How to Reach Kanha National Park</h2>
+
+        <p>
+          Kanha is well-connected by air, rail, and road from major Indian cities. The nearest airport is Jabalpur (165 km,
+          4 hours by road), with Jabalpur Junction and Gondia Junction serving as the main railway stations. Most visitors
+          hire a taxi from these points for the final drive to Khatia Gate.
+        </p>
+
+        <ul>
+          <li><strong>By Air:</strong> Jabalpur Airport (JLR) – 165 km | Nagpur (NAG) – 250 km | Raipur (RPR) – 220 km</li>
+          <li><strong>By Train:</strong> Jabalpur Junction – 165 km | Gondia Junction – 120 km | Mandla – 90 km</li>
+          <li><strong>By Road:</strong> Well-maintained highways from Jabalpur (4 hrs), Nagpur (5-6 hrs), Indore (10 hrs)</li>
+        </ul>
+
+        <h2>Accommodation Near Kanha</h2>
+
+        <p>
+          Resorts cluster around Khatia Gate (the main entry), with options ranging from budget homestays to luxury jungle
+          lodges. Wildmark Resort, located less than 1 km from the gate, offers mid-range AC accommodation with
+          multi-cuisine dining, a swimming pool, and bundled safari packages. Most resorts arrange safari permits,
+          jeep bookings, and guide coordination as part of their stay packages.
+        </p>
+
+        <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

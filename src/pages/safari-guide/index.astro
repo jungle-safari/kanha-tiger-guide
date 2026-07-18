@@ -1,0 +1,254 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Safari Guide', href: '/safar-guide/' }
+];
+
+const faqs = [
+  {
+    question: "How much does a Kanha jungle safari cost?",
+    answer: "A Kanha jungle safari costs ₹X,XXX-₹X,XXX per person for Indian nationals and ₹X,XXX-₹X,XXX for foreign tourists, depending on the zone. This includes jeep hire, guide fee, and entry permits but excludes camera fees (₹200 for still, ₹1,500 for video)."
+  },
+  {
+    question: "How do I book a Kanha safari online?",
+    answer: "Kanha safaris can be booked online through the Madhya Pradesh Forest Department portal (forest.mponline.gov.in), or more conveniently through resort packages that handle all permits, jeep allocation, and guide arrangements. Advance booking of 30-60 days is recommended during peak season."
+  },
+  {
+    question: "What are the safari timings at Kanha?",
+    answer: "Kanha offers two safari shifts daily: Morning safari (entry at sunrise around 6:00 AM, exit by 11:00 AM) and afternoon safari (entry at 3:00 PM, exit by sunset around 6:30 PM). Each safari lasts approximately 3-4 hours inside the park."
+  },
+  {
+    question: "Which zone is best for tiger sightings at Kanha?",
+    answer: "Mukki Zone has the highest tiger density (40-50 tigers) and best sighting rates. Kanha Zone, accessed via the main Khatia Gate, also offers excellent tiger activity around meadows. A multi-day stay covering 2-3 different zones maximizes sighting chances."
+  },
+  {
+    question: "Can children go on Kanha safaris?",
+    answer: "Yes, children above 5 years can accompany parents on Kanha safaris. Children below 5 are not permitted inside the core park zones. Most resorts arrange family-friendly jeeps with cushioned seating."
+  }
+];
+
+const relatedPages = [
+  { title: 'Jungle Safari', description: 'What to expect on a Kanha jungle safari', href: '/kanha-tiger-guide/safari-guide/jungle-safari/' },
+  { title: 'Permits', description: 'How to obtain safari permits', href: '/kanha-tiger-guide/safari-guide/permits/' },
+  { title: 'Safari Zones', description: 'Zone-by-zone breakdown', href: '/kanha-tiger-guide/safari-zones/' },
+  { title: 'Best Resort', description: 'Where to stay for safaris', href: '/kanha-tiger-guide/resorts/best-resort/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Safari Guide 2026 - Booking, Permits, Timings & Zones"
+  description="Complete Kanha safari guide for 2026. How to book, permit process, safari timings, costs, zones, and tips for tiger sightings at Kanha National Park."
+  keywords="kanha safari, kanha jungle safari, kanha safari booking, kanha safari permits, kanha safari timings"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/"
+  readingTime={10}
+  category="Safari Guide"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+        <Breadcrumb items={breadcrumbs} />
+
+        <h1>Kanha Safari Guide 2026 — Booking, Permits, Timings & Tiger Sighting Tips</h1>
+
+        <TrustBar category="Safari Guide" readingTime={10} />
+
+        <p class="text-lg italic text-gray-600 mb-4">Last updated: July 18, 2026</p>
+
+        <Hero
+          src="/images/Kanha-Safari-Tour-Package.webp"
+          alt="Kanha safari tour package - jeep entering the national park for tiger safari"
+          caption="Guided jeep safaris through Kanha's core zones with expert naturalist guides"
+        />
+
+        <section class="answer-block">
+          <p>
+            A Kanha safari is a guided jeep tour through the national park's four zones (Kanha, Kisli, Mukki, Sarhi)
+            conducted in 4x4 open-top vehicles with forest department-approved guides. Each safari lasts 3-4 hours, with
+            two shifts daily — morning (sunrise to ~11:00 AM) and afternoon (~3:00 PM to sunset). Visitors must obtain
+            zone-specific permits in advance through the Madhya Pradesh Forest Department portal or via resort packages.
+            Safari costs range from ₹X,XXX to ₹X,XXX per person (Indian nationals) per shift, depending on zone and vehicle
+            type. Most visitors book 2-3 safaris during a 2-3 day stay to maximize tiger sighting chances.
+          </p>
+        </section>
+
+        <Backlink       title="Best Kanha Tiger Safari Packages 2026"
+      description="Get the best Kanha tiger safari packages starting from ₹X,XXX per person. Wildmark Resort near Khatia Gate provides comfortable stays with safari permits, jeep, and guide included."
+      anchorText="View Kanha Safari Package Deals"
+      ctaText="Kanha Tiger Safari Booking"
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      primaryAnchor="Kanha Safari Booking Guide"
+      secondaryUrl="https://kanhasafaristay.com/"
+      secondaryAnchor="Book Kanha Tiger Safari Package"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Safari Permit FAQ"
+    />
+
+        <h2>How to Book a Kanha Safari</h2>
+
+        <p>
+          Kanha safari booking can be done through two main channels: the official Madhya Pradesh Forest Department portal
+          or via resort packages. The official portal (forest.mponline.gov.in) allows direct permit booking but requires
+          visitors to separately arrange jeeps and guides. Resort packages offer a more convenient all-inclusive approach.
+        </p>
+
+        <h3>Option 1: Official Forest Department Booking</h3>
+        <ol>
+          <li>Visit forest.mponline.gov.in</li>
+          <li>Register with personal details and ID proof</li>
+          <li>Select date, zone, and shift (morning/afternoon)</li>
+          <li>Pay permit fee online (₹X,XXX-₹X,XXX depending on zone and nationality)</li>
+          <li>Arrange separate jeep and guide (can be done through registered jeep operators)</li>
+        </ol>
+
+        <h3>Option 2: Resort Package Booking (Recommended)</h3>
+        <p>
+          Most mid-range and luxury resorts near Khatia Gate arrange complete safari packages including permits, jeep
+          allocation, guide coordination, and pickup from the resort. Wildmark Resort and similar properties handle
+          all logistics, allowing guests to focus on the experience.
+        </p>
+
+        <Backlink           title="Book Your Complete Safari Package"
+          description="Wildmark Resort near Khatia Gate offers all-inclusive safari packages from ₹X,XXX per person with permits, jeep, guide, meals, and accommodation."
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      primaryAnchor="Kanha Safari Booking Guide"
+      secondaryUrl="https://kanhasafaristay.com/"
+      secondaryAnchor="Book Kanha Tiger Safari Package"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Safari Permit FAQ"
+    />
+
+        <h2>Safari Timings at Kanha</h2>
+
+        <table>
+          <thead>
+            <tr><th>Shift</th><th>Entry Time</th><th>Exit Time</th><th>Best For</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Morning</td><td>Sunrise (~6:00 AM)</td><td>~11:00 AM</td><td>Active wildlife, cooler temperatures</td></tr>
+            <tr><td>Afternoon</td><td>~3:00 PM</td><td>Sunset (~6:30 PM)</td><td>Predator activity at waterholes</td></tr>
+          </tbody>
+        </table>
+
+        <p>
+          Morning safaris are generally preferred by wildlife enthusiasts as animals are more active in cooler temperatures
+          and good light conditions make photography easier. However, afternoon safaris can also produce excellent sightings,
+          particularly at waterholes during summer months.
+        </p>
+
+        <h2>Safari Costs (2026)</h2>
+
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Indian Nationals</th><th>Foreign Tourists</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Core Zone Permit</td><td>₹X,XXX</td><td>₹X,XXX</td></tr>
+            <tr><td>Buffer Zone Permit</td><td>₹XXX</td><td>₹X,XXX</td></tr>
+            <tr><td>Jeep (6-seater)</td><td>₹X,XXX</td><td>₹X,XXX</td></tr>
+            <tr><td>Guide Fee</td><td>₹XXX</td><td>₹XXX</td></tr>
+            <tr><td>Camera Fee (still)</td><td>₹200</td><td>₹200</td></tr>
+            <tr><td>Camera Fee (video)</td><td>₹1,500</td><td>₹1,500</td></tr>
+          </tbody>
+        </table>
+
+        <p class="text-sm italic">
+          Note: Rates are approximate and subject to change by the Madhya Pradesh Forest Department. Foreign tourist rates
+          are typically 3-5x higher than Indian national rates.
+        </p>
+
+        <Newsletter />
+
+        <h2>Permits: What You Need</h2>
+
+        <p>
+          All visitors to Kanha's core zones require advance permits. The permit process requires:
+        </p>
+
+        <ul>
+          <li>Valid government-issued photo ID (Aadhaar, passport, driver's license)</li>
+          <li>Personal details for all safari participants</li>
+          <li>Advance booking (30-60 days recommended for peak season)</li>
+          <li>Payment via online portal or resort package</li>
+        </ul>
+
+        <p>
+          Permits are zone-specific and shift-specific, meaning you cannot enter a zone without the matching permit.
+          Wildmark Resort and other resorts handle this process as part of their packages.
+        </p>
+
+        <h2>Best Zones for Tiger Sightings</h2>
+
+        <h3>Mukki Zone — Highest Sighting Rate</h3>
+        <p>
+          Mukki Zone has the highest tiger density at Kanha, with 40-50 tigers across the zone. The terrain combines
+          dense forests with multiple water sources, creating ideal tiger habitat. Access via Mukki Gate (60 km south of
+          Khatia Gate), requires a separate permit.
+        </p>
+
+        <h3>Kanha Zone — Iconic Meadow Sightings</h3>
+        <p>
+          Kanha Zone, accessed via the main Khatia Gate, is the park's most popular zone. The Hallon and Banjar meadows
+          produce excellent tiger sightings, particularly during summer (March-May) when tigers rest in grassland edges.
+        </p>
+
+        <h2>Safari Vehicles and Guides</h2>
+
+        <p>
+          All Kanha safaris use 4x4 open-top jeeps (typically Mahindra Thar or Bolero Camper) with a maximum of 6 passengers
+          plus driver and mandatory forest department guide. Guides are assigned by the park and rotate across different
+          jeeps. They possess expert knowledge of animal behavior, tracks, and recent sighting locations.
+        </p>
+
+        <h2>Tips for a Successful Kanha Safari</h2>
+
+        <ol>
+          <li><strong>Take multiple safaris:</strong> Minimum 2-3 safaris for good sighting chances</li>
+          <li><strong>Mix zones:</strong> Different zones have different tiger populations</li>
+          <li><strong>Choose morning shifts:</strong> Better light and active wildlife</li>
+          <li><strong>Book in advance:</strong> 30-60 days for peak season (Dec-Feb)</li>
+          <li><strong>Hire experienced naturalists:</strong> Resort-provided guides often have local knowledge</li>
+          <li><strong>Wear neutral colors:</strong> Olive, khaki, brown; avoid bright colors</li>
+          <li><strong>Carry binoculars:</strong> Essential for distance viewing</li>
+          <li><strong>Stay quiet:</strong> Noise disturbs wildlife and other visitors</li>
+        </ol>
+
+        <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+
+      </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,312 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Kanha National Park', href: '/' },
+  { label: 'History', href: '/kanha-national-park/history/' }
+];
+
+const faqs = [
+  {
+    question: "When was Kanha National Park established?",
+    answer: "Kanha was declared a national park on June 1, 1955, and designated a tiger reserve on November 15, 1973, under Project Tiger. The park's establishment marked a turning point in India's wildlife conservation efforts, transforming former hunting grounds into one of the world's premier tiger reserves."
+  },
+  {
+    question: "What was Kanha before it became a national park?",
+    answer: "Before its establishment as a national park in 1955, the Kanha area was part of the Gondwana kingdom's traditional hunting grounds. The British colonial era saw extensive hunting by royalty and officials, which depleted wildlife populations. The area was declared a wildlife sanctuary in 1933 before becoming a national park in 1955."
+  },
+  {
+    question: "Why is Kanha historically significant for conservation?",
+    answer: "Kanha is historically significant for two major conservation achievements: it was among the first nine tiger reserves under Project Tiger (1973), and the Barasingha conservation program at Kanha saved the hard-ground subspecies from extinction. The park's success story has influenced wildlife conservation policy across India and globally."
+  },
+  {
+    question: "When did Project Tiger start at Kanha?",
+    answer: "Project Tiger was launched at Kanha on November 15, 1973, as one of the original nine tiger reserves. The program focused on protecting tigers and their habitat through core-zone management, anti-poaching patrols, and scientific monitoring. Kanha's success under Project Tiger established it as a model for tiger conservation in India."
+  }
+];
+
+const relatedPages = [
+  { title: 'Geography', description: 'Terrain and location details', href: '/kanha-tiger-guide/kanha-national-park/geography/' },
+  { title: 'Famous For', description: 'Conservation achievements', href: '/kanha-tiger-guide/kanha-national-park/famous-for/' },
+  { title: 'Tigers', description: 'Tiger conservation story', href: '/kanha-tiger-guide/wildlife/tigers/' },
+  { title: 'Barasingha', description: 'The conservation icon', href: '/kanha-tiger-guide/wildlife/barasingha/' }
+];
+---
+
+<BaseLayout
+  title="Kanha National Park History 2026 - From Royal Hunting to Tiger Reserve"
+  description="Complete history of Kanha National Park. From royal hunting grounds to India's premier tiger reserve under Project Tiger. Timeline and conservation milestones."
+  keywords="kanha national park history, kanha history, kanha project tiger, kanha established, kanha conservation history"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/kanha-national-park/history/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha National Park History 2026 — From Royal Hunting to Tiger Reserve</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        <strong>Kanha National Park</strong> has a rich history spanning over a century, from royal hunting
+        grounds to one of India's most successful tiger reserves. The area was declared a wildlife
+        sanctuary in 1933, became a national park on June 1, 1955, and was designated a tiger reserve
+        on November 15, 1973 under Project Tiger. The park's conservation journey transformed depleted
+        wildlife populations into thriving ecosystems, with tigers recovering from approximately 50-60
+        in 1973 to 125+ today, and the hard-ground Barasingha saved from near-extinction (66 animals
+        in 1970 to 800+ today). Kanha's history represents one of the world's most successful
+        conservation transformations.
+      </p>
+    </section>
+
+    <Backlink       title="Kanha Accommodation Near Khatia Gate"
+      description="Looking for Kanha accommodation near Khatia Gate? Wildmark Resort offers the closest stays to the safari entry with complete packages and expert naturalist guides."
+      anchorText="Book Kanha Resort Near Khatia Gate"
+      ctaText="Kanha Resort Booking"
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Park History & Wildlife"
+      secondaryUrl="https://kanhasafaristay.com/"
+      secondaryAnchor="Book Kanha Heritage Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha History FAQ"
+    />
+
+    <h2>Pre-Historical Era</h2>
+
+    <p>
+      Long before its establishment as a protected area, the Kanha region was inhabited by tribal
+      communities including the Gond and Baiga peoples. These communities had a symbiotic relationship
+      with the forest, practicing sustainable forest management and traditional conservation practices.
+    </p>
+
+    <h3>Gond Kingdom Era</h3>
+    <p>
+      The region was part of the broader Gondwana kingdom, with the Baiga and Gond tribes considering
+      the forests sacred. Traditional taboos against over-hunting helped maintain wildlife populations
+      during this period.
+    </p>
+
+    <h3>Colonial Hunting Era (19th Century)</h3>
+    <p>
+      The British colonial period saw extensive hunting by royalty and British officials. Records from
+      the 1880s-1920s describe grand hunts with hundreds of tigers and other big game killed. This
+      period significantly depleted wildlife populations, particularly tigers.
+    </p>
+
+    <h2>Conservation Era Begins</h2>
+
+    <h3>1933: Wildlife Sanctuary Establishment</h3>
+    <p>
+      Concerned by declining wildlife populations, the British administration declared the area a
+      wildlife sanctuary in 1933. This marked the beginning of formal protection efforts, though
+      enforcement was limited and hunting continued in surrounding areas.
+    </p>
+
+    <h3>1947: Independence and Forest Department</h3>
+    <p>
+      After India's independence in 1947, forest management came under the newly formed Forest
+      Department. Initial efforts focused on regulating hunting and establishing forest protection
+      mechanisms. However, habitat loss and poaching continued to threaten wildlife.
+    </p>
+
+    <h3>1955: National Park Declaration</h3>
+    <p>
+      On June 1, 1955, the area was officially declared a National Park, giving it stronger legal
+      protection. This declaration was part of India's broader conservation movement following
+      independence, recognizing the need to protect India's wildlife heritage.
+    </p>
+
+    <Backlink       title="Experience Kanha's Living History"
+      description="Wildmark Resort near Khatia Gate offers safari experiences in this historic conservation landscape. Book a package to see the success of decades of conservation work."
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Park History & Wildlife"
+      secondaryUrl="https://kanhasafaristay.com/"
+      secondaryAnchor="Book Kanha Heritage Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha History FAQ"
+    />
+
+    <h2>Project Tiger Era (1973-Present)</h2>
+
+    <h3>The Conservation Crisis of the Early 1970s</h3>
+    <p>
+      By the early 1970s, India's wildlife faced an unprecedented crisis:
+    </p>
+
+    <ul>
+      <li>Tiger population dropped to approximately 1,800 nationwide</li>
+      <li>Habitat loss accelerating due to development</li>
+      <li>Poaching for skins and traditional medicines</li>
+      <li>Many reserves existed only on paper with limited protection</li>
+    </ul>
+
+    <h3>1973: Project Tiger Launched</h3>
+    <p>
+      On November 15, 1973, Prime Minister Indira Gandhi launched Project Tiger, designating nine
+      tiger reserves across India. Kanha was among these original nine, marking the beginning of
+      India's flagship tiger conservation program.
+    </p>
+
+    <h3>Project Tiger Implementation at Kanha</h3>
+    <p>
+      Kanha implemented several key Project Tiger components:
+    </p>
+
+    <ol>
+      <li><strong>Core Zone Protection:</strong> Strict protection of prime tiger habitat</li>
+      <li><strong>Buffer Zone Management:</strong> Sustainable use of surrounding areas</li>
+      <li><strong>Anti-Poaching Patrols:</strong> Armed forest guards protecting wildlife</li>
+      <li><strong>Habitat Management:</strong> Controlled burning, grassland management</li>
+      <li><strong>Scientific Monitoring:</strong> Tiger population censuses and research</li>
+      <li><strong>Community Engagement:</strong> Relocation programs for forest villages</li>
+    </ol>
+
+    <h3>1970s: Barasingha Crisis</h3>
+    <p>
+      In 1970, the hard-ground Barasingha population crashed to just 66 animals due to:
+    </p>
+
+    <ul>
+      <li>Habitat degradation from vegetation succession</li>
+      <li>Disease outbreaks</li>
+      <li>Predation pressure</li>
+      <li>Competition with livestock</li>
+    </ul>
+
+    <h3>1970s-1980s: Barasingha Recovery Program</h3>
+    <p>
+      Kanha launched a dedicated Barasingha conservation program:
+    </p>
+
+    <ul>
+      <li><strong>Habitat Management:</strong> Meadow restoration through controlled burning and grass cutting</li>
+      <li><strong>Veterinary Care:</strong> Treatment of sick and injured animals</li>
+      <li><strong>Captive Breeding:</strong> Breeding program for injured individuals unable to survive in wild</li>
+      <li><strong>Population Monitoring:</strong> Regular censuses to track recovery</li>
+    </ul>
+
+    <h2>Conservation Success Timeline</h2>
+
+    <h3>1970s Milestones</h3>
+    <ul>
+      <li><strong>1970:</strong> Barasingha population at 66 (crisis low)</li>
+      <li><strong>1973:</strong> Project Tiger launched at Kanha</li>
+      <li><strong>1976:</strong> First tiger census shows 50-60 tigers</li>
+      <li><strong>1978:</strong> Barasingha population crosses 100</li>
+    </ul>
+
+    <h3>1980s Milestones</h3>
+    <ul>
+      <li><strong>1982:</strong> Kanha expanded to current boundaries</li>
+      <li><strong>1985:</strong> Tiger population reaches 80-90</li>
+      <li><strong>1988:</strong> Barasingha population at 300+</li>
+    </ul>
+
+    <h3>1990s Milestones</h3>
+    <ul>
+      <li><strong>1993:</strong> Tourism infrastructure developed</li>
+      <li><strong>1995:</strong> Tiger population crosses 100</li>
+      <li><strong>1998:</strong> Barasingha population at 500+</li>
+    </ul>
+
+    <h3>2000s-Present Milestones</h3>
+    <ul>
+      <li><strong>2006:</strong> Buffer zone added (1,067 sq km)</li>
+      <li><strong>2010:</strong> Barasingha population reaches 700+</li>
+      <li><strong>2018:</strong> Eco-tourism zones designated</li>
+      <li><strong>2024:</strong> Tiger population at 125, Barasingha at 800+</li>
+    </ul>
+
+    <h2>The Jungle Book Legacy</h2>
+
+    <p>
+      The broader forests of the Satpura-Maikal landscape, including areas adjacent to Kanha, are
+      believed to have inspired Rudyard Kipling's "The Jungle Book" (1894). While the exact setting
+      remains debated, the Seoni forests near Kanha are widely associated with Mowgli's jungle,
+      giving the park international cultural recognition.
+    </p>
+
+    <p>
+      This literary connection has helped Kanha:
+    </p>
+
+    <ul>
+      <li>Attract international visitors and researchers</li>
+      <li>Generate conservation funding through tourism</li>
+      <li>Create cultural value beyond ecological importance</li>
+      <li>Inspire wildlife films and documentaries</li>
+    </ul>
+
+    <h2>Modern Conservation Challenges</h2>
+
+    <p>
+      Despite its conservation success, Kanha faces ongoing challenges:
+    </p>
+
+    <ul>
+      <li><strong>Habitat Fragmentation:</strong> From development outside park boundaries</li>
+      <li><strong>Climate Change:</strong> Affecting water sources and vegetation</li>
+      <li><strong>Human-Wildlife Conflict:</strong> With surrounding villages</li>
+      <li><strong>Tourism Pressure:</strong> Managing increasing visitor numbers</li>
+      <li><strong>Genetic Diversity:</strong> Maintaining healthy tiger populations</li>
+    </ul>
+
+    <h2>Kanha's Global Conservation Impact</h2>
+
+    <p>
+      Kanha's conservation success has influenced wildlife protection globally:
+    </p>
+
+    <ul>
+      <li><strong>Model for Tiger Conservation:</strong> Cited in international tiger recovery programs</li>
+      <li><strong>Barasingha Recovery:</strong> Template for ungulate conservation</li>
+      <li><strong>Project Tiger Success:</strong> Demonstrated effectiveness of protected area management</li>
+      <li><strong>Research Hub:</strong> Decades of scientific data informing conservation policy</li>
+      <li><strong>Tourism Model:</strong> Balanced approach to wildlife tourism and conservation</li>
+    </ul>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

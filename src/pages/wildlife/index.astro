@@ -1,0 +1,231 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Wildlife', href: '/wildlife/' }
+];
+
+const faqs = [
+  {
+    question: "What animals can you see at Kanha National Park?",
+    answer: "Kanha hosts Bengal tigers, Indian leopards, gaur (Indian bison), sloth bears, wild dogs (dholes), and the rare hard-ground Barasingha (swamp deer). Other species include chital (spotted deer), sambar deer, nilgai, chausingha (four-horned antelope), wild boar, and over 300 bird species."
+  },
+  {
+    question: "How many tigers are there in Kanha?",
+    answer: "According to the 2024 All India Tiger Estimation, Kanha has approximately 125 tigers across its four zones: Kanha (35-40), Kisli (25-30), Mukki (40-50), and Sarhi (10-15). Mukki Zone has the highest density."
+  },
+  {
+    question: "What is Kanha famous for in terms of wildlife?",
+    answer: "Kanha is internationally famous for two conservation achievements: its healthy Bengal tiger population and the revival of the hard-ground Barasingha (swamp deer), which exists only at Kanha and was saved from near-extinction. The park is also known for its population of Indian wild dogs (dholes)."
+  },
+  {
+    question: "When is the best time to see wildlife at Kanha?",
+    answer: "March through May offers the best wildlife viewing as summer heat (35-45°C) draws animals to water sources. Winter months (November-February) provide pleasant weather with moderate sighting chances. Morning safaris are optimal for active wildlife across all seasons."
+  }
+];
+
+const relatedPages = [
+  { title: 'Tigers', description: 'Population, sightings, and conservation', href: '/kanha-tiger-guide/wildlife/tigers/' },
+  { title: 'Barasingha', description: 'The swamp deer saved from extinction', href: '/kanha-tiger-guide/wildlife/barasingha/' },
+  { title: 'Birds', description: '300+ species of birds at Kanha', href: '/kanha-tiger-guide/wildlife/birds/' },
+  { title: 'Leopards', description: 'The other big cat at Kanha', href: '/kanha-tiger-guide/wildlife/leopards/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Wildlife 2026 - Tigers, Barasingha, Birds & Big Cats"
+  description="Complete guide to Kanha wildlife including tigers, leopards, Barasingha, gaur, and 300+ bird species. Population data, sighting tips, and conservation stories."
+  keywords="kanha wildlife, kanha tigers, kanha barasingha, kanha birds, kanha leopards, kanha animals"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/wildlife/"
+  readingTime={10}
+  category="Wildlife"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+        <Breadcrumb items={breadcrumbs} />
+
+        <h1>Kanha Wildlife 2026 — Tigers, Barasingha, Birds & Big Cats Guide</h1>
+
+        <TrustBar category="Wildlife" readingTime={10} />
+
+        <p class="text-lg italic text-gray-600 mb-4">Last updated: July 18, 2026</p>
+
+        <Hero
+          src="/images/tiger-of-kanha-national-park-1024x576.webp"
+          alt="Tiger of Kanha National Park - Bengal tiger in its natural habitat"
+          caption="Kanha hosts approximately 125 Bengal tigers across its four safari zones"
+        />
+
+        <section class="answer-block">
+          <p>
+            Kanha National Park is home to a remarkable diversity of wildlife, with <strong>approximately 125 Bengal
+            tigers</strong> (2024 census), 800+ hard-ground Barasingha (swamp deer), Indian leopards, gaur (Indian bison),
+            sloth bears, wild dogs (dholes), and over 300 bird species. The park's 940 sq km landscape supports this
+            biodiversity through a mix of Sal forests, bamboo thickets, meadows, and water sources. Kanha is
+            internationally recognized for two conservation achievements: maintaining one of India's healthiest tiger
+            populations and reviving the hard-ground Barasingha from near-extinction (66 animals in 1970 to 800+ today).
+            Visitors can spot tigers most reliably in Kanha and Mukki zones, while Barasingha herds are easily seen in
+            Kanha Zone meadows.
+          </p>
+        </section>
+
+        <Backlink       title="Kanha Accommodation Near Khatia Gate"
+      description="Looking for Kanha accommodation near Khatia Gate? Wildmark Resort offers the closest stays to the safari entry with complete packages and expert naturalist guides."
+      anchorText="Book Kanha Resort Near Khatia Gate"
+      ctaText="Kanha Resort Booking"
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Wildlife Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      secondaryAnchor="Best Time for Kanha Wildlife"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Wildlife FAQ"
+    />
+
+        <h2>Major Wildlife Species at Kanha</h2>
+
+        <h3>Bengal Tiger (Panthera tigris tigris)</h3>
+        <p>
+          The apex predator of Kanha, with approximately 125 individuals across the park's four zones. Tigers at Kanha
+          are protected under Project Tiger and benefit from extensive anti-poaching measures and habitat conservation.
+          The park hosts one of India's most reliably sighted tiger populations, with visitors having 85-90% chance of
+          tiger sightings during 3-safari packages in peak season.
+        </p>
+
+        <h3>Hard-ground Barasingha (Rucervus duvaucelii branderi)</h3>
+        <p>
+          A subspecies of swamp deer found ONLY at Kanha. The hard-ground Barasingha was saved from extinction through
+          dedicated conservation efforts, with populations recovering from 66 animals in 1970 to 800+ today. The subspecies
+          gets its name from its unique hard hooves adapted for hard ground (meadows), unlike the soft-ground Barasingha
+          found elsewhere. Herds are commonly spotted in Kanha Zone meadows, particularly Sonph and Maasahi.
+        </p>
+
+        <h3>Indian Leopard (Panthera pardus fusca)</h3>
+        <p>
+          The second big cat at Kanha, leopards are more elusive than tigers but regularly sighted in Kisli and
+          Kanha zones. Their adaptability allows them to coexist with tigers by using different habitats and prey.
+        </p>
+
+        <h3>Gaur (Bos gaurus)</h3>
+        <p>
+          India's largest bovine, gaur herds are common across all zones. Large herds of 10-20 animals can be seen in
+          meadows and forest clearings, particularly in the early morning and late afternoon.
+        </p>
+
+        <h3>Sloth Bear (Melursus ursinus)</h3>
+        <p>
+          Shaggy-coated omnivores found throughout Kanha's forests. Most active during summer months when they feed
+          on termites, fruits, and honey.
+        </p>
+
+        <h3>Indian Wild Dog / Dhole (Cuon alpinus)</h3>
+        <p>
+          Endangered pack hunters with small but stable populations at Kanha. Dholes are typically seen in packs of
+          5-12, with sightings more common in Mukki and Kisli zones.
+        </p>
+
+        <Backlink           title="Spot Kanha's Wildlife on Safari"
+          description="Wildmark Resort near Khatia Gate offers guided safari packages with expert naturalists to help spot tigers, Barasingha, and leopards at Kanha."
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Wildlife Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      secondaryAnchor="Best Time for Kanha Wildlife"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Wildlife FAQ"
+    />
+
+        <Newsletter />
+
+        <h2>Deer and Antelope Species</h2>
+
+        <ul>
+          <li><strong>Chital (Spotted Deer):</strong> Most common deer, found in large herds</li>
+          <li><strong>Sambar Deer:</strong> Large deer species, primary tiger prey</li>
+          <li><strong>Barasingha:</strong> The conservation icon of Kanha</li>
+          <li><strong>Nilgai:</strong> Large antelope, common in meadows</li>
+          <li><strong>Chausingha (Four-horned Antelope):</strong> Small, elusive antelope</li>
+          <li><strong>Indian Gazelle (Chinkara):</strong> Rare at Kanha, seen in dry areas</li>
+        </ul>
+
+        <h2>Birdlife at Kanha</h2>
+
+        <p>
+          Kanha has recorded over 300 bird species, including:
+        </p>
+
+        <ul>
+          <li><strong>Raptors:</strong> Crested Serpent Eagle, Changeable Hawk Eagle, Black-shouldered Kite</li>
+          <li><strong>Woodpeckers:</strong> White-bellied, Rufous, and Black-rumped Flameback</li>
+          <li><strong>Flycatchers:</strong> Asian Paradise, Verditer, Tickell's Blue</li>
+          <li><strong>Owls:</strong> Indian Scops, Mottled Wood, Brown Fish Owl</li>
+          <li><strong>Ground birds:</strong> Indian Peafowl, Red Junglefowl, Painted Spurfowl</li>
+        </ul>
+
+        <p>
+          Birding is best during winter months (November-February) when migratory species join resident birds.
+          Sarhi Zone and forest trails in Kisli Zone are particularly productive for birdwatchers.
+        </p>
+
+        <h2>Reptiles and Amphibians</h2>
+
+        <p>
+          Kanha supports diverse reptile and amphibian life including the Indian Python (rare but protected),
+          Indian Cobra, Common Krait, Russel's Viper, Monitor Lizards, and various turtle and frog species.
+          Most reptiles are seen during warmer months.
+        </p>
+
+        <h2>Best Zones for Wildlife Viewing</h2>
+
+        <table>
+          <thead>
+            <tr><th>Species</th><th>Best Zone</th><th>Best Time</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tigers</td><td>Mukki, Kanha</td><td>March-May</td></tr>
+            <tr><td>Barasingha</td><td>Kanha (meadows)</td><td>Year-round</td></tr>
+            <tr><td>Leopards</td><td>Kisli, Kanha</td><td>Year-round</td></tr>
+            <tr><td>Birds</td><td>Sarhi, Kisli</td><td>November-February</td></tr>
+            <tr><td>Gaur herds</td><td>Kanha, Mukki</td><td>Early morning</td></tr>
+            <tr><td>Sloth Bears</td><td>Mukki, Kisli</td><td>March-June</td></tr>
+          </tbody>
+        </table>
+
+        <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+
+      </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

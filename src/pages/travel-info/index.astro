@@ -1,0 +1,237 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Travel Info', href: '/travel-info/' }
+];
+
+const faqs = [
+  {
+    question: "How do I reach Kanha National Park?",
+    answer: "Kanha is accessible by air (Jabalpur Airport 165 km away), train (Jabalpur Junction 165 km or Gondia Junction 120 km), and road (well-connected highways from Jabalpur, Nagpur, and other major cities). Most visitors hire a taxi from Jabalpur for the final 4-hour drive to Khatia Gate."
+  },
+  {
+    question: "When is the best time to visit Kanha?",
+    answer: "The best time to visit Kanha is from October through June, with March-May being optimal for tiger sightings. The park is closed during monsoon (July-September). Winter months (November-February) offer pleasant weather and good wildlife viewing."
+  },
+  {
+    question: "What are the places to visit near Kanha National Park?",
+    answer: "Popular places near Kanha include Bandhavgarh National Park (250 km, 5 hours), Pench National Park (200 km, 4 hours), Kawardha (150 km), and the nearby tribal villages of Baiga and Gond communities. Most visitors combine Kanha with Bandhavgarh and Pench in multi-park circuits."
+  },
+  {
+    question: "Is Kanha safe for tourists?",
+    answer: "Yes, Kanha is very safe for tourists. The park has well-maintained safari tracks, trained guides, and strict forest department protocols. Visitors follow their guides at all times inside the park. Resorts around Khatia Gate offer standard tourist safety with 24-hour staff and secure premises."
+  }
+];
+
+const relatedPages = [
+  { title: 'How to Reach', description: 'Air, train, and road routes to Kanha', href: '/kanha-tiger-guide/travel-info/how-to-reach/' },
+  { title: 'Best Time to Visit', description: 'Season-by-season breakdown', href: '/kanha-tiger-guide/travel-info/best-time/' },
+  { title: 'Places Near Kanha', description: 'Nearby parks and attractions', href: '/kanha-tiger-guide/travel-info/places-near/' },
+  { title: 'Safari Guide', description: 'Complete safari planning guide', href: '/kanha-tiger-guide/safari-guide/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Travel Info 2026 - How to Reach, Best Time & Places Near"
+  description="Essential Kanha travel information: how to reach by air, train, and road, best time to visit, places to visit nearby, and safety tips for 2026."
+  keywords="how to reach kanha, kanha travel info, best time kanha, places near kanha, kanha distance from jabalpur"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/travel-info/"
+  readingTime={8}
+  category="Travel Info"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+        <Breadcrumb items={breadcrumbs} />
+
+        <h1>Kanha Travel Information 2026 — How to Reach, Best Time & Places Nearby</h1>
+
+        <TrustBar category="Travel Info" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-4">Last updated: July 18, 2026</p>
+
+        <Hero
+          src="/images/How-to-Reach-Kanha-National-Park-by-Air-Train-and-Road.webp"
+          alt="How to reach Kanha National Park by air, train, and road from major Indian cities"
+          caption="Kanha is well-connected by air, train, and road from Jabalpur, Nagpur, and other major cities"
+        />
+
+        <section class="answer-block">
+          <p>
+            Kanha National Park is accessible by air, train, and road from major Indian cities. The nearest airport is
+            <strong>Jabalpur (JLR)</strong> at 165 km (4 hours by taxi), with <strong>Jabalpur Junction</strong> railway
+            station at the same distance and <strong>Gondia Junction</strong> at 120 km. The park is open from
+            <strong>October 1 to June 30</strong>, closed during monsoon (July-September). The best time to visit is
+            March-May for tiger sightings and November-February for pleasant weather. Kanha connects well with nearby
+            parks like Bandhavgarh (250 km, 5 hours) and Pench (200 km, 4 hours) for multi-park tiger safari circuits.
+            Most visitors arrange transfers through their resort, with Wildmark Resort offering pickup services from
+            Jabalpur and Nagpur.
+          </p>
+        </section>
+
+        <Backlink       title="Reserve Your Kanha Safari Holiday Package"
+      description="Plan your Kanha safari holiday with all-inclusive packages at Wildmark Resort. Includes AC rooms, multi-cuisine dining, swimming pool, and tiger safari permits."
+      anchorText="Reserve Kanha Safari Holiday"
+      ctaText="Kanha Tiger Safari Package 2026"
+      primaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      primaryAnchor="Best Time to Visit Kanha Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/where-to-stay-near-kanha-national-park/"
+      secondaryAnchor="Kanha Travel Accommodation"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Travel FAQ"
+    />
+
+        <h2>How to Reach Kanha National Park</h2>
+
+        <h3>By Air</h3>
+        <p>
+          The nearest airport is Jabalpur (JLR), 165 km from Khatia Gate. Jabalpur has direct flights from Delhi,
+          Mumbai, Hyderabad, and Bhopal. Nagpur (NAG) at 250 km and Raipur (RPR) at 220 km are alternative airports
+          with wider flight connectivity.
+        </p>
+
+        <table>
+          <thead>
+            <tr><th>Airport</th><th>Distance</th><th>Drive Time</th><th>Best For</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Jabalpur (JLR)</td><td>165 km</td><td>4 hours</td><td>Most travelers</td></tr>
+            <tr><td>Nagpur (NAG)</td><td>250 km</td><td>5-6 hours</td><td>Mumbai, international</td></tr>
+            <tr><td>Raipur (RPR)</td><td>220 km</td><td>5 hours</td><td>East India travelers</td></tr>
+          </tbody>
+        </table>
+
+        <h3>By Train</h3>
+        <p>
+          Jabalpur Junction is the most convenient railway station, with express trains connecting to virtually every
+          major Indian city. Gondia Junction is closer (120 km) and serves the Mumbai-Kolkata rail route.
+        </p>
+
+        <table>
+          <thead>
+            <tr><th>Station</th><th>Distance</th><th>Train Connectivity</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Jabalpur Junction (JBP)</td><td>165 km</td><td>All major Indian cities</td></tr>
+            <tr><td>Gondia Junction (G)</td><td>120 km</td><td>Mumbai, Kolkata, Nagpur routes</td></tr>
+            <tr><td>Mandla</td><td>90 km</td><td>Limited local trains</td></tr>
+          </tbody>
+        </table>
+
+        <h3>By Road</h3>
+        <p>
+          Well-maintained state highways connect Kanha with major cities. Self-drive is feasible with proper planning.
+        </p>
+
+        <table>
+          <thead>
+            <tr><th>City</th><th>Distance</th><th>Drive Time</th><th>Route</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Jabalpur</td><td>165 km</td><td>4 hours</td><td>Via Mandla (SH-26)</td></tr>
+            <tr><td>Nagpur</td><td>250 km</td><td>5-6 hours</td><td>Via Seoni (NH-44)</td></tr>
+            <tr><td>Raipur</td><td>220 km</td><td>5 hours</td><td>Via Mandla</td></tr>
+            <tr><td>Indore</td><td>530 km</td><td>10 hours</td><td>Via Bhopal-Jabalpur</td></tr>
+            <tr><td>Bhopal</td><td>450 km</td><td>8-9 hours</td><td>Via Jabalpur</td></tr>
+          </tbody>
+        </table>
+
+        <Backlink           title="Book Kanha Transfers and Packages"
+          description="Wildmark Resort offers pickup services from Jabalpur (₹2,500-4,000) and Nagpur airports, with complete safari packages and accommodation included."
+      primaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      primaryAnchor="Best Time to Visit Kanha Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/where-to-stay-near-kanha-national-park/"
+      secondaryAnchor="Kanha Travel Accommodation"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Travel FAQ"
+    />
+
+        <Newsletter />
+
+        <h2>Best Time to Visit Kanha</h2>
+
+        <table>
+          <thead>
+            <tr><th>Season</th><th>Months</th><th>Temperature</th><th>Tiger Sightings</th><th>Recommendation</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Winter</td><td>Nov–Feb</td><td>10°C–25°C</td><td>Moderate</td><td>Best for pleasant weather</td></tr>
+            <tr><td>Summer</td><td>Mar–May</td><td>25°C–45°C</td><td>High</td><td>Best for tiger sightings</td></tr>
+            <tr><td>Monsoon</td><td>Jun–Sep</td><td>25°C–35°C</td><td>Park Closed</td><td>Avoid (park closed)</td></tr>
+            <tr><td>Post-Monsoon</td><td>Oct</td><td>20°C–30°C</td><td>Good</td><td>Good for first visit</td></tr>
+          </tbody>
+        </table>
+
+        <p>
+          Most wildlife enthusiasts visit during March-May for the best tiger sighting chances, despite the heat.
+          First-time visitors and families often prefer November-February for pleasant weather and comfortable
+          safari conditions.
+        </p>
+
+        <h2>Places to Visit Near Kanha</h2>
+
+        <h3>Bandhavgarh National Park (250 km, 5 hours)</h3>
+        <p>
+          Another premier tiger reserve in Madhya Pradesh, Bandhavgarh has one of India's highest tiger densities.
+          The park also features the Bandhavgarh Fort and ancient caves. Most visitors combine Kanha and Bandhavgarh
+          in a 6-night/7-day circuit.
+        </p>
+
+        <h3>Pench National Park (200 km, 4 hours)</h3>
+        <p>
+          Pench Tiger Reserve, also known as "Mowgli's land" (another Jungle Book connection), offers excellent
+          tiger and leopard sightings. Pench can be combined with Kanha for a 4-night/5-day tour.
+        </p>
+
+        <h3>Kawardha (150 km)</h3>
+        <p>
+          Known for the Bhoramdeo Temple (often called the Khajuraho of Chhattisgarh) and the classic Kawardha Palace,
+          now a heritage hotel.
+        </p>
+
+        <h3>Tribal Villages</h3>
+        <p>
+          The Baiga and Gond tribal communities around Kanha offer cultural experiences. Guided village walks provide
+          insights into traditional forest-dwelling lifestyles.
+        </p>
+
+        <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+
+      </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

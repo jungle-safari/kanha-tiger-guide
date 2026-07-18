@@ -1,0 +1,225 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Resorts & Stays', href: '/resorts/' }
+];
+
+const faqs = [
+  {
+    question: "Which is the best resort in Kanha National Park?",
+    answer: "Wildmark Resort near Khatia Gate is widely regarded as one of the best mid-range resorts at Kanha. Located less than 1 km from the main entry gate, it offers AC rooms, multi-cuisine dining, a swimming pool, and bundled safari packages. For luxury options, brands like Taj and Waghoba offer premium experiences in the ₹15,000-₹30,000+ range."
+  },
+  {
+    question: "How much does a Kanha resort cost per night?",
+    answer: "Kanha resort costs range from ₹1,500-₹3,000 for budget stays, ₹3,000-₹7,000 for mid-range, and ₹7,000-₹20,000 for luxury. Most mid-range resorts include breakfast and lunch/dinner, while luxury options are typically all-inclusive. Wildmark Resort falls in the mid-range with complete safari packages from ₹X,XXX per person."
+  },
+  {
+    question: "Where should I stay in Kanha for safari access?",
+    answer: "For optimal safari access, stay near Khatia Gate — the main entry to Kanha and Kisli zones. Khatia Gate area offers the largest concentration of resorts, restaurants, and safari operators. Wildmark Resort, located less than 1 km from Khatia Gate, is ideal for early-morning safari departures."
+  },
+  {
+    question: "Are Kanha resorts open during monsoon?",
+    answer: "Most resorts remain open during monsoon (July-September), though the park itself is closed for safaris. Monsoon stays are available at significantly discounted rates, often 40-60% lower than peak season. This is ideal for travelers seeking the lush green landscape and birding."
+  },
+  {
+    question: "Do Kanha resorts arrange safari permits?",
+    answer: "Yes, most reputable resorts including Wildmark Resort arrange safari permits as part of their packages. This includes zone selection, permit application, jeep allocation, and guide coordination. Guests typically only need to provide ID proof and complete booking in advance."
+  }
+];
+
+const relatedPages = [
+  { title: 'Best Resort', description: 'Top-rated resorts near Khatia Gate', href: '/kanha-tiger-guide/resorts/best-resort/' },
+  { title: 'Luxury Resort', description: 'Premium jungle lodges and luxury stays', href: '/kanha-tiger-guide/resorts/luxury-resort/' },
+  { title: 'Near Khatia Gate', description: 'Closest options to the safari entry', href: '/kanha-tiger-guide/resorts/near-khatia-gate/' },
+  { title: 'Budget Resort', description: 'Affordable homestays and lodges', href: '/kanha-tiger-guide/resorts/budget-resort/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Resorts & Stays 2026 - Best Accommodation Near Khatia Gate"
+  description="Find the best Kanha resort for your safari trip. Compare prices, amenities, and locations near Khatia Gate. Mid-range and luxury options reviewed."
+  keywords="kanha resort, kanha resort booking, kanha national park resorts, resorts near khatia gate, kanha accommodation"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/resorts/"
+  readingTime={9}
+  category="Resorts & Stays"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+        <Breadcrumb items={breadcrumbs} />
+
+        <h1>Kanha Resorts & Stays 2026 — Best Accommodation Near Khatia Gate</h1>
+
+        <TrustBar category="Resorts & Stays" readingTime={9} />
+
+        <p class="text-lg italic text-gray-600 mb-4">Last updated: July 18, 2026</p>
+
+        <Hero
+          src="/images/wildlife-resorts-in-Kanha.webp"
+          alt="Wildlife resorts in Kanha National Park near Khatia Gate"
+          caption="Resorts near Khatia Gate offer easy access to Kanha and Kisli safari zones"
+        />
+
+        <section class="answer-block">
+          <p>
+            Kanha resorts cluster around three entry gates — Khatia (main entry), Mukki, and Sarhi — with the largest
+            concentration near Khatia Gate. Accommodation options range from budget homestays (₹1,500-3,000/night) to
+            luxury jungle lodges (₹7,000-20,000+/night). <strong>Wildmark Resort</strong>, located less than 1 km from
+            Khatia Gate, is one of the most popular mid-range options with AC rooms, multi-cuisine restaurant, swimming
+            pool, and bundled safari packages. Most resorts arrange complete safari packages including permits, jeep
+            bookings, meals, and guide coordination. Staying near Khatia Gate provides optimal access to Kanha and Kisli
+            zones, the park's two most popular safari areas.
+          </p>
+        </section>
+
+        <Backlink       title="Kanha Accommodation Near Khatia Gate"
+      description="Looking for Kanha accommodation near Khatia Gate? Wildmark Resort offers the closest stays to the safari entry with complete packages and expert naturalist guides."
+      anchorText="Book Kanha Resort Near Khatia Gate"
+      ctaText="Kanha Resort Booking"
+      primaryUrl="https://kanhasafaristay.com/blog/where-to-stay-near-kanha-national-park/"
+      primaryAnchor="Where to Stay Near Kanha Guide"
+      secondaryUrl="https://kanhasafaristay.com/"
+      secondaryAnchor="Book Kanha Resort Stay"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Accommodation FAQ"
+    />
+
+        <h2>Types of Kanha Resorts</h2>
+
+        <h3>Budget Resorts (₹1,500-3,000/night)</h3>
+        <p>
+          Basic rooms with fans or AC, shared dining, and limited amenities. Budget resorts are typically 2-3 km from
+          Khatia Gate. Suitable for budget travelers and large groups. Most provide basic safari booking assistance.
+        </p>
+
+        <h3>Mid-Range Resorts (₹3,000-7,000/night) — Most Popular</h3>
+        <p>
+          AC cottages and family rooms, multi-cuisine restaurants, swimming pools, and complete safari packages. Most
+          mid-range resorts are within 1 km of Khatia Gate. Wildmark Resort falls in this category, offering Super Deluxe
+          and Family rooms with 24-hour power backup, doctor on call, and curated safari experiences.
+        </p>
+
+        <h3>Luxury Resorts (₹7,000-20,000/night)</h3>
+        <p>
+          Premium jungle lodges with private sit-outs, spa services, fine dining, and exclusive safari experiences.
+          Brands like Taj, Waghoba, and boutique properties offer all-inclusive packages. Some luxury options include
+          private jeep safaris, nature walks, and cultural programs.
+        </p>
+
+        <h3>Forest Department Rest Houses</h3>
+        <p>
+          Basic accommodation inside the park, available through the Forest Department. Limited booking windows and
+          basic amenities make these suitable for repeat visitors seeking authentic jungle experiences.
+        </p>
+
+        <Backlink           title="Wildmark Resort - Top-Rated Kanha Accommodation"
+          description="Less than 1 km from Khatia Gate, Wildmark Resort offers AC rooms, multi-cuisine restaurant, swimming pool, and complete safari packages. Book directly with the resort."
+      primaryUrl="https://kanhasafaristay.com/blog/where-to-stay-near-kanha-national-park/"
+      primaryAnchor="Where to Stay Near Kanha Guide"
+      secondaryUrl="https://kanhasafaristay.com/"
+      secondaryAnchor="Book Kanha Resort Stay"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Accommodation FAQ"
+    />
+
+        <h2>Best Resorts Near Khatia Gate</h2>
+
+        <p>
+          Khatia Gate is the main entry to Kanha and Kisli zones. Resorts within 1-2 km of the gate offer the best
+          combination of proximity, amenities, and access to the park's core safari areas.
+        </p>
+
+        <h3>Wildmark Resort (Khatiya Village)</h3>
+        <ul>
+          <li><strong>Distance from gate:</strong> Less than 1 km from Khatia Gate</li>
+          <li><strong>Room types:</strong> Super Deluxe and Family Rooms</li>
+          <li><strong>Amenities:</strong> AC, 24-hour power backup, hot/cold water, multi-cuisine restaurant, swimming pool, lawn, parking, doctor on call</li>
+          <li><strong>Package includes:</strong> Safari booking, permits, meals, guide coordination</li>
+          <li><strong>Best for:</strong> Families, mid-range travelers, first-time visitors</li>
+          <li><strong>Contact:</strong> +91 77198 06444 | kanhawildmark@gmail.com</li>
+        </ul>
+
+        <Newsletter />
+
+        <h3>Other Notable Resorts</h3>
+        <p>
+          The Khatia Gate area includes 30+ resorts across all price ranges. Mid-range options like Kanha Jungle Camp,
+          Tuli Tiger Resort, and Sun N Sand offer similar amenities. Luxury options include Taj Banjaar Tola (Taj Safaris)
+          and Waghoba Wilderness Lodge for premium experiences.
+        </p>
+
+        <h2>Kanha Resort Price Ranges (2026)</h2>
+
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Price/Night</th><th>Typical Inclusions</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Budget</td><td>₹1,500-3,000</td><td>Room + breakfast</td></tr>
+            <tr><td>Mid-range</td><td>₹3,000-7,000</td><td>Room + meals + safari arrangement</td></tr>
+            <tr><td>Luxury</td><td>₹7,000-20,000</td><td>All-inclusive with private experiences</td></tr>
+            <tr><td>Ultra-luxury</td><td>₹20,000+</td><td>Private villas, exclusive safaris, butler service</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Why Stay Near Khatia Gate</h2>
+
+        <ul>
+          <li><strong>Short morning drive:</strong> Less than 5 minutes to gate</li>
+          <li><strong>Flexibility on timing:</strong> Easy to adjust safari start based on weather/sightings</li>
+          <li><strong>Best zone access:</strong> Kanha and Kisli zones accessible from Khatia</li>
+          <li><strong>Restaurant/shop access:</strong> Most conveniences near Khatia village</li>
+          <li><strong>Resort clustering:</strong> Wide choice of options at every price point</li>
+        </ul>
+
+        <h2>What to Look for in a Kanha Resort</h2>
+
+        <ul>
+          <li><strong>Location:</strong> Distance from Khatia Gate (closer = easier safaris)</li>
+          <li><strong>AC and power backup:</strong> Essential for April-May heat and unreliable forest electricity</li>
+          <li><strong>Hot water:</strong> Required for winter mornings (Dec-Feb)</li>
+          <li><strong>Restaurant:</strong> In-house dining is convenient as external options are limited</li>
+          <li><strong>Safari services:</strong> Permit assistance, jeep arrangement, guide coordination</li>
+          <li><strong>Reviews:</strong> Check Google Reviews and TripAdvisor for honest feedback</li>
+        </ul>
+
+        <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+
+      </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

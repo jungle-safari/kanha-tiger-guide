@@ -1,0 +1,263 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Safari Zones', href: '/safar-zones/' }
+];
+
+const faqs = [
+  {
+    question: "How many safari zones are in Kanha?",
+    answer: "Kanha National Park has four safari zones: Kanha, Kisli, Mukki, and Sarhi. Kanha and Kisli zones are accessed via the main Khatia Gate. Mukki Zone requires a separate permit and access via Mukki Gate (60 km south). Sarhi Zone is accessed via Sarhi Gate (30 km east)."
+  },
+  {
+    question: "Which Kanha zone is best for tiger sightings?",
+    answer: "Mukki Zone has the highest tiger density at Kanha with 40-50 tigers and consistently produces excellent sightings. Kanha Zone, accessed via the main Khatia Gate, is also highly productive with 35-40 tigers, particularly around the Hallon and Banjar meadows during summer months (March-May)."
+  },
+  {
+    question: "Can I visit all four zones in one trip?",
+    answer: "Yes, multi-day stays of 4-5 days can cover all four zones. Each zone requires a separate permit and access via different gates. A typical itinerary includes 2-3 days at Khatia Gate (for Kanha and Kisli zones) and 1-2 days at Mukki Gate (for Mukki zone)."
+  },
+  {
+    question: "What is the difference between Kanha Zone and Kisli Zone?",
+    answer: "Kanha Zone covers the core meadows (Hallon, Banjar, Sonph, Maasahi) and is famous for Barasingha and tiger sightings in open landscapes. Kisli Zone features denser Sal forests with waterhole-based tiger sightings. Both are accessed via Khatia Gate but require separate permits."
+  }
+];
+
+const relatedPages = [
+  { title: 'Kanha Zone', description: 'Core meadows and Barasingha habitat', href: '/kanha-tiger-guide/safari-zones/kanha-zone/' },
+  { title: 'Mukki Zone', description: 'Highest tiger density zone', href: '/kanha-tiger-guide/safari-zones/mukki-zone/' },
+  { title: 'Kisli Zone', description: 'Dense Sal forests and waterholes', href: '/kanha-tiger-guide/safari-zones/kisli-zone/' },
+  { title: 'Sarhi Zone', description: 'Quiet birdwatching-focused zone', href: '/kanha-tiger-guide/safari-zones/sarhi-zone/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Safari Zones 2026 - Kanha, Kisli, Mukki & Sarhi Comparison"
+  description="Detailed guide to all four Kanha safari zones: Kanha, Kisli, Mukki, and Sarhi. Compare wildlife, terrain, tiger density, and access for each zone."
+  keywords="kanha safari zones, kanha zone, kisli zone, mukki zone, sarhi zone, kanha zones comparison"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/safari-zones/"
+  readingTime={9}
+  category="Safari Zones"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+        <Breadcrumb items={breadcrumbs} />
+
+        <h1>Kanha Safari Zones 2026 — Kanha, Kisli, Mukki & Sarhi Comparison</h1>
+
+        <TrustBar category="Safari Zones" readingTime={9} />
+
+        <p class="text-lg italic text-gray-600 mb-4">Last updated: July 18, 2026</p>
+
+        <Hero
+          src="/images/Kanha-Safari-Zone.webp"
+          alt="Kanha Safari Zone - landscape view of meadows and forests in Kanha National Park"
+          caption="Kanha National Park's four safari zones offer diverse wildlife experiences"
+        />
+
+        <section class="answer-block">
+          <p>
+            Kanha National Park is divided into <strong>four safari zones</strong>: Kanha, Kisli, Mukki, and Sarhi.
+            Kanha and Kisli zones are accessed via the main <strong>Khatia Gate</strong> and cover the park's core
+            meadows and Sal forests. Mukki Zone, accessed via <strong>Mukki Gate</strong> (60 km south of Khatia),
+            has the highest tiger density (40-50 tigers). Sarhi Zone, the smallest and least-visited, is accessed via
+            <strong>Sarhi Gate</strong> (30 km east of Khatia). Each zone requires a separate permit, and most
+            visitors experience 2-3 zones during a 3-4 day stay. Wildmark Resort near Khatia Gate serves as an ideal
+            base for Kanha and Kisli zone safaris.
+          </p>
+        </section>
+
+        <Backlink       title="Best Kanha Tiger Safari Packages 2026"
+      description="Get the best Kanha tiger safari packages starting from ₹X,XXX per person. Wildmark Resort near Khatia Gate provides comfortable stays with safari permits, jeep, and guide included."
+      anchorText="View Kanha Safari Package Deals"
+      ctaText="Kanha Tiger Safari Booking"
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-zones-guide-kanha-mukki-kisli-sarhi/"
+      primaryAnchor="Kanha Safari Zones Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Kanha Zone Safari Booking"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Safari Zone FAQ"
+    />
+
+        <h2>Kanha Safari Zones Comparison</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Zone</th>
+              <th>Access Gate</th>
+              <th>Tiger Count</th>
+              <th>Best For</th>
+              <th>Terrain</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Kanha Zone</strong></td>
+              <td>Khatia Gate</td>
+              <td>35-40</td>
+              <td>Meadow sightings, Barasingha</td>
+              <td>Open grasslands, meadows</td>
+            </tr>
+            <tr>
+              <td><strong>Kisli Zone</strong></td>
+              <td>Khatia Gate</td>
+              <td>25-30</td>
+              <td>Dense forest, waterhole sightings</td>
+              <td>Dense Sal forest</td>
+            </tr>
+            <tr>
+              <td><strong>Mukki Zone</strong></td>
+              <td>Mukki Gate</td>
+              <td>40-50</td>
+              <td>Highest tiger density</td>
+              <td>Mixed forest and meadows</td>
+            </tr>
+            <tr>
+              <td><strong>Sarhi Zone</strong></td>
+              <td>Sarhi Gate</td>
+              <td>10-15</td>
+              <td>Birdwatching, quiet experience</td>
+              <td>Forest with grasslands</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Kanha Zone — Iconic Meadows and Barasingha</h2>
+
+        <p>
+          Kanha Zone is the most popular safari zone, accessed via the main Khatia Gate. It covers the park's core
+          meadows including Hallon, Banjar, Sonph, and Maasahi — landscapes that have become iconic through wildlife
+          documentaries and photography. The zone hosts 35-40 tigers and reliable Barasingha herds.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Meadows:</strong> Hallon, Banjar, Sonph, Maasahi — scenic open grasslands</li>
+          <li><strong>Barasingha herds:</strong> Easy to spot in meadow areas</li>
+          <li><strong>Tiger activity:</strong> High near meadows, especially summer</li>
+          <li><strong>Photography:</strong> Excellent light and landscape backdrops</li>
+          <li><strong>Distance from gate:</strong> 0-15 km inside park</li>
+        </ul>
+
+        <h3>Best For</h3>
+        <p>First-time visitors, photographers, Barasingha enthusiasts, landscape lovers</p>
+
+        <h2>Kisli Zone — Dense Forests and Waterhole Sightings</h2>
+
+        <p>
+          Kisli Zone, also accessed via Khatia Gate, covers the western Sal forests with multiple seasonal and
+          perennial water sources. The zone hosts 25-30 tigers with reliable sightings along the Kisli road and
+          at waterholes.
+        </p>
+
+        <Newsletter />
+
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Dense forests:</strong> Mature Sal and mixed deciduous</li>
+          <li><strong>Waterholes:</strong> Multiple perennial sources attracting wildlife</li>
+          <li><strong>Tiger activity:</strong> Consistent along waterhole edges</li>
+          <li><strong>Birdlife:</strong> Excellent forest bird species</li>
+          <li><strong>Distance from gate:</strong> 15-30 km inside park</li>
+        </ul>
+
+        <h2>Mukki Zone — Highest Tiger Density</h2>
+
+        <p>
+          Mukki Zone, accessed via Mukki Gate 60 km south of Khatia Gate, has the highest tiger density among all
+          four zones with 40-50 tigers. The terrain combines dense forest with multiple water sources, creating ideal
+          tiger habitat. Mukki requires a separate permit and is a half-day drive from Khatia.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Tiger density:</strong> Highest at Kanha, 40-50 tigers</li>
+          <li><strong>Terrain:</strong> Mixed forest, meadows, water sources</li>
+          <li><strong>Permit:</strong> Separate from Khatia Gate zones</li>
+          <li><strong>Distance from Khatia:</strong> 60 km south (1.5-2 hours drive)</li>
+          <li><strong>Accommodation:</strong> Limited options at Mukki Gate</li>
+        </ul>
+
+        <Backlink           title="Book Safaris Across Multiple Zones"
+          description="Wildmark Resort near Khatia Gate can arrange multi-zone safari packages covering Kanha, Kisli, and Mukki zones with permits, jeeps, and guide coordination."
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-zones-guide-kanha-mukki-kisli-sarhi/"
+      primaryAnchor="Kanha Safari Zones Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Kanha Zone Safari Booking"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Safari Zone FAQ"
+    />
+
+        <h2>Sarhi Zone — Quiet Birdwatching Experience</h2>
+
+        <p>
+          Sarhi Zone is the smallest and least-visited of the four zones, accessed via Sarhi Gate 30 km east of
+          Khatia Gate. With 10-15 tigers and lower visitor numbers, Sarhi offers a quieter experience ideal for
+          birdwatchers and those seeking solitude.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Visitor numbers:</strong> Lowest among all zones</li>
+          <li><strong>Birdlife:</strong> Excellent for forest and grassland species</li>
+          <li><strong>Tiger sightings:</strong> Less frequent but still possible</li>
+          <li><strong>Distance from Khatia:</strong> 30 km east (1 hour drive)</li>
+          <li><strong>Best for:</strong> Repeat visitors, birders, photographers seeking quiet</li>
+        </ul>
+
+        <h2>How to Choose the Right Zone</h2>
+
+        <h3>For First-Time Visitors</h3>
+        <p>Stay at Khatia Gate and book 2-3 safaris across Kanha and Kisli zones. This combination offers the best
+        mix of tiger sightings, Barasingha viewing, and iconic landscapes.</p>
+
+        <h3>For Serious Wildlife Enthusiasts</h3>
+        <p>Plan a 4-5 day trip covering both Khatia Gate zones (Kanha, Kisli) and Mukki Zone. Stay 2-3 nights at
+        Khatia Gate and 1-2 nights at Mukki Gate for maximum coverage.</p>
+
+        <h3>For Birdwatchers</h3>
+        <p>Focus on Sarhi Zone and Kisli Zone, both of which have excellent bird diversity. Early morning safaris
+        in forest habitats produce the best birding results.</p>
+
+        <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+
+      </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

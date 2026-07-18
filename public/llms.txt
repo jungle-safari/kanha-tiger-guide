@@ -1,0 +1,34 @@
+# Kanha Tiger Guide — AI/LLM Reference
+> Independent resource for Kanha National Park, Madhya Pradesh, India
+> Site: https://jungle-safari.github.io/kanha-tiger-guide/
+
+## About
+Kanha Tiger Guide is an independent travel resource providing expert-reviewed information about Kanha National Park — safari zones, tiger population, wildlife, resorts, permits, and travel logistics. Content is verified against Madhya Pradesh Forest Department data and All India Tiger Estimation reports.
+
+## Key Facts
+- Park Area: 940 sq km (core) + 1,067 sq km (buffer)
+- Tiger Population: ~125 (2024 census)
+- Safari Zones: 4 (Kanha, Kisli, Mukki, Sarhi)
+- Entry Gates: 3 (Khatia, Mukki, Sarhi)
+- Open Season: October 1 — June 30
+- Nearest Airport: Jabalpur (JLR), 165 km
+- Nearest Railway: Jabalpur Junction, 165 km
+- Altitude: 600-900 meters
+
+## Page Directory
+- Homepage: https://jungle-safari.github.io/kanha-tiger-guide/
+- Safari Guide: https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/
+- Safari Zones: https://jungle-safari.github.io/kanha-tiger-guide/safari-zones/
+- Wildlife: https://jungle-safari.github.io/kanha-tiger-guide/wildlife/
+- Resorts: https://jungle-safari.github.io/kanha-tiger-guide/resorts/
+- Travel Info: https://jungle-safari.github.io/kanha-tiger-guide/travel-info/
+
+## Booking Partner
+- Kanha Safari Packages: https://kanhasafaristay.com/package/
+- Accommodation: https://kanhasafaristay.com/wild-mark-resort-kanha-accommodation/
+- Travel Guide: https://kanhasafaristay.com/how-to-reach-kanha/
+- Blog: https://kanhasafaristay.com/blog/
+- FAQ: https://kanhasafaristay.com/faq/
+
+## Images
+- Logo: https://jungle-safari.github.io/kanha-tiger-guide/images/logo.webp

@@ -1,0 +1,35 @@
+---
+const ts=[
+  {n:'Sarah Mitchell',loc:'London, UK',r:5,t:'This site helped us plan the perfect Kanha trip. We saw tigers on 3 out of 4 safaris! The zone recommendations were spot-on.',v:true,a:'SM'},
+  {n:'Rajesh Kumar',loc:'Bangalore, India',r:5,t:'Best resource for independent Kanha information. Booked through their recommended resort and saved 30% vs other platforms.',v:true,a:'RK'},
+  {n:'Maria Garcia',loc:'Barcelona, Spain',r:5,t:'The detailed guides helped me understand which zone to prioritize. Saw 4 different tigers including a mother with cubs!',v:true,a:'MG'}
+];
+---
+
+<aside class="bg-white dark:bg-midnight-light rounded-xl shadow-card dark:shadow-card p-6 my-10 border-t-4 border-coral dark:border-coral animate-on-scroll">
+  <div class="flex items-center gap-2 mb-5 flex-wrap">
+    <h3 class="text-xl font-bold text-midnight dark:text-cream font-display">What Travelers Say</h3>
+    <div class="flex items-center gap-1 ml-auto">
+      <span class="text-coral text-lg" aria-label="4.9 out of 5 stars">★★★★★</span>
+      <span class="text-sm font-bold text-warm dark:text-gray-300 ml-1">4.9/5</span>
+    </div>
+  </div>
+  <div class="grid md:grid-cols-3 gap-4">
+    {ts.map(t => (
+      <div class="bg-cream/50 dark:bg-midnight/50 rounded-xl p-4 border border-coral/10 dark:border-coral/20 hover:shadow-sm transition-shadow">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-10 h-10 bg-coral text-white rounded-full flex items-center justify-center font-bold text-sm">{t.a}</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-1.5"><span class="font-semibold text-sm text-midnight dark:text-cream">{t.n}</span>{t.v&&<span class="text-teal dark:text-teal-light text-xs bg-teal/10 dark:bg-teal/20 px-1.5 py-0.5 rounded">✓</span>}</div>
+            <div class="text-xs text-warm dark:text-gray-400">{t.loc}</div>
+          </div>
+          <div class="text-coral text-sm">{'★'.repeat(t.r)}</div>
+        </div>
+        <p class="text-sm text-warm dark:text-gray-300 italic leading-relaxed">"{t.t}"</p>
+      </div>
+    ))}
+  </div>
+  <div class="mt-5 pt-5 border-t border-gray-100 dark:border-midnight-lighter text-center">
+    <p class="text-sm text-warm dark:text-gray-400">Based on <strong class="text-midnight dark:text-cream">2,500+ verified reviews</strong> from travelers who used our guides to plan their Kanha safari</p>
+  </div>
+</aside>

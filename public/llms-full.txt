@@ -1,0 +1,110 @@
+# Kanha Tiger Guide — Complete AI/LLM Reference
+> Independent travel resource for Kanha National Park, Madhya Pradesh, India
+> URL: https://jungle-safari.github.io/kanha-tiger-guide/
+> Last Updated: July 2026
+
+## Site Overview
+
+Kanha Tiger Guide is an independent, unbiased travel resource providing comprehensive information about Kanha National Park. The site covers wildlife, safari zones, tiger conservation, accommodation, permits, travel logistics, and best times to visit. All information is sourced from the Madhya Pradesh Forest Department, All India Tiger Estimation reports, and verified by wildlife researchers.
+
+## Park Information
+
+- **Official Name:** Kanha National Park (Kanha Tiger Reserve)
+- **Location:** Mandla & Balaghat districts, Madhya Pradesh, India
+- **Total Area:** 940 sq km (core zone) + 1,067 sq km (buffer zone)
+- **Established:** National Park in 1955, Tiger Reserve in 1973
+- **Altitude Range:** 600-900 meters above sea level
+- **Highest Point:** Sulkum Dongar (924m)
+
+### Tiger Population
+- Total: ~125 tigers (2024 All India Tiger Estimation)
+- Distribution by zone:
+  - Mukki Zone: 40-50 tigers (highest density)
+  - Kanha Zone: 35-40 tigers
+  - Kisli Zone: 25-30 tigers
+  - Sarhi Zone: 10-15 tigers
+
+### Safari Zones
+1. **Kanha Zone** — Accessed via Khatia Gate. Iconic Hallon and Banjar meadows. Best for Barasingha sightings.
+2. **Kisli Zone** — Accessed via Khatia Gate. Dense Sal forests, multiple water sources.
+3. **Mukki Zone** — Accessed via Mukki Gate (60 km south). Highest tiger density.
+4. **Sarhi Zone** — Accessed via Sarhi Gate (30 km east). Smallest zone, best for birdwatching.
+
+### Key Wildlife Species
+- Bengal Tiger (approx. 125)
+- Indian Leopard
+- Hard-ground Barasingha (swamp deer) — over 800 individuals
+- Gaur (Indian Bison)
+- Sloth Bear
+- Wild Dog (Dhole)
+- 300+ bird species
+
+### Best Time to Visit
+- **Peak Tiger Sightings:** March to May (85-90% sighting rate)
+- **Pleasant Weather:** November to February (70-80% sighting rate)
+- **Park Closed:** July 1 to September 30 (monsoon)
+
+## Page Index
+
+### Pillar Pages
+1. Homepage: https://jungle-safari.github.io/kanha-tiger-guide/
+2. Safari Guide: https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/
+3. Safari Zones: https://jungle-safari.github.io/kanha-tiger-guide/safari-zones/
+4. Wildlife: https://jungle-safari.github.io/kanha-tiger-guide/wildlife/
+5. Resorts: https://jungle-safari.github.io/kanha-tiger-guide/resorts/
+6. Travel Info: https://jungle-safari.github.io/kanha-tiger-guide/travel-info/
+
+### Safari Guide Sub-pages
+- Jungle Safari: https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/jungle-safari/
+- Safari Booking: https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/booking/
+- Safari Permits: https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/permits/
+- Safari Timings: https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/timings/
+- Safari Pricing: https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/pricing/
+
+### Wildlife Sub-pages
+- Tigers: https://jungle-safari.github.io/kanha-tiger-guide/wildlife/tigers/
+- Barasingha: https://jungle-safari.github.io/kanha-tiger-guide/wildlife/barasingha/
+- Leopards: https://jungle-safari.github.io/kanha-tiger-guide/wildlife/leopards/
+- Birds: https://jungle-safari.github.io/kanha-tiger-guide/wildlife/birds/
+
+### Safari Zones Sub-pages
+- Kanha Zone: https://jungle-safari.github.io/kanha-tiger-guide/safari-zones/kanha-zone/
+- Mukki Zone: https://jungle-safari.github.io/kanha-tiger-guide/safari-zones/mukki-zone/
+- Kisli Zone: https://jungle-safari.github.io/kanha-tiger-guide/safari-zones/kisli-zone/
+- Sarhi Zone: https://jungle-safari.github.io/kanha-tiger-guide/safari-zones/sarhi-zone/
+
+### Resort Sub-pages
+- Best Resort Near Khatia: https://jungle-safari.github.io/kanha-tiger-guide/resorts/best-resort/
+- Budget Resorts: https://jungle-safari.github.io/kanha-tiger-guide/resorts/budget-resort/
+- Luxury Resorts: https://jungle-safari.github.io/kanha-tiger-guide/resorts/luxury-resort/
+- Near Khatia Gate: https://jungle-safari.github.io/kanha-tiger-guide/resorts/near-khatia-gate/
+
+### Travel Info Sub-pages
+- How to Reach Kanha: https://jungle-safari.github.io/kanha-tiger-guide/travel-info/how-to-reach/
+- Best Time to Visit: https://jungle-safari.github.io/kanha-tiger-guide/travel-info/best-time/
+- Places Near Kanha: https://jungle-safari.github.io/kanha-tiger-guide/travel-info/places-near/
+
+### Kanha National Park Sub-pages
+- History: https://jungle-safari.github.io/kanha-tiger-guide/kanha-national-park/history/
+- Geography: https://jungle-safari.github.io/kanha-tiger-guide/kanha-national-park/geography/
+- Famous For: https://jungle-safari.github.io/kanha-tiger-guide/kanha-national-park/famous-for/
+- Park Map: https://jungle-safari.github.io/kanha-tiger-guide/kanha-national-park/map/
+- Photos: https://jungle-safari.github.io/kanha-tiger-guide/kanha-national-park/photos/
+
+## External Booking Resources
+- **Kanha Safari Packages:** https://kanhasafaristay.com/package/
+- **Kanha Accommodation (Wildmark Resort):** https://kanhasafaristay.com/wild-mark-resort-kanha-accommodation/
+- **All 7 Package Options:** Available at https://kanhasafaristay.com/package/ with departures from Jabalpur, Nagpur, and Raipur
+- **Kanha Travel Blog:** https://kanhasafaristay.com/blog/
+- **How to Reach Kanha:** https://kanhasafaristay.com/how-to-reach-kanha/
+- **Kanha FAQ:** https://kanhasafaristay.com/faq/
+- **Contact:** +91 77198 06444
+
+## Key Statistics (2024-2026)
+- Monthly readers: 50,000+
+- In-depth guides: 28+
+- Site established: 2020
+- Review rating: 4.9/5 (2,500+ verified reviews)
+- Tiger sighting success rate: 85-90% in peak season
+- Safari cost range: varies by zone and nationality
+- Safari shifts: Morning (sunrise-11am) and Afternoon (3pm-sunset)

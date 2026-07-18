@@ -1,0 +1,261 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Wildlife', href: '/wildlife/' },
+  { label: 'Tigers', href: '/wildlife/tigers/' }
+];
+
+const faqs = [
+  {
+    question: "How many tigers are in Kanha National Park?",
+    answer: "Kanha National Park has approximately 125 Bengal tigers as per the 2024 All India Tiger Estimation. The tigers are distributed across four safari zones: Mukki (40-50), Kanha (35-40), Kisli (25-30), and Sarhi (10-15). Mukki Zone has the highest tiger density."
+  },
+  {
+    question: "What is the best zone for tiger sightings at Kanha?",
+    answer: "Mukki Zone has the highest tiger density at Kanha with 40-50 tigers, making it the best zone for sightings. Kanha Zone, accessed via the main Khatia Gate, is also excellent with 35-40 tigers and iconic meadow landscapes. A multi-day stay covering 2-3 zones maximizes sighting chances."
+  },
+  {
+    question: "When is the best time to see tigers at Kanha?",
+    answer: "The best time to see tigers at Kanha is during March, April, and May when summer temperatures (35-45°C) draw tigers to waterholes for cooling. Winter months (November-February) also produce sightings but tigers are less predictable in cooler weather. Morning safaris offer the highest sighting probability year-round."
+  },
+  {
+    question: "How did Kanha become a tiger reserve?",
+    answer: "Kanha was designated a tiger reserve in 1973 under Project Tiger, the Government of India's flagship conservation program. Before Project Tiger, India's tiger population had dwindled to approximately 1,800 nationwide due to hunting and habitat loss. Today, Kanha stands as one of the world's most successful tiger conservation models with stable, growing populations."
+  },
+  {
+    question: "What is the success rate of tiger sightings at Kanha?",
+    answer: "During peak season (March-May), visitors undertaking 3-safari packages have an 85-90% chance of spotting at least one tiger. Winter months (November-February) show a 70-80% success rate. Morning safaris consistently outperform afternoon shifts across all seasons."
+  }
+];
+
+const relatedPages = [
+  { title: 'Barasingha', description: 'The swamp deer conservation success', href: '/kanha-tiger-guide/wildlife/barasingha/' },
+  { title: 'Leopards', description: 'The other big cat at Kanha', href: '/kanha-tiger-guide/wildlife/leopards/' },
+  { title: 'Safari Zones', description: 'Best zones for tiger sightings', href: '/kanha-tiger-guide/safari-zones/' },
+  { title: 'Safari Guide', description: 'Complete safari planning', href: '/kanha-tiger-guide/safari-guide/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Tigers 2026 - Population, Sightings & Conservation"
+  description="Complete guide to tigers at Kanha National Park. Tiger population (125+), best zones for sightings, conservation history, and tips for spotting tigers on safari."
+  keywords="kanha tigers, kanha tiger population, kanha tiger sightings, bengal tiger kanha, kanha tiger reserve tigers"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/wildlife/tigers/"
+  readingTime={8}
+  category="Wildlife"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+        <Breadcrumb items={breadcrumbs} />
+
+        <h1>Kanha Tigers 2026 — Population, Sightings & Conservation Story</h1>
+
+        <TrustBar category="Wildlife" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-4">Last updated: July 18, 2026</p>
+
+        <Hero
+          src="/images/tiger-of-kanha-1024x576.webp"
+          alt="Bengal tiger of Kanha - one of approximately 125 tigers in Kanha National Park"
+          caption="Kanha's tiger population has grown from 50-60 in 1973 to approximately 125 today"
+        />
+
+        <section class="answer-block">
+          <p>
+            Kanha National Park hosts approximately <strong>125 Bengal tigers</strong> according to the 2024 All India Tiger Estimation, distributed across four safari zones: Mukki (40-50 tigers), Kanha (35-40), Kisli (25-30), and Sarhi (10-15). Mukki Zone has the highest density and best sighting rates, while Kanha Zone offers iconic meadow-based sightings accessible via the main Khatia Gate. The park was designated a tiger reserve in 1973 under Project Tiger, transforming Kanha from a hunting-ground-legacy area into one of the world's most successful tiger conservation models. Visitors undertaking 3-safari packages during peak season (March-May) have an 85-90% chance of spotting tigers, with morning safaris consistently producing the best results.
+          </p>
+        </section>
+
+        <Backlink       title="Book Kanha Tiger Safari Stay at Khatia Gate"
+      description="For the best Kanha tiger safari packages near Khatia Gate — including AC accommodation, all meals, forest permits, and guided jeep tours — check Kanha Safari Stay at Wildmark Resort."
+      anchorText="Book Kanha Tiger Safari Package"
+      ctaText="Reserve Kanha Resort Stay"
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Tigers Wildlife Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      secondaryAnchor="Best Time to See Tigers"
+      tertiaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      tertiaryAnchor="Book Tiger Safari at Kanha"
+    />
+
+        <h2>Tiger Population at Kanha (2024 Census)</h2>
+
+        <p>
+          The 2024 All India Tiger Estimation recorded approximately 125 tigers across Kanha's four zones. This
+          represents one of the highest tiger densities among Indian tiger reserves and reflects decades of
+          successful conservation efforts under Project Tiger.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Safari Zone</th>
+              <th>Estimated Tigers</th>
+              <th>Density (per 100 sq km)</th>
+              <th>Sighting Probability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Mukki Zone</td><td>40-50</td><td>15-18</td><td>Very High (85%+)</td></tr>
+            <tr><td>Kanha Zone</td><td>35-40</td><td>12-14</td><td>High (75%+)</td></tr>
+            <tr><td>Kisli Zone</td><td>25-30</td><td>10-12</td><td>High (70%+)</td></tr>
+            <tr><td>Sarhi Zone</td><td>10-15</td><td>5-8</td><td>Moderate (50%+)</td></tr>
+            <tr class="font-bold bg-amber-50"><td>Total</td><td>~125</td><td>~13</td><td>80%+ across zones</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Best Zones for Tiger Sightings</h2>
+
+        <h3>Mukki Zone — Highest Tiger Density</h3>
+        <p>
+          Mukki Zone has the highest tiger density at Kanha with 40-50 tigers across the zone. The terrain combines
+          dense Sal forest with multiple perennial water sources (Banjar River tributaries), creating ideal tiger
+          habitat. Mukki is accessed via Mukki Gate, 60 km south of Khatia Gate, requiring a separate permit.
+          Visitors staying 2-3 nights at Mukki consistently report multiple tiger sightings per safari.
+        </p>
+
+        <h3>Kanha Zone — Iconic Meadow Sightings</h3>
+        <p>
+          Kanha Zone, accessed via the main Khatia Gate, is the park's most-visited zone and offers the highest
+          probability of tiger sightings in open meadow landscapes. The Hallon, Banjar, Sonph, and Maasahi meadows
+          are particularly productive during summer (March-May) when tigers rest in grassland edges and approach
+          waterholes to cool off.
+        </p>
+
+        <h3>Kisli Zone — Forest Waterhole Sightings</h3>
+        <p>
+          Kisli Zone, also accessed via Khatia Gate, features dense Sal forests with multiple seasonal and
+          perennial water sources. Tigers frequent these waterholes during dry months, producing reliable
+          sightings along the Kisli road and at established waterholes.
+        </p>
+
+        <Backlink           title="Book Tiger Safari Packages"
+          description="Wildmark Resort near Khatia Gate offers multi-zone safari packages covering Kanha, Kisli, and Mukki zones to maximize tiger sighting chances during your stay."
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Tigers Wildlife Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      secondaryAnchor="Best Time to See Tigers"
+      tertiaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      tertiaryAnchor="Book Tiger Safari at Kanha"
+    />
+
+        <h2>Conservation History — Project Tiger at Kanha</h2>
+
+        <p>
+          Kanha was designated a tiger reserve in 1973 under <strong>Project Tiger</strong>, the Indian government's
+          flagship conservation initiative launched by Prime Minister Indira Gandhi. The project began when India's
+          wild tiger population had fallen to approximately 1,800 nationwide, with habitat loss and hunting being
+          the primary threats.
+        </p>
+
+        <h3>Pre-Project Tiger Era</h3>
+        <p>
+          Before 1973, the Kanha landscape was part of the larger Gondwana region with a long history of royal
+          hunting. The area was declared a national park in 1955, but tiger populations remained under pressure
+          from poaching and habitat fragmentation through the 1960s.
+        </p>
+
+        <h3>Project Tiger Impact (1973-Present)</h3>
+        <p>
+          Under Project Tiger, Kanha implemented core-zone buffer-zone protection, anti-poaching patrols, habitat
+          management, and scientific monitoring. The results have been transformative:
+        </p>
+
+        <ul>
+          <li><strong>1973:</strong> Kanha designated tiger reserve, baseline population estimated at 50-60 tigers</li>
+          <li><strong>1980s:</strong> Population recovers to 80-90 tigers through protection efforts</li>
+          <li><strong>2000s:</strong> Population crosses 100 tigers, recognized as model reserve</li>
+          <li><strong>2024:</strong> Latest census records approximately 125 tigers</li>
+        </ul>
+
+        <Newsletter />
+
+        <h2>When to See Tigers at Kanha</h2>
+
+        <p>
+          Tiger sighting probability varies significantly by season. Understanding seasonal patterns helps visitors
+          plan their trip for optimal wildlife viewing.
+        </p>
+
+        <table>
+          <thead>
+            <tr><th>Season</th><th>Sighting Rate</th><th>Best Times</th><th>Conditions</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Summer (Mar-May)</td><td>85-90%</td><td>5:30-10:00 AM, 4:00-6:30 PM</td><td>Hot, tigers at waterholes</td></tr>
+            <tr><td>Winter (Nov-Feb)</td><td>70-80%</td><td>6:30-10:30 AM, 3:00-5:30 PM</td><td>Pleasant, tigers active midday</td></tr>
+            <tr><td>Post-Monsoon (Oct)</td><td>75-85%</td><td>Mornings best</td><td>Cool, lush green landscape</td></tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>Summer (March-May)</strong> is the peak tiger sighting season despite temperatures reaching
+          35-45°C. The heat drives tigers to water sources during daytime, making them more visible. Winter
+          months offer pleasant weather but tigers are less predictable as they roam larger territories.
+        </p>
+
+        <h2>Tips for Tiger Sightings at Kanha</h2>
+
+        <ol>
+          <li><strong>Take multiple safaris:</strong> Minimum 2-3 safaris for 85%+ sighting probability</li>
+          <li><strong>Mix safari zones:</strong> Different zones have different tiger populations and behaviors</li>
+          <li><strong>Choose morning shifts:</strong> Better light, cooler temperatures, more active wildlife</li>
+          <li><strong>Book in advance:</strong> 30-60 days for peak season permit availability</li>
+          <li><strong>Hire experienced naturalists:</strong> Resort-provided guides with local knowledge</li>
+          <li><strong>Wear neutral colors:</strong> Olive, khaki, brown, beige; avoid bright colors</li>
+          <li><strong>Carry binoculars:</strong> Essential for distance viewing and tracking</li>
+          <li><strong>Listen for alarm calls:</strong> Deer and langur alarm calls signal tiger/leopard presence</li>
+          <li><strong>Stay quiet:</strong> Noise disturbs wildlife and other safari visitors</li>
+          <li><strong>Be patient:</strong> Some of the best sightings come after long waits</li>
+        </ol>
+
+        <h2>Famous Tigers at Kanha</h2>
+
+        <p>
+          Over the decades, Kanha has produced several famous individual tigers tracked by researchers and
+          wildlife enthusiasts. Names like "Chota Munna," "Bamera," and "Umarpani females" have become legendary
+          among tiger spotters. The current generation of dominant males and tigresses across zones continue
+          this tradition, with forest department guides maintaining detailed tracking data.
+        </p>
+
+        <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+
+      </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

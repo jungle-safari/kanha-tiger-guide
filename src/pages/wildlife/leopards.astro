@@ -1,0 +1,281 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Wildlife', href: '/wildlife/' },
+  { label: 'Leopards', href: '/wildlife/leopards/' }
+];
+
+const faqs = [
+  {
+    question: "Are there leopards at Kanha National Park?",
+    answer: "Yes, Kanha has a stable leopard population estimated at 40-50 individuals across its four zones. Leopards coexist with tigers by using different habitats (often denser forest and rocky areas), different prey (smaller deer species), and being primarily nocturnal or crepuscular."
+  },
+  {
+    question: "Where are leopards most commonly seen at Kanha?",
+    answer: "Leopards are most commonly spotted in Kisli Zone (dense Sal forest) and Kanha Zone (forest-meadow edges). They favor rocky outcrops, dense forest patches, and waterhole-adjacent areas. Afternoon safaris often produce better leopard sightings than morning shifts due to their crepuscular activity patterns."
+  },
+  {
+    question: "Can you see leopards and tigers on the same safari?",
+    answer: "Yes, it's possible to spot both leopards and tigers during the same safari, though uncommon. Leopards and tigers coexist by avoiding direct confrontation, with leopards typically using different areas than dominant tigers. Multi-day safaris covering multiple zones increase chances of seeing both species."
+  },
+  {
+    question: "Are leopards dangerous at Kanha?",
+    answer: "Leopards at Kanha are wild animals and theoretically dangerous, but incidents with safari visitors are extremely rare. Leopards generally avoid human contact and the safari setting (open vehicles, multiple people, guides present) minimizes any risk. Standard safari protocols apply for all wildlife."
+  }
+];
+
+const relatedPages = [
+  { title: 'Tigers', description: 'The apex predator of Kanha', href: '/kanha-tiger-guide/wildlife/tigers/' },
+  { title: 'Barasingha', description: 'The swamp deer conservation story', href: '/kanha-tiger-guide/wildlife/barasingha/' },
+  { title: 'Birds', description: '300+ bird species', href: '/kanha-tiger-guide/wildlife/birds/' },
+  { title: 'Safari Guide', description: 'Complete safari planning', href: '/kanha-tiger-guide/safari-guide/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Leopards 2026 - The Other Big Cat of Kanha"
+  description="Guide to leopards at Kanha National Park. Population, sightings, behavior, and the relationship between leopards and tigers. Best zones and times for leopard sightings."
+  keywords="kanha leopards, kanha leopard sightings, kanha big cats, leopard kanha national park, indian leopard kanha"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/wildlife/leopards/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha Leopards 2026 — The Other Big Cat of Kanha National Park</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <Hero
+      src="/images/Untitled-design-2.webp"
+      alt="Indian leopard in Kanha National Park - the other big cat coexisting with tigers"
+      caption="Kanha supports 40-50 leopards across its four zones, coexisting with tigers"
+    />
+
+    <section class="answer-block">
+      <p>
+        Kanha National Park has a stable leopard (Panthera pardus fusca) population of approximately 40-50
+        individuals distributed across its four zones. Leopards coexist with tigers through ecological
+        partitioning — using denser forest habitats, hunting smaller prey (chital, sambar fawns, wild boar),
+        and being primarily nocturnal or crepuscular to avoid direct tiger encounters. The best zones for
+        leopard sightings are <strong>Kisli Zone</strong> (dense Sal forest) and <strong>Kanha Zone</strong>
+        (forest-meadow edges with rocky outcrops). Afternoon safaris often produce better leopard sightings
+        than morning shifts due to their crepuscular activity. Leopards are more elusive than tigers but
+        offer equally thrilling sightings during Kanha safaris.
+      </p>
+    </section>
+
+    <Backlink       title="Reserve Your Kanha Safari Holiday Package"
+      description="Plan your Kanha safari holiday with all-inclusive packages at Wildmark Resort. Includes AC rooms, multi-cuisine dining, swimming pool, and tiger safari permits."
+      anchorText="Reserve Kanha Safari Holiday"
+      ctaText="Kanha Tiger Safari Package 2026"
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Leopards Wildlife Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Kanha Leopard Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Big Cats FAQ"
+    />
+
+    <h2>Leopard Population at Kanha</h2>
+
+    <p>
+      The leopard population at Kanha is estimated at 40-50 individuals across the park's four zones. While
+      tigers dominate Kanha's big cat profile, leopards represent a significant secondary predator population
+      that contributes to the park's ecological balance.
+    </p>
+
+    <table>
+      <thead>
+        <tr><th>Zone</th><th>Estimated Leopards</th><th>Habitat Preference</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Kisli Zone</td><td>15-18</td><td>Dense Sal forest, rocky areas</td></tr>
+        <tr><td>Kanha Zone</td><td>12-15</td><td>Forest-meadow edges, rocky outcrops</td></tr>
+        <tr><td>Mukki Zone</td><td>10-12</td><td>Mixed forest and rocky terrain</td></tr>
+        <tr><td>Sarhi Zone</td><td>5-8</td><td>Forest interior</td></tr>
+        <tr class="font-bold bg-amber-50"><td>Total</td><td>~40-50</td><td>Diverse habitats</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Leopard-Tiger Coexistence</h2>
+
+    <p>
+      Kanha is one of the best places in India to study leopard-tiger coexistence. The two big cats share
+      the landscape through several ecological strategies:
+    </p>
+
+    <h3>Habitat Partitioning</h3>
+    <p>
+      Tigers dominate open meadows and primary forest, while leopards use denser secondary forest, rocky
+      areas, and forest-meadow edges. This spatial separation reduces direct competition and confrontation.
+    </p>
+
+    <h3>Dietary Differences</h3>
+    <p>
+      Tigers primarily hunt large prey (sambar deer, gaur calves, wild boar), while leopards focus on
+      smaller prey (chital, sambar fawns, langur monkeys, small mammals). Some overlap exists but generally
+      the two species target different prey.
+    </p>
+
+    <h3>Activity Patterns</h3>
+    <p>
+      Tigers are active throughout the day with peaks at dawn and dusk. Leopards are more strictly crepuscular
+      and nocturnal, often resting in dense cover during daytime and hunting at dawn, dusk, and night.
+    </p>
+
+    <h3>Aggressive Interactions</h3>
+    <p>
+      Tigers occasionally kill leopards, particularly when territories overlap or food competition is high.
+      Leopards respond by avoiding areas of high tiger density and using more cautious movement patterns.
+    </p>
+
+    <Backlink       title="Spot Both Leopards and Tigers"
+      description="Wildmark Resort's multi-zone safari packages covering Kanha and Kisli zones offer excellent opportunities to spot both leopards and tigers during your stay."
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Leopards Wildlife Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Kanha Leopard Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Big Cats FAQ"
+    />
+
+    <h2>Best Zones for Leopard Sightings</h2>
+
+    <h3>Kisli Zone — Top Leopard Destination</h3>
+    <p>
+      Kisli Zone offers the best leopard sightings at Kanha due to its dense Sal forest and rocky terrain.
+      The mature forest structure with multiple rocky outcrops creates ideal leopard habitat. Drives through
+      Kisli regularly produce leopard sightings, particularly along forest roads and at rocky areas.
+    </p>
+
+    <h3>Kanha Zone — Forest-Edge Sightings</h3>
+    <p>
+      Kanha Zone's forest-meadow edges and rocky outcrops (particularly around the Sulkum Dongar area)
+      produce reliable leopard sightings. Afternoon safaris often catch leopards emerging from forest cover
+      as temperatures cool.
+    </p>
+
+    <h3>Mukki Zone — Less Disturbed Leopards</h3>
+    <p>
+      Mukki's lower visitor pressure means leopards here may be slightly more relaxed, though sightings
+      require more patience. The zone's mixed forest-rocky terrain provides excellent leopard habitat.
+    </p>
+
+    <h2>Best Time for Leopard Sightings</h2>
+
+    <table>
+      <thead>
+        <tr><th>Time</th><th>Sighting Probability</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Morning Safari (6:00-11:00 AM)</td><td>40-50%</td><td>Leopards may still be active at dawn</td></tr>
+        <tr><td>Afternoon Safari (3:00-6:30 PM)</td><td>55-65%</td><td>Best for leopard emergence from cover</td></tr>
+        <tr><td>Summer (Mar-May)</td><td>High</td><td>Tigers at waterholes, leopards in forest</td></tr>
+        <tr><td>Winter (Nov-Feb)</td><td>Moderate</td><td>Cool weather, leopards more active midday</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Leopard Behavior and Characteristics</h2>
+
+    <h3>Physical Features</h3>
+    <p>
+      Indian leopards at Kanha weigh 50-70 kg (males) and 30-45 kg (females). Their distinctive rosette
+      pattern provides excellent camouflage in dappled forest light. Males are significantly larger than
+      females, and individuals can be identified by unique rosette patterns.
+    </p>
+
+    <h3>Hunting Behavior</h3>
+    <p>
+      Leopards are stealth hunters, using vegetation cover to stalk prey within 5-10 meters before explosive
+      short-distance attacks. They cache larger kills in trees (a behavior rare in other big cats) to protect
+      from tigers and scavengers.
+    </p>
+
+    <h3>Reproduction</h3>
+    <p>
+      Leopards breed year-round with no specific season. After a 90-105 day gestation, females give birth
+      to 1-3 cubs in dense cover or rocky crevices. Cubs remain with the mother for 18-24 months, learning
+      hunting skills before establishing independent territories.
+    </p>
+
+    <h3>Territoriality</h3>
+    <p>
+      Male leopards maintain territories of 15-30 sq km, overlapping with multiple female territories
+      (typically 5-15 sq km each). Territorial marking through scraping, claw marks, and scent marking is
+      common. Leopards at Kanha show particularly adaptable territorial patterns due to tiger presence.
+    </p>
+
+    <h2>Leopard vs Tiger Identification</h2>
+
+    <p>
+      For first-time visitors, distinguishing leopards from tigers in the field requires attention to:
+    </p>
+
+    <table>
+      <thead>
+        <tr><th>Feature</th><th>Tiger</th><th>Leopard</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Size</td><td>Large (180-260 kg)</td><td>Medium (50-70 kg)</td></tr>
+        <tr><td>Coat Pattern</td><td>Orange with black stripes</td><td>Yellow-gold with rosettes</td></tr>
+        <tr><td>Body Shape</td><td>Massive, muscular</td><td>Slender, athletic</td></tr>
+        <tr><td>Tail</td><td>Thick, orange with black rings</td><td>Long, slender with rosettes</td></tr>
+        <tr><td>Behavior</td><td>More visible, dominant</td><td>More secretive, elusive</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Conservation Status</h2>
+
+    <p>
+      The Indian leopard is classified as <strong>Vulnerable</strong> by the IUCN, with habitat loss and
+      human-wildlife conflict being primary threats. Within protected areas like Kanha, leopards benefit from
+      habitat protection but face competition and occasional predation from tigers. The stable Kanha leopard
+      population represents an important conservation success within the park's broader carnivore community.
+    </p>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

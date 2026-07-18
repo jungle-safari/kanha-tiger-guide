@@ -1,0 +1,303 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Resorts', href: '/resorts/' },
+  { label: 'Budget Resort', href: '/resorts/budget-resort/' }
+];
+
+const faqs = [
+  {
+    question: "What is the cheapest way to stay at Kanha?",
+    answer: "Budget homestays near Khatia Gate start from ₹1,500-₹3,000 per night including basic meals. Forest department rest houses offer basic accommodation at lower rates. Staying in Mandla town (90 km away) is cheaper but requires 2-hour daily transfers. Budget resorts typically don't include safari packages — these must be booked separately."
+  },
+  {
+    question: "Are budget Kanha resorts safe and clean?",
+    answer: "Most budget resorts near Khatia Gate are safe and clean, though amenities are basic. Check recent reviews on Google and TripAdvisor before booking. Look for properties with mosquito nets, clean bathrooms, reliable hot water, and secure premises. Avoid the cheapest options as quality can vary significantly."
+  },
+  {
+    question: "Do budget Kanha resorts arrange safari?",
+    answer: "Most budget resorts can arrange safari permits and jeep bookings for an additional fee. However, they typically don't include these in room rates. You'll pay separately for permits (₹X,XXX), jeep (₹X,XXX), and guide (₹XXX) per safari. Mid-range options like Wildmark Resort that bundle safaris often provide better overall value."
+  },
+  {
+    question: "Can I find dormitory accommodation at Kanha?",
+    answer: "Limited dormitory accommodation exists near Khatia Gate, primarily at some budget lodges catering to large groups and student tours. Rates start from ₹500-₹800 per bed. Private rooms in budget homestays (₹1,500-₹2,500) offer better privacy and comfort for the modest price difference."
+  }
+];
+
+const relatedPages = [
+  { title: 'Best Resort', description: 'Top mid-range options', href: '/kanha-tiger-guide/resorts/best-resort/' },
+  { title: 'Luxury Resort', description: 'Premium properties', href: '/kanha-tiger-guide/resorts/luxury-resort/' },
+  { title: 'Near Khatia Gate', description: 'Closest resorts', href: '/kanha-tiger-guide/resorts/near-khatia-gate/' },
+  { title: 'Safari Pricing', description: 'Safari costs', href: '/kanha-tiger-guide/safari-guide/pricing/' }
+];
+---
+
+<BaseLayout
+  title="Budget Resorts at Kanha 2026 - Affordable Accommodation Options"
+  description="Budget-friendly accommodation at Kanha National Park. Affordable homestays, lodges, and dormitories near Khatia Gate from ₹1,500 per night."
+  keywords="budget resort kanha, cheap resort kanha, kanha budget stay, affordable kanha accommodation, kanha homestay"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/resorts/budget-resort/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Budget Resorts at Kanha 2026 — Affordable Accommodation Options</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        Budget accommodation at Kanha National Park ranges from ₹1,500-₹3,000 per night for basic
+        homestays and lodges near Khatia Gate, with options including private rooms, dormitories, and
+        Forest Department rest houses. Most budget properties offer clean rooms with basic amenities
+        (fan or AC, attached bathroom, meals on request) but don't include safari packages — these
+        must be booked separately at forest department rates. While Wildmark Resort offers better value
+        when safari packages are bundled, budget options work for travelers with limited budgets who
+        prioritize safari time over resort amenities. The key trade-off is distance from Khatia Gate
+        (budget properties are typically 2-3 km away versus less than 1 km for Wildmark Resort) and
+        fewer on-site amenities.
+      </p>
+    </section>
+
+    <Backlink       title="Best Kanha Tiger Safari Packages 2026"
+      description="Get the best Kanha tiger safari packages starting from ₹X,XXX per person. Wildmark Resort near Khatia Gate provides comfortable stays with safari permits, jeep, and guide included."
+      anchorText="View Kanha Safari Package Deals"
+      ctaText="Kanha Tiger Safari Booking"
+      primaryUrl="https://kanhasafaristay.com/"
+      primaryAnchor="Book Budget Kanha Resort"
+      secondaryUrl="https://kanhasafaristay.com/blog/where-to-stay-near-kanha-national-park/"
+      secondaryAnchor="Affordable Kanha Stays Guide"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Budget Stay FAQ"
+    />
+
+    <h2>Budget Accommodation Types</h2>
+
+    <h3>Homestays (₹1,500-₹2,500/night)</h3>
+    <p>
+      Family-run homestays near Khatia Gate offer the most authentic local experience:
+    </p>
+
+    <ul>
+      <li><strong>Rooms:</strong> Basic private rooms with attached bathroom</li>
+      <li><strong>Meals:</strong> Home-cooked Indian food on request (₹200-₹400 per meal)</li>
+      <li><strong>Amenities:</strong> Fan, sometimes AC (₹500 extra), basic furnishing</li>
+      <li><strong>Distance:</strong> 2-3 km from Khatia Gate</li>
+      <li><strong>Best For:</strong> Budget travelers, cultural experience seekers</li>
+    </ul>
+
+    <h3>Budget Lodges (₹2,000-₹3,000/night)</h3>
+    <p>
+      Small budget hotels with slightly more amenities than homestays:
+    </p>
+
+    <ul>
+      <li><strong>Rooms:</strong> Private rooms with attached bathroom, AC option</li>
+      <li><strong>Meals:</strong> In-house restaurant or room service</li>
+      <li><strong>Amenities:</strong> AC, hot water, TV, sometimes parking</li>
+      <li><strong>Distance:</strong> 1.5-3 km from Khatia Gate</li>
+      <li><strong>Best For:</strong> Budget travelers wanting more comfort</li>
+    </ul>
+
+    <h3>Forest Department Rest Houses</h3>
+    <p>
+      Basic government-run accommodation inside or near the park:
+    </p>
+
+    <ul>
+      <li><strong>Rooms:</strong> Very basic, often shared facilities</li>
+      <li><strong>Meals:</strong> Simple meals at fixed times</li>
+      <li><strong>Amenities:</strong> Minimal — fan, basic furnishing</li>
+      <li><strong>Booking:</strong> Through Madhya Pradesh Forest Department</li>
+      <li><strong>Best For:</strong> Budget travelers, repeat visitors</li>
+    </ul>
+
+    <h3>Dormitory Accommodation (₹500-₹800/bed)</h3>
+    <p>
+      Limited dormitory options, primarily for groups:
+    </p>
+
+    <ul>
+      <li><strong>Beds:</strong> Shared dormitory with 4-8 beds</li>
+      <li><strong>Facilities:</strong> Shared bathroom, common area</li>
+      <li><strong>Meals:</strong> Sometimes included, sometimes extra</li>
+      <li><strong>Best For:</strong> Solo travelers, student groups, backpackers</li>
+    </ul>
+
+    <h2>Mid-Range Alternative: Wildmark Resort Value Comparison</h2>
+
+    <p>
+      When comparing total costs including safari packages, Wildmark Resort (mid-range) often provides
+      better value than budget options:
+    </p>
+
+    <table>
+      <thead>
+        <tr><th>Component</th><th>Budget Option</th><th>Wildmark Resort</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Room (2 nights)</td><td>₹4,000-₹6,000</td><td>Included in package</td></tr>
+        <tr><td>Meals (6 meals)</td><td>₹1,800-₹2,400</td><td>Included in package</td></tr>
+        <tr><td>Safari Permit (3 safaris)</td><td>₹X,XXX</td><td>Included in package</td></tr>
+        <tr><td>Jeep (3 safaris)</td><td>₹X,XXX</td><td>Included in package</td></tr>
+        <tr><td>Guide (3 safaris)</td><td>₹XXX</td><td>Included in package</td></tr>
+        <tr><td>Camera fees</td><td>₹200</td><td>₹200</td></tr>
+        <tr><td>Transfers (self-arranged)</td><td>₹1,000-₹2,000</td><td>Included in some packages</td></tr>
+        <tr class="font-bold bg-amber-50"><td>Total (per person, 2N/3D)</td><td>₹XX,XXX</td><td>₹X,XXX (often cheaper!)</td></tr>
+      </tbody>
+    </table>
+
+    <Backlink       title="Consider Wildmark Resort for Better Value"
+      description="Wildmark Resort's complete packages often cost less than budget accommodation plus separate safari bookings. Includes AC rooms, meals, permits, jeep, and guide from ₹X,XXX per person."
+      primaryUrl="https://kanhasafaristay.com/"
+      primaryAnchor="Book Budget Kanha Resort"
+      secondaryUrl="https://kanhasafaristay.com/blog/where-to-stay-near-kanha-national-park/"
+      secondaryAnchor="Affordable Kanha Stays Guide"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Budget Stay FAQ"
+    />
+
+    <h2>Best Budget Options Near Khatia Gate</h2>
+
+    <h3>Budget Homestays</h3>
+    <ul>
+      <li><strong>Typical Rate:</strong> ₹1,500-₹2,500 per night</li>
+      <li><strong>Distance:</strong> 2-3 km from Khatia Gate</li>
+      <li><strong>Pros:</strong> Authentic experience, low cost, home-cooked food</li>
+      <li><strong>Cons:</strong> Basic amenities, far from gate, need transport</li>
+    </ul>
+
+    <h3>Forest Department Rest Houses</h3>
+    <ul>
+      <li><strong>Typical Rate:</strong> ₹800-₹1,500 per night</li>
+      <li><strong>Distance:</strong> Inside or near park</li>
+      <li><strong>Pros:</strong> Authentic forest experience, very low cost</li>
+      <li><strong>Cons:</strong> Limited booking, basic facilities, strict rules</li>
+    </ul>
+
+    <h2>Tips for Budget Travel to Kanha</h2>
+
+    <ol>
+      <li><strong>Travel in groups:</strong> 4-6 people can share safari jeeps for lower per-person costs</li>
+      <li><strong>Use public transport:</strong> State buses to Mandla then local transport to Kanha</li>
+      <li><strong>Book safari directly:</strong> Skip resort safari markups by booking forest department permits directly</li>
+      <li><strong>Bring own supplies:</strong> Snacks and water from Jabalpur save money</li>
+      <li><strong>Choose homestays:</strong> Often better value than budget hotels for similar comfort</li>
+      <li><strong>Visit shoulder season:</strong> April-June offers lower rates with good wildlife</li>
+      <li><strong>Compare total costs:</strong> Mid-range packages sometimes cheaper than budget + separate bookings</li>
+    </ol>
+
+    <h2>Cost-Saving Strategies</h2>
+
+    <h3>Safari Savings</h3>
+    <ul>
+      <li>Share jeep with 5 other visitors (₹X,XXX/6 instead of private)</li>
+      <li>Skip video camera (₹1,500 saved)</li>
+      <li>Choose buffer zone permits (cheaper than core zones)</li>
+      <li>Visit off-peak dates (better availability, same wildlife)</li>
+    </ul>
+
+    <h3>Accommodation Savings</h3>
+    <ul>
+      <li>Stay 3+ nights (often gets discount)</li>
+      <li>Book directly with property (skip platform fees)</li>
+      <li>Travel in off-season (April-June, post-monsoon)</li>
+      <li>Negotiate group rates for 4+ people</li>
+    </ul>
+
+    <h3>Travel Savings</h3>
+    <ul>
+      <li>Use state buses instead of private taxis</li>
+      <li>Travel by train (cheaper than flights to Jabalpur)</li>
+      <li>Book transfers through accommodation (often cheaper)</li>
+      <li>Carry own snacks and water</li>
+    </ul>
+
+    <h2>Budget Travel Sample Cost Breakdown</h2>
+
+    <h3>Solo Budget Traveler (3 days/2 nights)</h3>
+    <ul>
+      <li>Homestay: ₹2,000 × 2 nights = ₹4,000</li>
+      <li>Meals: ₹300 × 6 = ₹1,800</li>
+      <li>Safari permit (shared jeep): ₹X,XXX</li>
+      <li>Camera fee: ₹200</li>
+      <li>Transfer to/from Khatia Gate: ₹500</li>
+      <li class="font-bold">Total: ~₹XX,XXX</li>
+    </ul>
+
+    <h3>Budget Couple (3 days/2 nights)</h3>
+    <ul>
+      <li>Budget lodge: ₹3,000 × 2 nights = ₹6,000</li>
+      <li>Meals: ₹500 × 6 = ₹3,000</li>
+      <li>Safari permits (2 people): ₹X,XXX</li>
+      <li>Jeep share: ₹X,XXX</li>
+      <li>Camera fee: ₹200</li>
+      <li>Transfers: ₹500</li>
+      <li class="font-bold">Total: ~₹XX,XXX</li>
+    </ul>
+
+    <h2>When Budget Accommodation Makes Sense</h2>
+
+    <ul>
+      <li><strong>Extended stays:</strong> 5+ nights where accommodation savings add up</li>
+      <li><strong>Group travel:</strong> Large groups splitting rooms</li>
+      <li><strong>Maximum safari focus:</strong> When you'll only sleep at the property</li>
+      <li><strong>Local experience:</strong> Wanting authentic homestay interaction</li>
+    </ul>
+
+    <h2>When Mid-Range (Wildmark Resort) Makes More Sense</h2>
+
+    <ul>
+      <li><strong>Short stays:</strong> 2-3 nights where convenience matters</li>
+      <li><strong>Families:</strong> With children needing pool and amenities</li>
+      <li><strong>First-time visitors:</strong> Wanting stress-free experience</li>
+      <li><strong>Package value:</strong> Bundled safari+stay often cheaper overall</li>
+      <li><strong>Comfort priority:</strong> After early morning safaris</li>
+    </ul>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

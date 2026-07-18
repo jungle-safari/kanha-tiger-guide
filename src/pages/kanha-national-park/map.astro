@@ -1,0 +1,294 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Kanha National Park', href: '/' },
+  { label: 'Map', href: '/kanha-national-park/map/' }
+];
+
+const faqs = [
+  {
+    question: "How big is Kanha National Park on a map?",
+    answer: "Kanha National Park covers 940 sq km of core area plus 1,067 sq km of buffer zone (total ~2,000 sq km). The park stretches approximately 60 km north to south and 30 km east to west in Madhya Pradesh, India. Kanha and Kisli zones are in the north (accessed via Khatia Gate), Mukki zone in the south (Mukki Gate), and Sarhi zone in the east (Sarhi Gate)."
+  },
+  {
+    question: "Where is Kanha located on India map?",
+    answer: "Kanha is located in central India in Madhya Pradesh state, approximately in the geographic center of India. The park is in Mandla and Balaghat districts, 165 km southeast of Jabalpur city. GPS coordinates are 22.27°N latitude and 80.61°E longitude."
+  },
+  {
+    question: "Which gate should I use to enter Kanha?",
+    answer: "Choose your gate based on which zone you want to visit: Khatia Gate for Kanha and Kisli zones (main entry, most amenities), Mukki Gate for Mukki zone (60 km south), or Sarhi Gate for Sarhi zone (30 km east). Most visitors use Khatia Gate where the largest resort cluster exists."
+  },
+  {
+    question: "Can I see a map of Kanha safari zones?",
+    answer: "Yes, the Madhya Pradesh Forest Department provides official zone maps at entry gates. Many resorts also share detailed zone maps with guests. The four zones — Kanha, Kisli, Mukki, Sarhi — are clearly demarcated with separate entry permits required for each zone."
+  }
+];
+
+const relatedPages = [
+  { title: 'Geography', description: 'Terrain features', href: '/kanha-tiger-guide/kanha-national-park/geography/' },
+  { title: 'Safari Zones', description: 'Zone-by-zone breakdown', href: '/kanha-tiger-guide/safari-zones/' },
+  { title: 'How to Reach', description: 'Getting to Kanha', href: '/kanha-tiger-guide/travel-info/how-to-reach/' },
+  { title: 'History', description: 'Park history', href: '/kanha-tiger-guide/kanha-national-park/history/' }
+];
+---
+
+<BaseLayout
+  title="Kanha National Park Map 2026 - Zone Map, Gates & Geography"
+  description="Interactive map guide for Kanha National Park. Zone map showing Kanha, Kisli, Mukki, Sarhi zones, gates, meadows, and key landmarks across the park."
+  keywords="kanha national park map, kanha map, kanha zone map, kanha gate map, kanha safari map"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/kanha-national-park/map/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha National Park Map 2026 — Zone Map, Gates & Geography</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        Kanha National Park spans 940 sq km of core area plus 1,067 sq km buffer zone in central Madhya
+        Pradesh, India. The park is divided into four safari zones (Kanha, Kisli, Mukki, Sarhi) accessed
+        through three gates (Khatia, Mukki, Sarhi). <strong>Khatia Gate</strong> in the north is the main
+        entry point and most popular base, serving Kanha and Kisli zones. Mukki Gate (60 km south of
+        Khatia) accesses Mukki Zone with the highest tiger density. Sarhi Gate (30 km east) serves the
+        quieter Sarhi Zone ideal for birdwatching. The park's central coordinates are 22.27°N, 80.61°E,
+        located 165 km southeast of Jabalpur city.
+      </p>
+    </section>
+
+    <Backlink       title="Reserve Your Kanha Safari Holiday Package"
+      description="Plan your Kanha safari holiday with all-inclusive packages at Wildmark Resort. Includes AC rooms, multi-cuisine dining, swimming pool, and tiger safari permits."
+      anchorText="Reserve Kanha Safari Holiday"
+      ctaText="Kanha Tiger Safari Package 2026"
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-zones-guide-kanha-mukki-kisli-sarhi/"
+      primaryAnchor="Kanha Zone Map Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Kanha Zone Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Map FAQ"
+    />
+
+    <h2>Park Map Overview</h2>
+
+    <table>
+      <tbody>
+        <tr><td><strong>Total Core Area</strong></td><td>940 sq km</td></tr>
+        <tr><td><strong>Buffer Zone</strong></td><td>1,067 sq km</td></tr>
+        <tr><td><strong>North-South Extent</strong></td><td>~60 km</td></tr>
+        <tr><td><strong>East-West Extent</strong></td><td>~30 km</td></tr>
+        <tr><td><strong>Coordinates (Center)</strong></td><td>22.27°N, 80.61°E</td></tr>
+        <tr><td><strong>State</strong></td><td>Madhya Pradesh, India</td></tr>
+        <tr><td><strong>Districts</strong></td><td>Mandla, Balaghat</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Safari Zones Map</h2>
+
+    <h3>Zone Distribution</h3>
+
+    <table>
+      <thead>
+        <tr><th>Zone</th><th>Approx. Area</th><th>Position</th><th>Access Gate</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Kanha Zone</td><td>~300 sq km</td><td>North-central</td><td>Khatia Gate</td></tr>
+        <tr><td>Kisli Zone</td><td>~275 sq km</td><td>Northwest</td><td>Khatia Gate</td></tr>
+        <tr><td>Mukki Zone</td><td>~325 sq km</td><td>South</td><td>Mukki Gate (60 km from Khatia)</td></tr>
+        <tr><td>Sarhi Zone</td><td>~200 sq km</td><td>East</td><td>Sarhi Gate (30 km from Khatia)</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Major Gates and Entry Points</h2>
+
+    <h3>Khatia Gate (Main Entry)</h3>
+    <p>
+      The primary entry point to Kanha National Park:
+    </p>
+
+    <ul>
+      <li><strong>Location:</strong> Northern edge of park, in Khatiya village</li>
+      <li><strong>Coordinates:</strong> 22.27°N, 80.61°E</li>
+      <li><strong>Zones Accessed:</strong> Kanha and Kisli</li>
+      <li><strong>Facilities:</strong> Permit office, parking, restroom, restaurant</li>
+      <li><strong>Nearby:</strong> Wildmark Resort (less than 1 km), 30+ other resorts</li>
+      <li><strong>Operating Hours:</strong> Sunrise entry for morning safari, 3 PM for afternoon</li>
+    </ul>
+
+    <h3>Mukki Gate</h3>
+    <p>
+      Southern entry for Mukki Zone:
+    </p>
+
+    <ul>
+      <li><strong>Location:</strong> 60 km south of Khatia Gate</li>
+      <li><strong>Coordinates:</strong> Approximately 21.85°N, 80.65°E</li>
+      <li><strong>Zones Accessed:</strong> Mukki Zone only</li>
+      <li><strong>Facilities:</strong> Permit office, basic amenities</li>
+      <li><strong>Nearby:</strong> Limited accommodation, mostly budget</li>
+      <li><strong>Drive from Khatia:</strong> 1.5-2 hours via Mandla-Mukki road</li>
+    </ul>
+
+    <h3>Sarhi Gate</h3>
+    <p>
+      Eastern entry for Sarhi Zone:
+    </p>
+
+    <ul>
+      <li><strong>Location:</strong> 30 km east of Khatia Gate</li>
+      <li><strong>Zones Accessed:</strong> Sarhi Zone</li>
+      <li><strong>Facilities:</strong> Basic permit office</li>
+      <li><strong>Drive from Khatia:</strong> Approximately 1 hour</li>
+      <li><strong>Visitor Numbers:</strong> Lowest of all gates (5-10 vehicles per shift)</li>
+    </ul>
+
+    <Backlink       title="Start from Khatia Gate - Best Base"
+      description="Wildmark Resort near Khatia Gate is the best base for Kanha Zone and Kisli Zone safaris. Multi-zone packages covering Mukki and Sarhi also available."
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-zones-guide-kanha-mukki-kisli-sarhi/"
+      primaryAnchor="Kanha Zone Map Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Kanha Zone Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Map FAQ"
+    />
+
+    <h2>Key Landmarks on the Map</h2>
+
+    <h3>Meadows (Dadars) — Iconic Landscapes</h3>
+    <ul>
+      <li><strong>Hallon Meadow:</strong> Largest meadow in Kanha Zone (central-north)</li>
+      <li><strong>Banjar Meadow:</strong> Along Banjar River (central)</li>
+      <li><strong>Sonph Meadow:</strong> Sonph River area (central-north)</li>
+      <li><strong>Maasahi Meadow:</strong> Compact meadow near Kanha Zone</li>
+      <li><strong>Sulkum Meadow:</strong> Higher elevation meadow</li>
+    </ul>
+
+    <h3>Major Rivers</h3>
+    <ul>
+      <li><strong>Banjar River:</strong> Main river flowing south through park</li>
+      <li><strong>Sonph River:</strong> Tributary feeding Sonph Meadow</li>
+      <li><strong>Sulkum River:</strong> Northern Kanha Zone</li>
+      <li><strong>Halon River:</strong> Banjar tributary</li>
+    </ul>
+
+    <h3>Settlement Areas</h3>
+    <ul>
+      <li><strong>Khatiya Village:</strong> Main village near Khatia Gate</li>
+      <li><strong>Mocha Village:</strong> Postal address for Wildmark Resort area</li>
+      <li><strong>Mukki Village:</strong> Settlement near Mukki Gate</li>
+    </ul>
+
+    <h2>Distance Chart (from Khatia Gate)</h2>
+
+    <table>
+      <thead>
+        <tr><th>Destination</th><th>Distance</th><th>Drive Time</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Khatia Gate</td><td>0 km (base)</td><td>—</td></tr>
+        <tr><td>Kanha Zone Core</td><td>0-15 km inside park</td><td>Safari entry</td></tr>
+        <tr><td>Kisli Zone Core</td><td>15-30 km inside park</td><td>Safari entry</td></tr>
+        <tr><td>Sarhi Gate</td><td>30 km east</td><td>~1 hour</td></tr>
+        <tr><td>Mukki Gate</td><td>60 km south</td><td>~1.5-2 hours</td></tr>
+        <tr><td>Mukki Zone Core</td><td>0-20 km from Mukki Gate</td><td>Safari entry</td></tr>
+        <tr><td>Mandla Town</td><td>90 km</td><td>~2 hours</td></tr>
+        <tr><td>Jabalpur</td><td>165 km</td><td>~4 hours</td></tr>
+        <tr><td>Nagpur</td><td>250 km</td><td>~5-6 hours</td></tr>
+      </tbody>
+    </table>
+
+    <h2>How to Use the Map for Safari Planning</h2>
+
+    <h3>Plan Zone Visits Based on Gate Location</h3>
+    <ul>
+      <li><strong>Staying near Khatia Gate:</strong> Focus on Kanha and Kisli zones</li>
+      <li><strong>Day trip to Mukki:</strong> Long day (5:30 AM to 7 PM) for Mukki Zone</li>
+      <li><strong>Day trip to Sarhi:</strong> Shorter day trip for Sarhi Zone</li>
+      <li><strong>Multi-zone packages:</strong> Best via resort arrangement</li>
+    </ul>
+
+    <h3>Map-Based Route Planning</h3>
+    <ol>
+      <li>Start at your resort (likely near Khatia Gate)</li>
+      <li>Drive to appropriate gate (5 min - 2 hours)</li>
+      <li>Enter park for chosen zone safari</li>
+      <li>Drive to productive areas within zone</li>
+      <li>Return to gate and back to resort</li>
+    </ol>
+
+    <h2>Map Resources</h2>
+
+    <p>
+      Multiple map resources help plan your Kanha visit:
+    </p>
+
+    <ul>
+      <li><strong>Forest Department Maps:</strong> Available at entry gates and permit offices</li>
+      <li><strong>Resort Maps:</strong> Most properties provide detailed zone maps</li>
+      <li><strong>Online Maps:</strong> Google Maps shows park boundaries and roads</li>
+      <li><strong>Guide Maps:</strong> Forest department guides carry zone-specific maps</li>
+      <li><strong>Tourism Maps:</strong> Madhya Pradesh Tourism provides visitor maps</li>
+    </ul>
+
+    <h2>Geographic Coordinates Reference</h2>
+
+    <table>
+      <thead>
+        <tr><th>Location</th><th>Latitude</th><th>Longitude</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Khatia Gate</td><td>22.27°N</td><td>80.61°E</td></tr>
+        <tr><td>Park Center</td><td>22.20°N</td><td>80.55°E</td></tr>
+        <tr><td>Mukki Gate (approx)</td><td>21.85°N</td><td>80.65°E</td></tr>
+        <tr><td>Sarhi Gate (approx)</td><td>22.20°N</td><td>80.80°E</td></tr>
+        <tr><td>Mandla Town</td><td>22.60°N</td><td>80.38°E</td></tr>
+        <tr><td>Jabalpur</td><td>23.17°N</td><td>79.95°E</td></tr>
+      </tbody>
+    </table>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

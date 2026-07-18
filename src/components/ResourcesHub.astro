@@ -1,0 +1,65 @@
+---
+const { title = 'Kanha Safari Resources & Booking Links', subtitle = 'Complete directory of Kanha safari packages, accommodation, and travel guides from our recommended partner' } = Astro.props;
+const resources = [
+  { category:'Safari Packages',icon:'🐅',desc:'Complete Kanha safari packages with permits, jeep, and guide',
+    bg:'from-cream to-cream-dark dark:from-midnight-light/50 dark:to-midnight/50',border:'border-coral/30 dark:border-coral/40',text:'text-midnight dark:text-cream',
+    link:'text-coral-dark dark:text-coral-light hover:text-coral',badge:'bg-coral/10 dark:bg-coral/20 text-coral-dark dark:text-coral-light',
+    links:[
+      {t:'Kanha Safari Tour Package',u:'https://kanhasafaristay.com/package/kanha-safari-tour-package/'},
+      {t:'Kanha Jungle Safari Package',u:'https://kanhasafaristay.com/package/kanha-jungle-safari-package/'},
+      {t:'Kanha Kisli Tour Package',u:'https://kanhasafaristay.com/package/kanha-kisli-tour-package/'},
+      {t:'Mukki Zone Tour Package',u:'https://kanhasafaristay.com/package/mukki-zone-tour-package/'},
+      {t:'Kanha Leisure Tour Package',u:'https://kanhasafaristay.com/package/kanha-leisure-tour-package/'},
+      {t:'Pench Kanha Safari Tour Package',u:'https://kanhasafaristay.com/package/pench-kanha-safari-tour-package/'},
+      {t:'Kanha Bandhavgarh Tour Package',u:'https://kanhasafaristay.com/package/kanha-bandhavgarh-safari-tour-packages/'}
+    ]},
+  { category:'Accommodation',icon:'🏨',desc:'Kanha resort stays near Khatia Gate with safari packages',
+    bg:'from-teal/5 to-teal/10 dark:from-teal/10 dark:to-teal/5',border:'border-teal/30 dark:border-teal/30',text:'text-midnight dark:text-cream',
+    link:'text-teal-dark dark:text-teal-light hover:text-coral',badge:'bg-teal/10 dark:bg-teal/20 text-teal-dark dark:text-teal-light',
+    links:[{t:'Wildmark Resort Kanha Accommodation',u:'https://kanhasafaristay.com/wild-mark-resort-kanha-accommodation/'}]},
+  { category:'Travel Information',icon:'✈️',desc:'How to reach Kanha from major cities',
+    bg:'from-cream to-cream-dark dark:from-midnight-light/50 dark:to-midnight/50',border:'border-coral/20 dark:border-coral/30',text:'text-midnight dark:text-cream',
+    link:'text-coral-dark dark:text-coral-light hover:text-coral',badge:'bg-coral/10 dark:bg-coral/20 text-coral-dark dark:text-coral-light',
+    links:[{t:'How to Reach Kanha National Park',u:'https://kanhasafaristay.com/how-to-reach-kanha/'}]},
+  { category:'Blog & Guides',icon:'📚',desc:'In-depth Kanha travel guides and articles',
+    bg:'from-teal/5 to-teal/10 dark:from-teal/10 dark:to-teal/5',border:'border-teal/30 dark:border-teal/30',text:'text-midnight dark:text-cream',
+    link:'text-teal-dark dark:text-teal-light hover:text-coral',badge:'bg-teal/10 dark:bg-teal/20 text-teal-dark dark:text-teal-light',
+    links:[
+      {t:'All Kanha Blog Posts',u:'https://kanhasafaristay.com/blog/'},
+      {t:'Wildlife of Kanha National Park Guide',u:'https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/'},
+      {t:'Kanha Safari Booking Guide',u:'https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/'},
+      {t:'Where to Stay Near Kanha',u:'https://kanhasafaristay.com/blog/where-to-stay-near-kanha-national-park/'},
+      {t:'Kanha Safari Zones Guide',u:'https://kanhasafaristay.com/blog/kanha-safari-zones-guide-kanha-mukki-kisli-sarhi/'},
+      {t:'Best Time to Visit Kanha',u:'https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/'}
+    ]},
+  { category:'Help & FAQ',icon:'❓',desc:'Common questions about Kanha safari booking',
+    bg:'from-cream to-cream-dark dark:from-midnight-light/50 dark:to-midnight/50',border:'border-coral/20 dark:border-coral/30',text:'text-midnight dark:text-cream',
+    link:'text-coral-dark dark:text-coral-light hover:text-coral',badge:'bg-coral/10 dark:bg-coral/20 text-coral-dark dark:text-coral-light',
+    links:[{t:'Kanha Safari FAQ',u:'https://kanhasafaristay.com/faq/'},{t:'Kanha Safari Stay Home',u:'https://kanhasafaristay.com/'}]}
+];
+---
+
+<section class="my-12 bg-white dark:bg-midnight-light rounded-xl shadow-card dark:shadow-card p-6 md:p-8 border-t-4 border-coral dark:border-coral animate-on-scroll">
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold text-midnight dark:text-cream mb-2 font-display">{title}</h2>
+    <p class="text-warm dark:text-gray-400 max-w-2xl mx-auto">{subtitle}</p>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+    {resources.map(c => (
+      <div class={`bg-gradient-to-br ${c.bg} rounded-xl p-5 border-2 ${c.border} shadow-sm transition-all duration-200 hover:shadow-card-hover`}>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-2xl">{c.icon}</span>
+          <h3 class={`text-lg font-bold ${c.text} font-display`}>{c.category}</h3>
+          <span class={`ml-auto text-[10px] font-medium px-2 py-0.5 rounded-full ${c.badge}`}>{c.links.length} link{c.links.length>1?'s':''}</span>
+        </div>
+        <p class="text-xs text-warm dark:text-gray-400 mb-3">{c.desc}</p>
+        <ul class="space-y-2">{c.links.map(l => (
+          <li><a href={l.u} rel="dofollow noopener" target="_blank" class={`text-sm font-medium ${c.link} hover:underline flex items-start gap-1.5 transition-colors`} title={l.t}><span class="text-xs mt-0.5 flex-shrink-0">→</span><span>{l.t}</span></a></li>
+        ))}</ul>
+      </div>
+    ))}
+  </div>
+  <div class="mt-8 pt-6 border-t border-gray-100 dark:border-midnight-lighter text-center">
+    <p class="text-sm text-warm dark:text-gray-400">All resources provided by our recommended partner <a href="https://kanhasafaristay.com/" rel="dofollow noopener" target="_blank" class="text-coral-dark dark:text-coral-light font-semibold hover:underline ml-1">KanhaSafariStay.com</a> — Wildmark Resort, Khatia Gate, Kanha National Park</p>
+  </div>
+</section>

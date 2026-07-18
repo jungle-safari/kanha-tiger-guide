@@ -1,0 +1,340 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Kanha National Park', href: '/' },
+  { label: 'Geography', href: '/kanha-national-park/geography/' }
+];
+
+const faqs = [
+  {
+    question: "What is the geography of Kanha National Park?",
+    answer: "Kanha National Park spans 940 sq km of core area in the Maikal Range of Madhya Pradesh, central India. The park sits on the Deccan plateau edge at 600-900 meters elevation, with a mix of Sal forests, bamboo thickets, meadows (dadars), and river systems. The terrain combines flat-bottomed valleys with gentle hills, creating diverse wildlife habitats."
+  },
+  {
+    question: "What is the elevation of Kanha National Park?",
+    answer: "Kanha's elevation ranges from 600 to 900 meters above sea level. The highest point is Sulkum Dongar at 924 meters. The varied elevation creates diverse microclimates and habitat types that support the park's rich biodiversity."
+  },
+  {
+    question: "What are the major rivers in Kanha?",
+    answer: "Major rivers and streams at Kanha include the Banjar River (major tributary), Sonph River, Sulkum River, and Halon River. These water sources are critical for wildlife, especially during dry summer months when animals concentrate near permanent water."
+  },
+  {
+    question: "What is the terrain like at Kanha?",
+    answer: "Kanha's terrain features flat-bottomed valleys called 'dadars' (meadows) surrounded by Sal forests, with the highest plateau areas being Sulkum Dongar. The landscape alternates between open grasslands, dense forests, bamboo thickets, and rocky areas, creating ideal habitat diversity for tigers, leopards, deer, and other wildlife."
+  }
+];
+
+const relatedPages = [
+  { title: 'History', description: 'Conservation history', href: '/kanha-tiger-guide/kanha-national-park/history/' },
+  { title: 'Famous For', description: 'Conservation achievements', href: '/kanha-tiger-guide/kanha-national-park/famous-for/' },
+  { title: 'Map', description: 'Zone map', href: '/kanha-tiger-guide/kanha-national-park/map/' },
+  { title: 'Wildlife', description: 'Park wildlife', href: '/kanha-tiger-guide/wildlife/' }
+];
+---
+
+<BaseLayout
+  title="Kanha National Park Geography 2026 - Terrain, Rivers & Elevation"
+  description="Complete geography of Kanha National Park. Terrain features, rivers, elevation, climate zones, and how geography shapes wildlife distribution across the park."
+  keywords="kanha national park geography, kanha terrain, kanha rivers, kanha elevation, kanha maikal range"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/kanha-national-park/geography/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha National Park Geography 2026 — Terrain, Rivers & Elevation</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        <strong>Kanha National Park</strong> spans 940 sq km of core area in the Maikal Range of Madhya
+        Pradesh, central India. The park sits on the southern edge of the Deccan plateau at elevations
+        ranging from 600 to 900 meters above sea level, with the highest point at Sulkum Dongar (924m).
+        The terrain combines flat-bottomed valleys (locally called "dadars" or meadows) with surrounding
+        Sal forests, bamboo thickets, and rocky uplands. Major rivers include the Banjar, Sonph, Sulkum,
+        and Halon, which serve as critical water sources for wildlife. This geographic diversity creates
+        varied habitats that support tigers, leopards, Barasingha, and over 300 bird species across the
+        park's four safari zones.
+      </p>
+    </section>
+
+    <Backlink       title="Best Kanha Tiger Safari Packages 2026"
+      description="Get the best Kanha tiger safari packages starting from ₹X,XXX per person. Wildmark Resort near Khatia Gate provides comfortable stays with safari permits, jeep, and guide included."
+      anchorText="View Kanha Safari Package Deals"
+      ctaText="Kanha Tiger Safari Booking"
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-zones-guide-kanha-mukki-kisli-sarhi/"
+      primaryAnchor="Kanha Geography & Zones Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Kanha Safari Package"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Geography FAQ"
+    />
+
+    <h2>Geographic Overview</h2>
+
+    <table>
+      <tbody>
+        <tr><td><strong>Location</strong></td><td>Central India, Madhya Pradesh</td></tr>
+        <tr><td><strong>Districts</strong></td><td>Mandla and Balaghat</td></tr>
+        <tr><td><strong>Total Core Area</strong></td><td>940 sq km</td></tr>
+        <tr><td><strong>Buffer Zone</strong></td><td>1,067 sq km</td></tr>
+        <tr><td><strong>Elevation Range</strong></td><td>600-900 meters</td></tr>
+        <tr><td><strong>Highest Point</strong></td><td>Sulkum Dongar (924m)</td></tr>
+        <tr><td><strong>Major Range</strong></td><td>Maikal Hills (Satpura Range extension)</td></tr>
+        <tr><td><strong>Coordinates</strong></td><td>22.27°N, 80.61°E</td></tr>
+        <tr><td><strong>Geological Formation</strong></td><td>Deccan plateau basalt base</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Terrain Features</h2>
+
+    <h3>Meadows (Dadars)</h3>
+    <p>
+      The most distinctive feature of Kanha's geography is its meadows, locally called "dadars." These
+      flat-bottomed valleys form the iconic Kanha landscape:
+    </p>
+
+    <ul>
+      <li><strong>Hallon Meadow:</strong> Largest meadow, prime tiger habitat</li>
+      <li><strong>Banjar Meadow:</strong> Drained by Banjar River, mixed herds</li>
+      <li><strong>Sonph Meadow:</strong> Excellent Barasingha viewing</li>
+      <li><strong>Maasahi Meadow:</strong> Compact, high wildlife density</li>
+      <li><strong>Sulkum Meadow:</strong> Higher elevation meadow</li>
+    </ul>
+
+    <h3>Sal Forests</h3>
+    <p>
+      Sal (Shorea robusta) dominates Kanha's forest cover:
+    </p>
+
+    <ul>
+      <li><strong>Coverage:</strong> Approximately 70% of forested area</li>
+      <li><strong>Characteristics:</strong> Tall trees (20-30m), dense canopy</li>
+      <li><strong>Best Examples:</strong> Kisli Zone and dense parts of Kanha Zone</li>
+      <li><strong>Wildlife:</strong> Tigers, leopards, gaur, deer</li>
+    </ul>
+
+    <h3>Bamboo Thickets</h3>
+    <p>
+      Bamboo (Dendrocalamus strictus) forms dense understory in many areas:
+    </p>
+
+    <ul>
+      <li><strong>Coverage:</strong> Scattered throughout but concentrated in specific zones</li>
+      <li><strong>Characteristics:</strong> Dense, regenerating rapidly</li>
+      <li><strong>Best Examples:</strong> Mukki Zone, parts of Kanha Zone</li>
+      <li><strong>Wildlife:</strong> Tigers use bamboo for cover, specialized bamboo birds</li>
+      <li><strong>Management:</strong> Periodic clearing to maintain habitat diversity</li>
+    </ul>
+
+    <h3>Mixed Deciduous Forests</h3>
+    <p>
+      Beyond pure Sal, Kanha features mixed deciduous forests:
+    </p>
+
+    <ul>
+      <li><strong>Tree Species:</strong> Teak, tendu, mahua, bel, and others</li>
+      <li><strong>Coverage:</strong> Transition areas between Sal forests and meadows</li>
+      <li><strong>Wildlife:</strong> Diverse bird species, smaller mammals</li>
+    </ul>
+
+    <Backlink       title="Experience Kanha's Diverse Geography"
+      description="Wildmark Resort's safari packages cover multiple zones across Kanha's varied terrain — from meadows to dense forests. See the geography come alive during your safari."
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-zones-guide-kanha-mukki-kisli-sarhi/"
+      primaryAnchor="Kanha Geography & Zones Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Kanha Safari Package"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Geography FAQ"
+    />
+
+    <h2>Major Rivers and Water Sources</h2>
+
+    <h3>Banjar River</h3>
+    <p>
+      The most significant river in Kanha, flowing through the park's core:
+    </p>
+
+    <ul>
+      <li><strong>Length in Park:</strong> Approximately 35 km</li>
+      <li><strong>Tributaries:</strong> Multiple perennial streams</li>
+      <li><strong>Wildlife Significance:</strong> Critical water source for tigers, leopards, deer</li>
+      <li><strong>Zones:</strong> Borders Kanha and Mukki zones</li>
+    </ul>
+
+    <h3>Sonph River</h3>
+    <p>
+      Important tributary feeding Sonph Meadow:
+    </p>
+
+    <ul>
+      <li><strong>Significance:</strong> Maintains Sonph meadow habitat</li>
+      <li><strong>Wildlife:</strong> Barasingha concentrate here during dry season</li>
+    </ul>
+
+    <h3>Sulkum River</h3>
+    <p>
+      Flows through northern Kanha Zone:
+    </p>
+
+    <ul>
+      <li><strong>Significance:</strong> Water source for northern wildlife populations</li>
+      <li><strong>Terrain:</strong> Flows through higher elevation areas</li>
+    </ul>
+
+    <h3>Halon River</h3>
+    <p>
+      Tributary of the Banjar:
+    </p>
+
+    <ul>
+      <li><strong>Significance:</strong> Seasonal water source</li>
+      <li><strong>Wildlife:</strong> Attracts diverse bird species</li>
+    </ul>
+
+    <h2>Elevation and Topography</h2>
+
+    <p>
+      Kanha's elevation profile influences habitat distribution:
+    </p>
+
+    <table>
+      <thead>
+        <tr><th>Elevation Zone</th><th>Height (m)</th><th>Habitat Type</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Lowland Valleys</td><td>600-700</td><td>Meadows, riverine forests</td></tr>
+        <tr><td>Mid-Elevation</td><td>700-800</td><td>Sal forests, mixed deciduous</td></tr>
+        <tr><td>Plateau</td><td>800-900</td><td>Drier forests, rocky areas</td></tr>
+        <tr><td>Highest Peak (Sulkum Dongar)</td><td>924</td><td>Rocky plateau habitat</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Climate Zones</h2>
+
+    <h3>Tropical Monsoon Climate</h3>
+    <p>
+      Kanha experiences a tropical monsoon climate with three distinct seasons:
+    </p>
+
+    <ul>
+      <li><strong>Summer (March-May):</strong> Hot, dry; 25-45°C</li>
+      <li><strong>Monsoon (June-September):</strong> Heavy rainfall; 25-35°C</li>
+      <li><strong>Winter (October-February):</strong> Cool, dry; 10-25°C</li>
+    </ul>
+
+    <h3>Rainfall Pattern</h3>
+    <ul>
+      <li><strong>Annual Rainfall:</strong> 1,400-1,600 mm (mostly June-September)</li>
+      <li><strong>Monsoon Impact:</strong> Park closed during peak monsoon</li>
+      <li><strong>Dry Season:</strong> October-May, ideal for safaris</li>
+    </ul>
+
+    <h2>How Geography Shapes Wildlife</h2>
+
+    <h3>Tiger Distribution</h3>
+    <p>
+      Tiger territories at Kanha align with geographic features:
+    </p>
+
+    <ul>
+      <li><strong>Tigers favor:</strong> Meadow edges, waterhole areas, bamboo thickets</li>
+      <li><strong>Density highest:</strong> Where multiple habitat types converge</li>
+      <li><strong>Mukki Zone advantage:</strong> Diverse terrain supports high density</li>
+    </ul>
+
+    <h3>Barasingha Habitat</h3>
+    <p>
+      The hard-ground Barasingha depends on specific geographic features:
+    </p>
+
+    <ul>
+      <li><strong>Requires:</strong> Open meadows with short grass</li>
+      <li><strong>Concentrated in:</strong> Sonph, Maasahi, Hallon, Banjar meadows</li>
+      <li><strong>Vulnerability:</strong> Meadow succession threatens habitat</li>
+    </ul>
+
+    <h3>Bird Distribution</h3>
+    <p>
+      Different bird species prefer different geographic features:
+    </p>
+
+    <ul>
+      <li><strong>Forest birds:</strong> Dense Sal forests (Kisli Zone)</li>
+      <li><strong>Meadow birds:</strong> Open grasslands (Kanha Zone)</li>
+      <li><strong>Water birds:</strong> River systems and waterholes</li>
+      <li><strong>Raptors:</strong> Higher elevations and forest edges</li>
+    </ul>
+
+    <h2>Buffer Zone Geography</h2>
+
+    <p>
+      The 1,067 sq km buffer zone surrounds the core area:
+    </p>
+
+    <ul>
+      <li><strong>Purpose:</strong> Provides transition between core zone and human settlements</li>
+      <li><strong>Activities:</strong> Limited tourism, forest product collection, research</li>
+      <li><strong>Wildlife:</strong> Supports wildlife dispersal and breeding</li>
+      <li><strong>Management:</strong> Joint Forest Management with local communities</li>
+    </ul>
+
+    <h2>Geological Significance</h2>
+
+    <p>
+      Kanha sits on ancient geological formations:
+    </p>
+
+    <ul>
+      <li><strong>Base Rock:</strong> Deccan trap basalt from ancient volcanic activity</li>
+      <li><strong>Soil:</strong> Rich black cotton soil (regur) in lowlands</li>
+      <li><strong>Drainage:</strong> Multiple rivers flowing south to Godavari system</li>
+      <li><strong>Age:</strong> Landscape formed over millions of years</li>
+    </ul>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

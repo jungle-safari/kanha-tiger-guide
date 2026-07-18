@@ -1,0 +1,267 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Safari Zones', href: '/safar-zones/' },
+  { label: 'Kanha Zone', href: '/safar-zones/kanha-zone/' }
+];
+
+const faqs = [
+  {
+    question: "How do I book Kanha Zone safari?",
+    answer: "Kanha Zone safaris can be booked through the Madhya Pradesh Forest Department portal or via resort packages. Kanha Zone is accessed via Khatia Gate. Wildmark Resort and other properties near Khatia Gate handle complete booking including permits, jeep allocation, and guide coordination."
+  },
+  {
+    question: "What is the best time to visit Kanha Zone?",
+    answer: "The best time to visit Kanha Zone is during March-May for peak tiger and Barasingha sightings in open meadows. Winter months (November-February) offer pleasant weather with good sightings. Morning safaris are optimal for the soft light on meadows and active wildlife."
+  },
+  {
+    question: "What is the safari duration in Kanha Zone?",
+    answer: "Kanha Zone safaris last 3-4 hours per shift, with morning safaris (entry at sunrise ~6:00 AM, exit by 11:00 AM) and afternoon safaris (entry ~3:00 PM, exit at sunset ~6:30 PM). The zone extends 0-15 km inside the park from Khatia Gate."
+  },
+  {
+    question: "Can I see Barasingha in Kanha Zone?",
+    answer: "Yes, Kanha Zone is the best zone to see Barasingha. The iconic meadows (Sonph, Maasahi, Hallon, Banjar) host reliable Barasingha herds throughout the year. Visitors can expect to see Barasingha in nearly every Kanha Zone safari, particularly during morning hours."
+  }
+];
+
+const relatedPages = [
+  { title: 'Mukki Zone', description: 'Highest tiger density zone', href: '/kanha-tiger-guide/safari-zones/mukki-zone/' },
+  { title: 'Kisli Zone', description: 'Dense Sal forest sightings', href: '/kanha-tiger-guide/safari-zones/kisli-zone/' },
+  { title: 'Sarhi Zone', description: 'Quiet birdwatching zone', href: '/kanha-tiger-guide/safari-zones/sarhi-zone/' },
+  { title: 'Barasingha', description: 'Kanha Zone conservation icon', href: '/kanha-tiger-guide/wildlife/barasingha/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Zone 2026 - Core Meadows, Barasingha & Tiger Sightings"
+  description="Complete guide to Kanha Zone at Kanha National Park. Core meadows (Hallon, Banjar, Sonph, Maasahi), tiger population, Barasingha herds, and safari booking info."
+  keywords="kanha zone, kanha zone safari, hallon meadow, banjar meadow, kanha zone tigers, kanha zone barasingha"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/safari-zones/kanha-zone/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha Zone 2026 — Core Meadows, Barasingha & Tiger Sightings</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        <strong>Kanha Zone</strong> is the most popular and iconic safari zone at Kanha National Park, accessed
+        via the main <strong>Khatia Gate</strong>. Covering the park's core meadows including Hallon, Banjar,
+        Sonph, and Maasahi, the zone hosts 35-40 tigers and the world's entire population of hard-ground
+        Barasingha (800+ individuals). The open meadow landscapes make this zone ideal for photography and
+        wildlife viewing, with reliable tiger sightings near water sources and Barasingha herds grazing in
+        grasslands. Kanha Zone covers approximately 300 sq km and extends 0-15 km inside the park from
+        Khatia Gate. Most first-time visitors prioritize this zone, and Wildmark Resort (less than 1 km from
+        Khatia Gate) serves as an ideal base for Kanha Zone safaris.
+      </p>
+    </section>
+
+    <Backlink       title="Kanha Accommodation Near Khatia Gate"
+      description="Looking for Kanha accommodation near Khatia Gate? Wildmark Resort offers the closest stays to the safari entry with complete packages and expert naturalist guides."
+      anchorText="Book Kanha Resort Near Khatia Gate"
+      ctaText="Kanha Resort Booking"
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-zones-guide-kanha-mukki-kisli-sarhi/"
+      primaryAnchor="Kanha Zone Safari Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Kanha Zone Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Zone Permit FAQ"
+    />
+
+    <h2>Kanha Zone Overview</h2>
+
+    <table>
+      <thead>
+        <tr><th>Feature</th><th>Details</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Access Gate</strong></td><td>Khatia Gate (main entry)</td></tr>
+        <tr><td><strong>Area</strong></td><td>~300 sq km</td></tr>
+        <tr><td><strong>Distance from Gate</strong></td><td>0-15 km inside park</td></tr>
+        <tr><td><strong>Tiger Population</strong></td><td>35-40 individuals</td></tr>
+        <tr><td><strong>Barasingha Population</strong></td><td>400+ (most of Kanha's herd)</td></tr>
+        <tr><td><strong>Terrain</strong></td><td>Open meadows, Sal forests, water sources</td></tr>
+        <tr><td><strong>Best For</strong></td><td>First-time visitors, photographers, Barasingha viewing</td></tr>
+        <tr><td><strong>Safari Difficulty</strong></td><td>Easy (close to gate, good roads)</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Iconic Meadows of Kanha Zone</h2>
+
+    <p>
+      Kanha Zone is famous for its meadows (locally called "dadars") that create the park's iconic landscape
+      featured in wildlife documentaries and photography.
+    </p>
+
+    <h3>Hallon Meadow</h3>
+    <p>
+      Hallon is one of Kanha's largest meadows and a prime location for tiger sightings. The open grassland
+      with surrounding Sal forest creates ideal tiger habitat. Hallon is particularly productive during
+      summer months when tigers rest in meadow edges and approach waterholes.
+    </p>
+
+    <h3>Banjar Meadow</h3>
+    <p>
+      Banjar meadow, drained by the Banjar River, attracts diverse wildlife including tigers, leopards,
+      Barasingha herds, and gaur. The river-edge habitat creates excellent photography opportunities with
+      water reflections and dramatic landscapes.
+    </p>
+
+    <h3>Sonph Meadow</h3>
+    <p>
+      Sonph is one of the best locations for Barasingha viewing, with large herds grazing in the open meadow
+      during morning hours. Tigers also frequent Sonph, creating dramatic wildlife interactions.
+    </p>
+
+    <h3>Maasahi Meadow</h3>
+    <p>
+      Maasahi (also called "Mausahi") is a smaller meadow but highly productive for wildlife sightings.
+      The compact size concentrates wildlife activity, making it easier to spot animals in shorter safari
+      durations.
+    </p>
+
+    <Backlink       title="Book Kanha Zone Safari"
+      description="Wildmark Resort near Khatia Gate offers morning and afternoon Kanha Zone safaris with permits, jeep, and expert naturalist guide included in package pricing."
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-zones-guide-kanha-mukki-kisli-sarhi/"
+      primaryAnchor="Kanha Zone Safari Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Kanha Zone Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Zone Permit FAQ"
+    />
+
+    <h2>Wildlife in Kanha Zone</h2>
+
+    <h3>Tigers (35-40)</h3>
+    <p>
+      Kanha Zone hosts 35-40 tigers distributed across the meadows and surrounding forests. Dominant
+      territories are centered around water sources and prime hunting grounds. Tigers here are accustomed
+      to safari vehicles and often produce excellent viewing opportunities.
+    </p>
+
+    <h3>Barasingha (400+)</h3>
+    <p>
+      The majority of Kanha's 800+ Barasingha population lives in Kanha Zone meadows. Herds of 10-30 animals
+      are commonly seen grazing in Sonph, Maasahi, Hallon, and Banjar. This is the only place in the world
+      to see hard-ground Barasingha.
+    </p>
+
+    <h3>Other Wildlife</h3>
+    <ul>
+      <li><strong>Leopards:</strong> 12-15 in forest-meadow edges</li>
+      <li><strong>Gaur:</strong> Large herds of 10-20 animals</li>
+      <li><strong>Chital and Sambar:</strong> Common prey species</li>
+      <li><strong>Wild Boar:</strong> Common in meadow edges</li>
+      <li><strong>Sloth Bears:</strong> Occasional sightings, especially summer</li>
+    </ul>
+
+    <h2>Best Safari Routes in Kanha Zone</h2>
+
+    <p>
+      Forest department guides typically follow established routes that maximize wildlife sighting potential:
+    </p>
+
+    <ol>
+      <li><strong>Hallon-Banjar Loop:</strong> Covers the largest meadows; best for tigers and Barasingha</li>
+      <li><strong>Sonph Circuit:</strong> Focuses on Sonph and Maasahi meadows; reliable Barasingha viewing</li>
+      <li><strong>Sulkum Dongar Route:</strong> Higher elevation route; leopards and forest species</li>
+      <li><strong>Waterhole Circuit:</strong> Visits multiple waterholes; excellent in summer</li>
+    </ol>
+
+    <h2>Best Time to Visit Kanha Zone</h2>
+
+    <table>
+      <thead>
+        <tr><th>Season</th><th>Months</th><th>Wildlife Activity</th><th>Recommendation</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Summer</td><td>Mar-May</td><td>Tigers at waterholes, Barasingha in meadows</td><td>Best overall</td></tr>
+        <tr><td>Winter</td><td>Nov-Feb</td><td>Pleasant weather, active wildlife</td><td>Best for comfort</td></tr>
+        <tr><td>Post-monsoon</td><td>Oct</td><td>Lush green, active wildlife</td><td>Best for photography</td></tr>
+        <tr><td>Monsoon</td><td>Jul-Sep</td><td>Park closed</td><td>Not applicable</td></tr>
+      </tbody>
+    </table>
+
+    <h2>How to Book Kanha Zone Safari</h2>
+
+    <p>
+      Kanha Zone safaris can be booked through two channels:
+    </p>
+
+    <h3>Option 1: Forest Department Portal</h3>
+    <p>
+      The Madhya Pradesh Forest Department portal (forest.mponline.gov.in) allows direct booking of Kanha
+      Zone permits. This requires separate arrangement of jeep and guide, typically through registered
+      jeep operators near Khatia Gate.
+    </p>
+
+    <h3>Option 2: Resort Package (Recommended)</h3>
+    <p>
+      Most mid-range and luxury resorts near Khatia Gate handle complete Kanha Zone safari bookings including
+      permits, jeep allocation, and guide coordination. Wildmark Resort offers this as part of their safari
+      packages with convenient resort-to-gate proximity (less than 1 km).
+    </p>
+
+    <h2>What to Expect on a Kanha Zone Safari</h2>
+
+    <p>
+      A typical Kanha Zone safari follows this pattern:
+    </p>
+
+    <ol>
+      <li><strong>5:30-6:00 AM:</strong> Pickup from resort, drive to Khatia Gate (5-10 minutes)</li>
+      <li><strong>6:00-6:15 AM:</strong> Entry formalities, permit verification, jeep assignment</li>
+      <li><strong>6:15-7:00 AM:</strong> Drive to core safari area, often reaching first meadow</li>
+      <li><strong>7:00-10:00 AM:</strong> Active wildlife viewing at meadows and waterholes</li>
+      <li><strong>10:00-10:30 AM:</strong> Return drive, often with birding stops</li>
+      <li><strong>10:30-11:00 AM:</strong> Exit park, return to resort for breakfast</li>
+    </ol>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

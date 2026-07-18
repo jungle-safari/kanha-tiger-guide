@@ -1,0 +1,305 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Safari Guide', href: '/safar-guide/' },
+  { label: 'Permits', href: '/safar-guide/permits/' }
+];
+
+const faqs = [
+  {
+    question: "Do I need a permit for Kanha safari?",
+    answer: "Yes, all visitors to Kanha's core zones require advance permits. Permits are zone-specific (Kanha, Kisli, Mukki, or Sarhi) and shift-specific (morning or afternoon). Permits can be obtained through the Madhya Pradesh Forest Department portal or via resort packages."
+  },
+  {
+    question: "How much does a Kanha safari permit cost?",
+    answer: "Permit costs vary by zone and nationality. Core zone permits cost approximately ₹X,XXX for Indian nationals and ₹X,XXX for foreign tourists per shift. Buffer zone permits are cheaper (₹XXX-₹X,XXX). Camera fees are additional (₹200 still, ₹1,500 video)."
+  },
+  {
+    question: "What documents are needed for a safari permit?",
+    answer: "Government-issued photo ID (Aadhaar, passport, driver's license, voter ID) for all participants is required. Foreign tourists need passport details. All visitors must be at least 5 years old. Personal details including name, age, gender, and nationality are needed for booking."
+  },
+  {
+    question: "Can permits be cancelled or transferred?",
+    answer: "Permits are generally non-transferable. Cancellation policies vary: typically 50% refund if cancelled 15+ days before safari date, 25% if 7-15 days, no refund within 7 days. Date changes are usually allowed subject to availability but may incur administrative fees."
+  },
+  {
+    question: "How many permits are issued per safari shift?",
+    answer: "Each zone has a fixed number of permits per shift (morning and afternoon). Permit limits are set by the Madhya Pradesh Forest Department to manage visitor pressure. Limited permits mean booking 30-60 days in advance is recommended, especially during peak season."
+  }
+];
+
+const relatedPages = [
+  { title: 'Safari Booking', description: 'How to book your safari', href: '/kanha-tiger-guide/safari-guide/booking/' },
+  { title: 'Safari Timings', description: 'Daily shift timings', href: '/kanha-tiger-guide/safari-guide/timings/' },
+  { title: 'Safari Pricing', description: 'Cost breakdown', href: '/kanha-tiger-guide/safari-guide/pricing/' },
+  { title: 'Jungle Safari', description: 'What to expect', href: '/kanha-tiger-guide/safari-guide/jungle-safari/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Safari Permits 2026 - Process, Costs & Requirements"
+  description="Complete guide to Kanha safari permits. How to obtain permits, costs for Indian and foreign tourists, required documents, and booking process explained."
+  keywords="kanha safari permits, kanha permit booking, kanha safari pass, kanha forest permit, kanha entry permit"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/permits/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha Safari Permits 2026 — Process, Costs & Requirements</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        Kanha safari permits are mandatory for entry to all core zones (Kanha, Kisli, Mukki, Sarhi) and
+        must be obtained in advance. Permits are issued by the Madhya Pradesh Forest Department through
+        their official portal (forest.mponline.gov.in) or via resort packages that handle the entire
+        process. Permit costs vary by zone and nationality, with Indian nationals paying approximately
+        ₹X,XXX per shift and foreign tourists paying 3-5x higher rates. Required documents include
+        government-issued photo ID for all participants. Wildmark Resort and other Khatia Gate properties
+        arrange permits as part of their safari packages, eliminating the need for visitors to navigate
+        the booking process independently.
+      </p>
+    </section>
+
+    <Backlink       title="Reserve Your Kanha Safari Holiday Package"
+      description="Plan your Kanha safari holiday with all-inclusive packages at Wildmark Resort. Includes AC rooms, multi-cuisine dining, swimming pool, and tiger safari permits."
+      anchorText="Reserve Kanha Safari Holiday"
+      ctaText="Kanha Tiger Safari Package 2026"
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      primaryAnchor="Kanha Safari Permits Guide"
+      secondaryUrl="https://kanhasafaristay.com/faq/"
+      secondaryAnchor="Kanha Safari Permit FAQ"
+      tertiaryUrl="https://kanhasafaristay.com/"
+      tertiaryAnchor="Book Kanha Safari with Permits"
+    />
+
+    <h2>Why Permits Are Required</h2>
+
+    <p>
+      Kanha National Park issues permits to:
+    </p>
+
+    <ul>
+      <li><strong>Limit visitor numbers:</strong> Protect wildlife from excessive disturbance</li>
+      <li><strong>Manage zones:</strong> Distribute visitors across four safari zones</li>
+      <li><strong>Track visitors:</strong> Ensure safety and accountability</li>
+      <li><strong>Generate conservation funds:</strong> Permit fees support park management and wildlife protection</li>
+      <li><strong>Maintain quality experience:</strong> Fewer vehicles mean better wildlife viewing</li>
+    </ul>
+
+    <h2>Permit Types at Kanha</h2>
+
+    <h3>Core Zone Permits</h3>
+    <p>
+      Required for entry to all four core zones: Kanha, Kisli, Mukki, and Sarhi. Each zone requires its
+      own permit. Limited permits per shift ensure quality wildlife viewing.
+    </p>
+
+    <h3>Buffer Zone Permits</h3>
+    <p>
+      Buffer zones surround the core areas and offer alternative wildlife viewing with fewer restrictions.
+      Cheaper than core zone permits and often available last-minute.
+    </p>
+
+    <h2>Permit Costs (2026)</h2>
+
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Indian Nationals</th><th>Foreign Tourists</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Core Zone Permit (per person, per shift)</td><td>₹X,XXX</td><td>₹X,XXX</td></tr>
+        <tr><td>Buffer Zone Permit (per person, per shift)</td><td>₹XXX</td><td>₹X,XXX</td></tr>
+        <tr><td>Guide Fee (mandatory)</td><td>₹XXX</td><td>₹XXX</td></tr>
+        <tr><td>Camera Fee (still photography)</td><td>₹200</td><td>₹200</td></tr>
+        <tr><td>Camera Fee (video)</td><td>₹1,500</td><td>₹1,500</td></tr>
+        <tr><td>Jeep Hire (6-seater, per safari)</td><td>₹X,XXX</td><td>₹X,XXX</td></tr>
+      </tbody>
+    </table>
+
+    <p class="text-sm italic">
+      Note: Permit rates are subject to change by the Madhya Pradesh Forest Department. Confirm current
+      rates at the time of booking.
+    </p>
+
+    <h2>Documents Required for Permits</h2>
+
+    <h3>For Indian Nationals</h3>
+    <ul>
+      <li>Government-issued photo ID (one of the following):
+        <ul>
+          <li>Aadhaar Card</li>
+          <li>Passport</li>
+          <li>Driver's License</li>
+          <li>Voter ID</li>
+          <li>PAN Card</li>
+        </ul>
+      </li>
+      <li>Personal details: Full name, age, gender, address</li>
+      <li>Mobile number and email address for booking</li>
+    </ul>
+
+    <h3>For Foreign Tourists</h3>
+    <ul>
+      <li>Valid passport</li>
+      <li>Visa details</li>
+      <li>Personal details: Full name (as in passport), age, gender, nationality</li>
+      <li>Email address and mobile number (international format)</li>
+    </ul>
+
+    <h3>Age Restrictions</h3>
+    <ul>
+      <li>Minimum age: 5 years (children below 5 not permitted in core zones)</li>
+      <li>Children 5-12 years: Reduced permit fees in some categories</li>
+      <li>No upper age limit, but elderly visitors should consider comfort factors</li>
+    </ul>
+
+    <Backlink       title="Skip Permit Hassle - Book Through Resort"
+      description="Wildmark Resort handles all permit arrangements as part of their safari packages. Provide ID proof, choose dates, and the resort takes care of the rest."
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      primaryAnchor="Kanha Safari Permits Guide"
+      secondaryUrl="https://kanhasafaristay.com/faq/"
+      secondaryAnchor="Kanha Safari Permit FAQ"
+      tertiaryUrl="https://kanhasafaristay.com/"
+      tertiaryAnchor="Book Kanha Safari with Permits"
+    />
+
+    <h2>How to Obtain Permits</h2>
+
+    <h3>Method 1: Forest Department Portal</h3>
+    <ol>
+      <li>Visit <strong>forest.mponline.gov.in</strong></li>
+      <li>Register with personal details and create account</li>
+      <li>Login and select Kanha National Park</li>
+      <li>Choose safari date, zone, and shift</li>
+      <li>Enter participant details and ID information</li>
+      <li>Pay online via credit/debit card, net banking, or UPI</li>
+      <li>Receive permit via email and SMS</li>
+    </ol>
+
+    <h3>Method 2: Resort Package</h3>
+    <ol>
+      <li>Book safari package with resort (e.g., Wildmark Resort)</li>
+      <li>Provide ID proof and participant details</li>
+      <li>Pay advance to confirm booking</li>
+      <li>Resort handles all permit arrangements</li>
+      <li>Receive confirmation before arrival</li>
+    </ol>
+
+    <h2>Permit Booking Window</h2>
+
+    <table>
+      <thead>
+        <tr><th>Period</th><th>Booking Window</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Standard booking</td><td>Up to 90 days before safari date</td></tr>
+        <tr><td>Peak season (recommended)</td><td>60-90 days advance</td></tr>
+        <tr><td>Shoulder season</td><td>30-60 days advance</td></tr>
+        <tr><td>Last-minute (subject to availability)</td><td>7-15 days advance</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Permit Cancellation Policy</h2>
+
+    <p>
+      Permit cancellation policies are typically:
+    </p>
+
+    <ul>
+      <li><strong>15+ days before safari:</strong> 50% refund</li>
+      <li><strong>7-15 days before:</strong> 25% refund</li>
+      <li><strong>Less than 7 days:</strong> No refund</li>
+      <li><strong>No-show:</strong> No refund</li>
+      <li><strong>Date change:</strong> Subject to availability, may incur admin fees</li>
+    </ul>
+
+    <p>
+      Resort packages may have slightly different cancellation terms. Always confirm before booking.
+    </p>
+
+    <h2>Multi-Zone Permits</h2>
+
+    <p>
+      Each zone requires a separate permit. Visitors wanting to experience multiple zones need:
+    </p>
+
+    <ul>
+      <li>Separate permit for each zone visited</li>
+      <li>Booking each zone through portal or resort</li>
+      <li>Additional time for transfers (especially to Mukki and Sarhi zones)</li>
+    </ul>
+
+    <p>
+      Most multi-zone visitors book through resorts for coordinated arrangements.
+    </p>
+
+    <h2>Permit Verification on Safari Day</h2>
+
+    <p>
+      On safari day, visitors must present:
+    </p>
+
+    <ol>
+      <li><strong>Valid Photo ID:</strong> Original or copy matching booking details</li>
+      <li><strong>Permit Confirmation:</strong> Email or SMS printout/digital copy</li>
+      <li><strong>Entry at Gate:</strong> Show documents to forest department staff at Khatia/Mukki/Sarhi Gate</li>
+    </ol>
+
+    <h2>Tips for Smooth Permit Booking</h2>
+
+    <ol>
+      <li><strong>Book early:</strong> Especially for peak season (December-February)</li>
+      <li><strong>Double-check ID details:</strong> Mismatched ID and booking details can cause entry denial</li>
+      <li><strong>Save confirmation:</strong> Keep email/SMS accessible for safari day</li>
+      <li><strong>Use resort booking:</strong> Recommended for hassle-free experience</li>
+      <li><strong>Carry multiple IDs:</strong> Backup identification in case of issues</li>
+    </ol>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

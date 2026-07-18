@@ -1,0 +1,276 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Safari Guide', href: '/safar-guide/' },
+  { label: 'Jungle Safari', href: '/safar-guide/jungle-safari/' }
+];
+
+const faqs = [
+  {
+    question: "What is a jungle safari at Kanha?",
+    answer: "A Kanha jungle safari is a guided 3-4 hour jeep tour through the park's core zones in open-top 4x4 vehicles with mandatory forest department guides. Visitors can spot tigers, leopards, Barasingha, gaur, and 300+ bird species. Safaris operate in morning (sunrise to 11 AM) and afternoon (3 PM to sunset) shifts daily during open season (October 1 to June 30)."
+  },
+  {
+    question: "Is Kanha jungle safari safe?",
+    answer: "Yes, Kanha jungle safaris are very safe. Visitors remain in vehicles at all times, accompanied by trained forest department guides. The park has strict protocols and the guides are experts in wildlife behavior. Incidents with safari visitors are extremely rare across decades of operation."
+  },
+  {
+    question: "What should I wear on a jungle safari?",
+    answer: "Wear neutral-colored clothing (olive, khaki, brown, beige) to blend with surroundings. Avoid bright colors, white, and red. Dress in layers for temperature variations (cool mornings, hot afternoons in summer). Comfortable closed-toe shoes, hat, sunglasses, and sunscreen are essential."
+  },
+  {
+    question: "Can I take children on jungle safaris?",
+    answer: "Children above 5 years can accompany adults on jungle safaris. Children below 5 are not permitted in core zones. Most resorts arrange family-friendly jeeps with cushioned seating and accommodate children with reduced fare for under-12s sharing with parents."
+  },
+  {
+    question: "What is the success rate of tiger sightings on jungle safaris?",
+    answer: "Tiger sighting success rates are 85-90% during peak season (March-May) for 3-safari packages, and 70-80% during winter (November-February). Morning safaris consistently outperform afternoon shifts across all seasons."
+  }
+];
+
+const relatedPages = [
+  { title: 'Safari Booking', description: 'How to book your Kanha safari', href: '/kanha-tiger-guide/safari-guide/booking/' },
+  { title: 'Permits', description: 'Permit process and requirements', href: '/kanha-tiger-guide/safari-guide/permits/' },
+  { title: 'Safari Timings', description: 'Daily shift timings and best times', href: '/kanha-tiger-guide/safari-guide/timings/' },
+  { title: 'Safari Pricing', description: 'Cost breakdown for safaris', href: '/kanha-tiger-guide/safari-guide/pricing/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Jungle Safari 2026 - What to Expect on a Safari"
+  description="Complete guide to jungle safari at Kanha National Park. What to expect, vehicle types, guides, safety, and tips for a great tiger safari experience."
+  keywords="kanha jungle safari, jungle safari kanha, kanha safari experience, kanha jeep safari, kanha wildlife safari"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/jungle-safari/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha Jungle Safari 2026 — What to Expect on a Safari</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        A <strong>Kanha jungle safari</strong> is a guided 3-4 hour jeep tour through the park's core zones in
+        open-top 4x4 vehicles with mandatory forest department guides. Each safari carries up to 6 passengers
+        plus driver and guide, with two shifts daily — morning (sunrise to ~11:00 AM) and afternoon
+        (~3:00 PM to sunset). Visitors can spot Bengal tigers, leopards, Barasingha, gaur, sloth bears, and
+        300+ bird species across Kanha's four zones. The safari experience combines adrenaline, natural beauty,
+        and expert interpretation by trained guides who know the park intimately. Wildmark Resort near Khatia
+        Gate serves as an ideal base for jungle safaris with packages including permits, jeep, guide, and
+        meals bundled together.
+      </p>
+    </section>
+
+    <Backlink       title="Kanha Accommodation Near Khatia Gate"
+      description="Looking for Kanha accommodation near Khatia Gate? Wildmark Resort offers the closest stays to the safari entry with complete packages and expert naturalist guides."
+      anchorText="Book Kanha Resort Near Khatia Gate"
+      ctaText="Kanha Resort Booking"
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      primaryAnchor="Kanha Jungle Safari Booking Guide"
+      secondaryUrl="https://kanhasafaristay.com/"
+      secondaryAnchor="Reserve Kanha Safari Package"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Safari FAQ"
+    />
+
+    <h2>What is a Kanha Jungle Safari?</h2>
+
+    <p>
+      A Kanha jungle safari is a structured wildlife viewing experience conducted under strict forest
+      department regulations. Unlike self-driven tours, all safaris use approved 4x4 vehicles with trained
+      guides assigned by the park.
+    </p>
+
+    <h3>Safari Format</h3>
+    <ul>
+      <li><strong>Duration:</strong> 3-4 hours per shift</li>
+      <li><strong>Vehicle:</strong> Open-top 4x4 jeeps (typically Mahindra Thar or Bolero Camper)</li>
+      <li><strong>Capacity:</strong> Maximum 6 passengers + driver + guide</li>
+      <li><strong>Shifts:</strong> Morning (sunrise to ~11 AM) and Afternoon (~3 PM to sunset)</li>
+      <li><strong>Guide:</strong> Mandatory forest department guide, assigned by rotation</li>
+    </ul>
+
+    <h3>What You'll See</h3>
+    <p>
+      Each safari offers opportunities to spot:
+    </p>
+
+    <ul>
+      <li><strong>Tigers:</strong> 125+ across the park, with 85-90% sighting chance during 3-safari packages</li>
+      <li><strong>Leopards:</strong> 40-50 individuals, particularly in Kisli and Kanha zones</li>
+      <li><strong>Barasingha:</strong> 800+ individuals, especially in Kanha Zone meadows</li>
+      <li><strong>Gaur:</strong> Large herds of India's largest bovine</li>
+      <li><strong>Sloth Bears:</strong> Common in summer months</li>
+      <li><strong>Wild Dogs:</strong> Endangered dholes in packs of 5-12</li>
+      <li><strong>Birds:</strong> 300+ species including raptors, woodpeckers, flycatchers</li>
+      <li><strong>Deer:</strong> Chital, sambar, nilgai, chausingha</li>
+    </ul>
+
+    <Backlink       title="Book Your Jungle Safari"
+      description="Wildmark Resort near Khatia Gate offers complete jungle safari packages with permits, jeep, expert guide, meals, and accommodation from ₹X,XXX per person."
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      primaryAnchor="Kanha Jungle Safari Booking Guide"
+      secondaryUrl="https://kanhasafaristay.com/"
+      secondaryAnchor="Reserve Kanha Safari Package"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Safari FAQ"
+    />
+
+    <h2>Safari Day Schedule</h2>
+
+    <h3>Morning Safari</h3>
+    <ol>
+      <li><strong>5:30 AM:</strong> Wake-up at resort, light breakfast</li>
+      <li><strong>5:45 AM:</strong> Departure from resort to Khatia Gate</li>
+      <li><strong>6:00 AM:</strong> Entry gate formalities and permit verification</li>
+      <li><strong>6:15 AM:</strong> Begin safari, drive to core wildlife area</li>
+      <li><strong>7:00-10:30 AM:</strong> Active wildlife viewing in meadows and forests</li>
+      <li><strong>10:30 AM:</strong> Exit through Khatia Gate</li>
+      <li><strong>11:00 AM:</strong> Return to resort for full breakfast</li>
+    </ol>
+
+    <h3>Afternoon Safari</h3>
+    <ol>
+      <li><strong>2:30 PM:</strong> Lunch at resort</li>
+      <li><strong>2:45 PM:</strong> Departure to Khatia Gate</li>
+      <li><strong>3:00 PM:</strong> Entry formalities</li>
+      <li><strong>3:15 PM:</strong> Begin safari</li>
+      <li><strong>4:00-6:00 PM:</strong> Wildlife viewing, particularly at waterholes</li>
+      <li><strong>6:15 PM:</strong> Exit park</li>
+      <li><strong>6:30 PM:</strong> Return to resort</li>
+    </ol>
+
+    <h2>Safari Vehicles</h2>
+
+    <p>
+      All Kanha jungle safaris use 4x4 open-top vehicles approved by the Madhya Pradesh Forest Department.
+      The most common vehicles are:
+    </p>
+
+    <h3>Mahindra Thar</h3>
+    <p>
+      The most popular safari vehicle at Kanha, the Thar offers comfortable seating for 6 passengers with
+      good visibility from all positions. Its robust 4x4 capability handles all park terrain types.
+    </p>
+
+    <h3>Bolero Camper</h3>
+    <p>
+      A larger vehicle often used for family or group bookings, with bench seating and a slightly elevated
+      viewing platform. Comfortable but slightly less agile than the Thar.
+    </p>
+
+    <h3>Open Gypsy</h3>
+    <p>
+      Traditional safari vehicle with maximum visibility. Less comfortable for long drives but offers the
+      best photography angles.
+    </p>
+
+    <h2>Forest Department Guides</h2>
+
+    <p>
+      Every Kanha jungle safari includes a mandatory forest department guide assigned by the park. These
+      guides are:
+    </p>
+
+    <ul>
+      <li><strong>Trained:</strong> Certified by the forest department with extensive training</li>
+      <li><strong>Local experts:</strong> Possess deep knowledge of animal behavior, tracks, and recent sightings</li>
+      <li><strong>Assigned by rotation:</strong> Different guides each safari, ensuring wide exposure</li>
+      <li><strong>Communicative:</strong> Share wildlife knowledge, conservation stories, and park history</li>
+      <li><strong>Responsible:</strong> Ensure safety, follow park rules, and interpret wildlife behavior</li>
+    </ul>
+
+    <h2>What to Bring on Safari</h2>
+
+    <h3>Essential Items</h3>
+    <ul>
+      <li>Valid photo ID (Aadhaar, passport, driver's license)</li>
+      <li>Camera with telephoto lens (200mm+ recommended)</li>
+      <li>Binoculars (8x42 or 10x42 ideal)</li>
+      <li>Hat and sunglasses</li>
+      <li>Sunscreen and insect repellent</li>
+      <li>Water bottle</li>
+      <li>Light snacks (long safaris can be tiring)</li>
+    </ul>
+
+    <h3>Clothing Recommendations</h3>
+    <ul>
+      <li>Neutral colors: olive, khaki, brown, beige</li>
+      <li>Layers for temperature variations</li>
+      <li>Closed-toe comfortable shoes</li>
+      <li>Light jacket for winter mornings</li>
+      <li>Avoid bright colors, white, and red</li>
+    </ul>
+
+    <h2>Safari Safety Rules</h2>
+
+    <ol>
+      <li><strong>Stay in vehicle:</strong> Never exit the jeep except at designated stops</li>
+      <li><strong>No flash photography:</strong> Use natural light only</li>
+      <li><strong>Maintain silence:</strong> Avoid loud noises that disturb wildlife</li>
+      <li><strong>No feeding:</strong> Never feed or attract wildlife</li>
+      <li><strong>Follow guide instructions:</strong> Guides know safe distances and behaviors</li>
+      <li><strong>Stay seated:</strong> Movement can spook animals and other visitors</li>
+      <li><strong>No smoking:</strong> Fire risk in dry forest areas</li>
+      <li><strong>Stay on tracks:</strong> Off-track driving is illegal</li>
+    </ol>
+
+    <h2>Tips for a Memorable Jungle Safari</h2>
+
+    <ol>
+      <li><strong>Take multiple safaris:</strong> Each shift and zone offers different opportunities</li>
+      <li><strong>Choose morning shifts:</strong> Better light and active wildlife</li>
+      <li><strong>Be patient:</strong> Some of the best sightings come after long waits</li>
+      <li><strong>Listen for alarm calls:</strong> Deer and langur alarm calls signal predator presence</li>
+      <li><strong>Trust your guide:</strong> They know the park and animal patterns</li>
+      <li><strong>Bring binoculars:</strong> Essential for distance viewing</li>
+      <li><strong>Stay quiet:</strong> The quieter you are, the more you'll see</li>
+    </ol>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

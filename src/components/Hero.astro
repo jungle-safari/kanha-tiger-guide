@@ -1,0 +1,12 @@
+---
+const { src, alt, caption, width = 'full', rounded = true, priority = false } = Astro.props;
+const imageSrc = src.startsWith('/') && !src.startsWith('//') ? `${import.meta.env.BASE_URL.replace(/\/$/, '')}${src}` : src;
+---
+
+<figure class={`my-8 ${width === 'narrow' ? 'max-w-3xl mx-auto' : ''}`}>
+  <div class="relative overflow-hidden rounded-xl bg-warm/10 dark:bg-midnight-lighter shadow-card dark:shadow-card">
+    <img src={imageSrc} alt={alt || ''} loading={priority ? 'eager' : 'lazy'} decoding="async" width="1200" height="675" class="w-full h-auto object-cover transition-all duration-500 hover:scale-[1.02]" onload="this.classList.add('loaded')" onerror="this.parentElement.classList.add('bg-warm/10','dark:bg-midnight-lighter');this.style.display='none';this.nextElementSibling.style.display='flex'" />
+    <noscript><img src={imageSrc} alt={alt || ''} class="w-full h-auto object-cover" /></noscript>
+  </div>
+  {caption && <figcaption class="text-sm text-warm dark:text-gray-400 italic text-center mt-2 px-2">{caption}</figcaption>}
+</figure>

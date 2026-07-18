@@ -1,0 +1,296 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Safari Guide', href: '/safar-guide/' },
+  { label: 'Pricing', href: '/safar-guide/pricing/' }
+];
+
+const faqs = [
+  {
+    question: "How much does a Kanha safari cost?",
+    answer: "A Kanha safari costs ₹X,XXX-₹X,XXX per person for Indian nationals and ₹X,XXX-₹X,XXX for foreign tourists per shift. This includes permit fee, jeep hire, and guide charge. Camera fees (₹200 still, ₹1,500 video) are additional. Resort packages with accommodation and meals range from ₹X,XXX-₹XX,XXX per person for multi-day stays."
+  },
+  {
+    question: "Are Kanha safari prices the same year-round?",
+    answer: "Safari permit fees are fixed year-round, but resort package prices vary by season. Peak season (October-March) commands 20-30% premium rates. Off-season (April-June) offers lower rates but hot weather. Some resorts offer discounts during monsoon for non-safari stays."
+  },
+  {
+    question: "What is included in safari pricing?",
+    answer: "Standard safari pricing includes: zone-specific permit, jeep hire (shared for 6 passengers), forest department guide fee, and entry fees. Camera fees, personal expenses, and tips are additional. Resort packages typically include accommodation, all meals, permits, jeep, and guide together."
+  },
+  {
+    question: "Can I get a discount on Kanha safari prices?",
+    answer: "Discounts are limited for forest department bookings, but resort packages often offer: early bird discounts (60+ days advance), group rates (4+ people), off-season pricing (April-June), and loyalty discounts for repeat visitors. Contact resorts directly for current offers."
+  }
+];
+
+const relatedPages = [
+  { title: 'Safari Booking', description: 'How to book your safari', href: '/kanha-tiger-guide/safari-guide/booking/' },
+  { title: 'Permits', description: 'Permit costs and process', href: '/kanha-tiger-guide/safari-guide/permits/' },
+  { title: 'Safari Timings', description: 'Shift timings', href: '/kanha-tiger-guide/safari-guide/timings/' },
+  { title: 'Resorts', description: 'Accommodation pricing', href: '/kanha-tiger-guide/resorts/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Safari Pricing 2026 - Cost Breakdown & Package Rates"
+  description="Complete Kanha safari pricing guide. Permit fees, jeep costs, guide charges, camera fees, and complete package rates for Indian and foreign tourists in 2026."
+  keywords="kanha safari price, kanha safari cost, kanha safari rates, kanha package price, kanha safari fees"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/pricing/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha Safari Pricing 2026 — Cost Breakdown & Package Rates</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        Kanha safari pricing consists of permit fees (₹X,XXX for Indian nationals, ₹X,XXX for foreign
+        tourists per shift), jeep hire (₹X,XXX per safari for up to 6 passengers), guide charges (₹XXX),
+        and camera fees (₹200 for still photography, ₹1,500 for video). Complete resort packages combining
+        safari with accommodation and meals start from ₹X,XXX per person for 2-night/3-day packages at
+        mid-range resorts like Wildmark Resort near Khatia Gate. Pricing varies by zone, season, and
+        accommodation tier, with peak season (October-March) commanding 20-30% premium rates over
+        off-season (April-June).
+      </p>
+    </section>
+
+    <Backlink       title="Book Kanha Tiger Safari Stay at Khatia Gate"
+      description="For the best Kanha tiger safari packages near Khatia Gate — including AC accommodation, all meals, forest permits, and guided jeep tours — check Kanha Safari Stay at Wildmark Resort."
+      anchorText="Book Kanha Tiger Safari Package"
+      ctaText="Reserve Kanha Resort Stay"
+      primaryUrl="https://kanhasafaristay.com/"
+      primaryAnchor="View Kanha Safari Package Prices"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Kanha Safari Cost Guide"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Safari Pricing FAQ"
+    />
+
+    <h2>Safari Cost Components</h2>
+
+    <p>
+      A Kanha safari booking typically involves these cost components:
+    </p>
+
+    <h3>Permit Fees</h3>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Indian Nationals</th><th>Foreign Tourists</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Core Zone Permit (per person, per shift)</td><td>₹X,XXX</td><td>₹X,XXX</td></tr>
+        <tr><td>Buffer Zone Permit (per person, per shift)</td><td>₹XXX</td><td>₹X,XXX</td></tr>
+        <tr><td>Children (5-12 years)</td><td>₹XXX (reduced)</td><td>₹X,XXX</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Vehicle and Guide</h3>
+    <table>
+      <thead>
+        <tr><th>Service</th><th>Cost</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Jeep Hire (6-seater, full safari)</td><td>₹X,XXX</td></tr>
+        <tr><td>Forest Department Guide (mandatory)</td><td>₹XXX</td></tr>
+        <tr><td>Private Jeep Upgrade</td><td>₹X,XXX extra</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Camera Fees</h3>
+    <table>
+      <thead>
+        <tr><th>Equipment</th><th>Fee</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Still Photography (camera)</td><td>₹200</td></tr>
+        <tr><td>Video Camera</td><td>₹1,500</td></tr>
+        <tr><td>Professional Camera (large lens)</td><td>₹X,XXX</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Per-Safari Cost Examples</h2>
+
+    <h3>Indian National — Shared Jeep (6 passengers)</h3>
+    <table>
+      <tbody>
+        <tr><td>Permit (1 person)</td><td>₹X,XXX</td></tr>
+        <tr><td>Jeep share (₹X,XXX / 6)</td><td>₹XXX</td></tr>
+        <tr><td>Guide fee (₹XXX / 6)</td><td>₹XX</td></tr>
+        <tr><td>Camera fee (still)</td><td>₹200</td></tr>
+        <tr class="font-bold bg-amber-50"><td>Total per person per safari</td><td>₹X,XXX</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Indian National — Private Jeep (couple)</h3>
+    <table>
+      <tbody>
+        <tr><td>Permit (2 persons × ₹X,XXX)</td><td>₹X,XXX</td></tr>
+        <tr><td>Private Jeep</td><td>₹X,XXX</td></tr>
+        <tr><td>Guide fee</td><td>₹XXX</td></tr>
+        <tr><td>Camera fee (still)</td><td>₹200</td></tr>
+        <tr class="font-bold bg-amber-50"><td>Total per couple per safari</td><td>₹X,XXX</td></tr>
+      </tbody>
+    </table>
+
+    <Backlink       title="Check Current Package Pricing"
+      description="Wildmark Resort offers complete safari packages starting from ₹X,XXX per person for 2-night/3-day stays. Includes permits, jeep, guide, meals, and accommodation."
+      primaryUrl="https://kanhasafaristay.com/"
+      primaryAnchor="View Kanha Safari Package Prices"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Kanha Safari Cost Guide"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Safari Pricing FAQ"
+    />
+
+    <h2>Complete Package Pricing</h2>
+
+    <p>
+      Most visitors book complete packages combining safaris with accommodation and meals. Typical package
+      pricing at Wildmark Resort (mid-range):
+    </p>
+
+    <table>
+      <thead>
+        <tr><th>Package</th><th>Nights</th><th>Safaris</th><th>Per Person (Twin Share)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Quick Safari</td><td>1N/2D</td><td>2</td><td>₹X,XXX</td></tr>
+        <tr><td>Classic Kanha</td><td>2N/3D</td><td>3</td><td>₹X,XXX</td></tr>
+        <tr><td>Premium Kanha</td><td>3N/4D</td><td>4-5</td><td>₹XX,XXX</td></tr>
+        <tr><td>Multi-Zone Explorer</td><td>4N/5D</td><td>6-7</td><td>₹XX,XXX</td></tr>
+        <tr><td>Tiger Circuit</td><td>6N/7D</td><td>9</td><td>₹XX,XXX</td></tr>
+      </tbody>
+    </table>
+
+    <p class="text-sm italic">
+      Package pricing varies by season, room type, and number of safari zones. Contact Wildmark Resort
+      directly for current rates and customization options.
+    </p>
+
+    <h2>Seasonal Price Variations</h2>
+
+    <table>
+      <thead>
+        <tr><th>Season</th><th>Months</th><th>Price Premium</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Peak Season</td><td>October-March</td><td>+20-30%</td></tr>
+        <tr><td>Summer</td><td>April-June</td><td>Standard rates</td></tr>
+        <tr><td>Post-Monsoon</td><td>Early October</td><td>Standard rates</td></tr>
+        <tr><td>Monsoon</td><td>July-September</td><td>-40-60% (resort only, no safaris)</td></tr>
+      </tbody>
+    </table>
+
+    <h2>What's Included vs Extra</h2>
+
+    <h3>Included in Standard Safari</h3>
+    <ul>
+      <li>Zone-specific permit</li>
+      <li>Jeep hire (shared or private)</li>
+      <li>Forest department guide</li>
+      <li>Park entry fees</li>
+    </ul>
+
+    <h3>Included in Resort Packages</h3>
+      <ul>
+        <li>All standard safari inclusions</li>
+        <li>Accommodation (chosen room type)</li>
+        <li>All meals (breakfast, lunch, dinner)</li>
+        <li>Resort amenities (pool, restaurant, etc.)</li>
+        <li>Permit booking assistance</li>
+        <li>Pickup/drop arrangements (some packages)</li>
+      </ul>
+
+    <h3>NOT Included (Extra Charges)</h3>
+    <ul>
+      <li>Camera fees (₹200-₹1,500)</li>
+      <li>Personal expenses and tips</li>
+      <li>Travel insurance</li>
+      <li>Air/train tickets to Jabalpur</li>
+      <li>Alcoholic beverages</li>
+      <li>Extra safaris beyond package</li>
+      <li>Spa, laundry, and other personal services</li>
+    </ul>
+
+    <h2>Price Comparison: Direct vs Package</h2>
+
+    <table>
+      <thead>
+        <tr><th>Component</th><th>Direct Booking</th><th>Resort Package</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Permit (3 safaris)</td><td>₹X,XXX × 3 = ₹X,XXX</td><td>Included</td></tr>
+        <tr><td>Jeep (3 safaris)</td><td>₹X,XXX × 3 = ₹X,XXX</td><td>Included</td></tr>
+        <tr><td>Guide (3 safaris)</td><td>₹XXX × 3 = ₹X,XXX</td><td>Included</td></tr>
+        <tr><td>Accommodation (2 nights)</td><td>₹X,XXX - ₹XX,XXX</td><td>Included</td></tr>
+        <tr><td>Meals (6 meals)</td><td>₹X,XXX - ₹X,XXX</td><td>Included</td></tr>
+        <tr><td>Coordination</td><td>Self-managed</td><td>Resort handles</td></tr>
+        <tr><td class="font-bold">Total (approx)</td><td>₹XX,XXX</td><td>₹XX,XXX - ₹XX,XXX</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      Resort packages often provide better value and significantly less hassle, especially for first-time
+      visitors.
+    </p>
+
+    <h2>Money-Saving Tips</h2>
+
+    <ol>
+      <li><strong>Travel in groups:</strong> 4-6 people can share jeeps for lower per-person costs</li>
+      <li><strong>Book off-season:</strong> April-June offers lower rates with good tiger sightings</li>
+      <li><strong>Choose mid-range resorts:</strong> Best value vs luxury for most travelers</li>
+      <li><strong>Book in advance:</strong> Early bird discounts available at most resorts</li>
+      <li><strong>Combine zones:</strong> Multi-zone packages more efficient than separate bookings</li>
+      <li><strong>Avoid peak holidays:</strong> Diwali, Christmas, New Year command premium pricing</li>
+    </ol>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

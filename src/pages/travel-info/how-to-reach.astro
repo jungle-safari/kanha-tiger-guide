@@ -1,0 +1,310 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Travel Info', href: '/travel-info/' },
+  { label: 'How to Reach', href: '/travel-info/how-to-reach/' }
+];
+
+const faqs = [
+  {
+    question: "What is the nearest airport to Kanha National Park?",
+    answer: "The nearest airport to Kanha is Jabalpur (JLR) at 165 km (4 hours by road). Nagpur (NAG) at 250 km (5-6 hours) is the second option with more international and domestic flight connectivity. Raipur (RPR) at 220 km is another alternative. Jabalpur has direct flights from Delhi, Mumbai, Hyderabad, and Bhopal."
+  },
+  {
+    question: "Which is the nearest railway station to Kanha?",
+    answer: "The nearest major railway station is Jabalpur Junction (JBP) at 165 km, which connects to virtually every major Indian city via express trains. Gondia Junction (G) at 120 km is closer but has fewer train options. Mandla at 90 km has very limited train connectivity. Most visitors arrive at Jabalpur and hire taxis for the final drive."
+  },
+  {
+    question: "How do I reach Kanha from Delhi or Mumbai?",
+    answer: "From Delhi or Mumbai, fly to Jabalpur (best option, 2-3 hours direct flight) and hire a taxi for the 4-hour drive. Alternatively, take an overnight train to Jabalpur Junction (15-18 hours from Delhi, 12-14 hours from Mumbai) followed by a taxi. Self-drive is possible but 1,000+ km with 18-20 hours driving time."
+  },
+  {
+    question: "Can I take a state bus to Kanha?",
+    answer: "State buses run from Jabalpur and Mandla to Khatiya village near Khatia Gate. However, the service is limited, schedules can be unpredictable, and the journey takes 5-6 hours. Most visitors prefer private taxis for comfort and reliability. Wildmark Resort and other properties can arrange pickup services from Jabalpur or Nagpur."
+  }
+];
+
+const relatedPages = [
+  { title: 'Best Time to Visit', description: 'Seasonal guide', href: '/kanha-tiger-guide/travel-info/best-time/' },
+  { title: 'Places Near Kanha', description: 'Nearby attractions', href: '/kanha-tiger-guide/travel-info/places-near/' },
+  { title: 'Travel Info', description: 'Complete travel guide', href: '/kanha-tiger-guide/travel-info/' },
+  { title: 'Resorts', description: 'Accommodation near Khatia', href: '/kanha-tiger-guide/resorts/' }
+];
+---
+
+<BaseLayout
+  title="How to Reach Kanha National Park 2026 - Air, Train & Road Guide"
+  description="Complete guide on how to reach Kanha National Park from major Indian cities. Best airports, railway stations, road routes, and transfer options to Khatia Gate."
+  keywords="how to reach kanha, kanha airport, kanha railway station, kanha distance, kanha transport, jabalpur to kanha"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/travel-info/how-to-reach/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>How to Reach Kanha National Park 2026 — Air, Train & Road Guide</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        Kanha National Park is accessible by air, train, and road from major Indian cities. The nearest
+        airport is <strong>Jabalpur (JLR)</strong> at 165 km (4 hours by taxi), with Jabalpur Junction
+        railway station at the same distance and Gondia Junction at 120 km. From Jabalpur, the most
+        convenient option is to hire a private taxi for the scenic 4-hour drive to Khatia Gate through
+        Mandla. Wildmark Resort and other properties near Khatia Gate offer pickup services from
+        Jabalpur Airport and Jabalpur Junction for ₹2,500-₹4,000. For travelers from Mumbai or Delhi,
+        flying to Jabalpur is the most efficient option, while train travel offers good value for those
+        with flexible schedules.
+      </p>
+    </section>
+
+    <Backlink       title="Kanha Accommodation Near Khatia Gate"
+      description="Looking for Kanha accommodation near Khatia Gate? Wildmark Resort offers the closest stays to the safari entry with complete packages and expert naturalist guides."
+      anchorText="Book Kanha Resort Near Khatia Gate"
+      ctaText="Kanha Resort Booking"
+      primaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      primaryAnchor="Kanha Travel & Timing Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Kanha Safari Transfer"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Travel FAQ"
+    />
+
+    <h2>Reaching Kanha by Air</h2>
+
+    <h3>Nearest Airports</h3>
+
+    <table>
+      <thead>
+        <tr><th>Airport</th><th>Code</th><th>Distance</th><th>Drive Time</th><th>Best For</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Jabalpur Airport</td><td>JLR</td><td>165 km</td><td>4 hours</td><td>Most travelers</td></tr>
+        <tr><td>Nagpur Airport</td><td>NAG</td><td>250 km</td><td>5-6 hours</td><td>Mumbai, international</td></tr>
+        <tr><td>Raipur Airport</td><td>RPR</td><td>220 km</td><td>5 hours</td><td>East India travelers</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Jabalpur Airport (JLR) — Recommended</h3>
+    <p>
+      Jabalpur is the most convenient airport for Kanha access:
+    </p>
+
+    <ul>
+      <li><strong>Direct Flights From:</strong> Delhi, Mumbai, Hyderabad, Bhopal</li>
+      <li><strong>Airlines:</strong> IndiGo, SpiceJet, Air India, Alliance Air</li>
+      <li><strong>Flight Duration:</strong> 1.5-3 hours from major cities</li>
+      <li><strong>Distance to Kanha:</strong> 165 km (4 hours by road)</li>
+      <li><strong>Transfer Cost:</strong> ₹2,500-₹4,000 by taxi</li>
+    </ul>
+
+    <h3>Nagpur Airport (NAG) — Alternative</h3>
+    <p>
+      Nagpur offers wider flight connectivity but longer drive:
+    </p>
+
+    <ul>
+      <li><strong>Direct Flights From:</strong> Mumbai, Delhi, Pune, Hyderabad, Bangalore</li>
+      <li><strong>International Connections:</strong> Some Middle East and SE Asia routes</li>
+      <li><strong>Flight Duration:</strong> 2-3 hours from major cities</li>
+      <li><strong>Distance to Kanha:</strong> 250 km (5-6 hours by road)</li>
+      <li><strong>Transfer Cost:</strong> ₹4,000-₹6,000 by taxi</li>
+    </ul>
+
+    <Backlink       title="Book Airport Transfers"
+      description="Wildmark Resort offers reliable pickup services from Jabalpur (₹2,500-₹4,000) and Nagpur (₹4,000-₹6,000) airports. Pre-book with your stay package."
+      primaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      primaryAnchor="Kanha Travel & Timing Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Kanha Safari Transfer"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Travel FAQ"
+    />
+
+    <h2>Reaching Kanha by Train</h2>
+
+    <h3>Nearest Railway Stations</h3>
+
+    <table>
+      <thead>
+        <tr><th>Station</th><th>Code</th><th>Distance</th><th>Connectivity</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Jabalpur Junction</td><td>JBP</td><td>165 km</td><td>All major Indian cities</td></tr>
+        <tr><td>Gondia Junction</td><td>G</td><td>120 km</td><td>Mumbai, Kolkata, Nagpur</td></tr>
+        <tr><td>Mandla</td><td>MDL</td><td>90 km</td><td>Limited local trains</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Jabalpur Junction (JBP) — Recommended</h3>
+    <p>
+      Jabalpur Junction is the most convenient railway station for Kanha access:
+    </p>
+
+    <ul>
+      <li><strong>Major Trains From:</strong> Delhi, Mumbai, Kolkata, Chennai, Bangalore</li>
+      <li><strong>Journey Time:</strong> 12-18 hours from Delhi/Mumbai</li>
+      <li><strong>Train Classes:</strong> Rajdhani, Shatabdi, Duronto, Express available</li>
+      <li><strong>Distance to Kanha:</strong> 165 km (4 hours by taxi)</li>
+      <li><strong>Transfer Cost:</strong> ₹2,500-₹3,500 by taxi</li>
+    </ul>
+
+    <h3>Gondia Junction (G) — Closer Alternative</h3>
+    <p>
+      Gondia Junction is closer to Kanha but has fewer train options:
+    </p>
+
+    <ul>
+      <li><strong>Major Trains From:</strong> Mumbai, Kolkata, Nagpur</li>
+      <li><strong>Journey Time:</strong> 10-14 hours from Mumbai</li>
+      <li><strong>Distance to Kanha:</strong> 120 km (3 hours by taxi)</li>
+      <li><strong>Transfer Cost:</strong> ₹2,000-₹2,500 by taxi</li>
+    </ul>
+
+    <h2>Reaching Kanha by Road</h2>
+
+    <h3>Road Distances from Major Cities</h3>
+
+    <table>
+      <thead>
+        <tr><th>City</th><th>Distance</th><th>Drive Time</th><th>Route</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Jabalpur</td><td>165 km</td><td>4 hours</td><td>Via Mandla (SH-26)</td></tr>
+        <tr><td>Nagpur</td><td>250 km</td><td>5-6 hours</td><td>Via Seoni (NH-44)</td></tr>
+        <tr><td>Raipur</td><td>220 km</td><td>5 hours</td><td>Via Mandla</td></tr>
+        <tr><td>Mandla</td><td>90 km</td><td>2 hours</td><td>SH-26</td></tr>
+        <tr><td>Bhopal</td><td>450 km</td><td>8-9 hours</td><td>Via Jabalpur</td></tr>
+        <tr><td>Indore</td><td>530 km</td><td>10 hours</td><td>Via Bhopal-Jabalpur</td></tr>
+        <tr><td>Delhi</td><td>1,000 km</td><td>18-20 hours</td><td>Via Bhopal-Jabalpur</td></tr>
+        <tr><td>Mumbai</td><td>950 km</td><td>16-18 hours</td><td>Via Nagpur</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Best Road Routes</h3>
+
+    <h4>From Jabalpur (Most Common)</h4>
+    <ol>
+      <li>Take NH-30 from Jabalpur towards Mandla</li>
+      <li>Continue on SH-26 to Mandla (90 km)</li>
+      <li>Continue on SH-26 towards Kanha</li>
+      <li>Arrive at Khatia Gate (75 km from Mandla)</li>
+      <li>Total: 165 km, approximately 4 hours</li>
+    </ol>
+
+    <h4>From Nagpur</h4>
+    <ol>
+      <li>Take NH-44 south from Nagpur</li>
+      <li>Continue through Seoni (130 km)</li>
+      <li>Turn towards Kanha via state highway</li>
+      <li>Arrive at Khatia Gate</li>
+      <li>Total: 250 km, approximately 5-6 hours</li>
+    </ol>
+
+    <h3>Self-Drive Tips</h3>
+    <ul>
+      <li><strong>Vehicle:</strong> Any vehicle suitable for highways; last 30 km can be rough</li>
+      <li><strong>Best Time to Drive:</strong> Daytime travel only (avoid night driving)</li>
+      <li><strong>Fuel:</strong> Last reliable pumps at Mandla and Nainpur</li>
+      <li><strong>Road Condition:</strong> Good highways, occasional rough patches near park</li>
+      <li><strong>Parking:</strong> Available at most resorts including Wildmark Resort</li>
+    </ul>
+
+    <h2>Transfer Options from Major Points</h2>
+
+    <h3>From Jabalpur Airport/Station to Khatia Gate</h3>
+
+    <table>
+      <thead>
+        <tr><th>Option</th><th>Cost</th><th>Duration</th><th>Booking</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Resort Taxi (Sedan)</td><td>₹2,500-₹3,500</td><td>4 hours</td><td>Pre-book via resort</td></tr>
+        <tr><td>Resort Taxi (SUV)</td><td>₹3,500-₹4,500</td><td>4 hours</td><td>Pre-book via resort</td></tr>
+        <tr><td>Local Taxi (Non-AC)</td><td>₹2,000-₹2,500</td><td>4 hours</td><td>On arrival</td></tr>
+        <tr><td>Shared Jeep</td><td>₹500-₹800/person</td><td>5 hours</td><td>Limited availability</td></tr>
+        <tr><td>State Bus to Mandla + Local Taxi</td><td>₹300-₹500</td><td>6-7 hours</td><td>MP Transport</td></tr>
+      </tbody>
+    </table>
+
+    <h3>From Nagpur to Khatia Gate</h3>
+    <table>
+      <thead>
+        <tr><th>Option</th><th>Cost</th><th>Duration</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Resort Taxi (Sedan)</td><td>₹4,000-₹5,000</td><td>5-6 hours</td></tr>
+        <tr><td>Resort Taxi (SUV)</td><td>₹5,000-₹6,000</td><td>5-6 hours</td></tr>
+        <tr><td>Train to Gondia + Taxi</td><td>₹500 + ₹2,000</td><td>4-5 hours total</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Recommended Travel Combinations</h2>
+
+    <h3>From Delhi</h3>
+    <ol>
+      <li>Fly Delhi to Jabalpur (2-3 hours direct)</li>
+      <li>Taxi Jabalpur to Khatia Gate (4 hours)</li>
+      <li>Total travel time: 6-7 hours</li>
+    </ol>
+
+    <h3>From Mumbai</h3>
+    <ol>
+      <li>Fly Mumbai to Nagpur (2 hours direct)</li>
+      <li>Taxi Nagpur to Khatia Gate (5-6 hours)</li>
+      <li>Total travel time: 7-8 hours</li>
+    </ol>
+
+    <h3>Budget Option from Delhi/Mumbai</h3>
+    <ol>
+      <li>Train to Jabalpur Junction (overnight, 12-18 hours)</li>
+      <li>Taxi Jabalpur to Khatia Gate (4 hours)</li>
+      <li>Total travel time: 16-22 hours (saves money but adds time)</li>
+    </ol>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

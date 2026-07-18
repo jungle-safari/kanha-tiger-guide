@@ -1,0 +1,271 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Wildlife', href: '/wildlife/' },
+  { label: 'Barasingha', href: '/wildlife/barasingha/' }
+];
+
+const faqs = [
+  {
+    question: "What is Barasingha and why is it famous at Kanha?",
+    answer: "Barasingha (Rucervus duvaucelii), or swamp deer, is a deer species famous at Kanha because the park hosts the only population of the hard-ground subspecies (R. d. branderi) in the world. By 1970, the population had crashed to just 66 animals. Through dedicated conservation, Kanha revived the subspecies to 800+ individuals today, making it one of the world's most successful ungulate conservation stories."
+  },
+  {
+    question: "How many Barasingha are at Kanha?",
+    answer: "As of 2024, Kanha's hard-ground Barasingha population stands at approximately 800-850 individuals, recovered from a low of 66 animals in 1970. The subspecies exists ONLY at Kanha, making the park the global stronghold for this unique deer."
+  },
+  {
+    question: "Where can I see Barasingha at Kanha?",
+    answer: "Barasingha herds are commonly spotted in Kanha Zone meadows, particularly around Sonph, Maasahi, Hallon, and Banjar meadows. They graze in open grasslands during morning and late afternoon, making them easy to observe during regular safaris. Kisli Zone also has Barasingha populations in its forest-meadow edges."
+  },
+  {
+    question: "What is special about Kanha's Barasingha?",
+    answer: "Kanha's Barasingha is the hard-ground subspecies (Rucervus duvaucelii branderi), distinguished from soft-ground Barasingha (found in other parts of India) by its unique hard hooves adapted for hard ground rather than swampy terrain. This adaptation makes Kanha's Barasingha unique in the world and explains why it couldn't survive outside the park."
+  },
+  {
+    question: "When is the best time to see Barasingha at Kanha?",
+    answer: "Barasingha are visible year-round at Kanha, but they are most active and visible during cooler months (November-February) when they graze in meadows during morning and late afternoon. Summer months (March-May) also produce good sightings as herds concentrate near remaining water sources. During rutting season (October-November), males are particularly visible with antler displays and territorial behavior."
+  }
+];
+
+const relatedPages = [
+  { title: 'Tigers', description: 'The apex predator of Kanha', href: '/kanha-tiger-guide/wildlife/tigers/' },
+  { title: 'Leopards', description: 'The other big cat', href: '/kanha-tiger-guide/wildlife/leopards/' },
+  { title: 'Birds', description: '300+ species at Kanha', href: '/kanha-tiger-guide/wildlife/birds/' },
+  { title: 'Kanha Zone', description: 'Core meadows and Barasingha habitat', href: '/kanha-tiger-guide/safari-zones/kanha-zone/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Barasingha 2026 - The Swamp Deer Conservation Success Story"
+  description="The complete story of Barasingha (swamp deer) at Kanha National Park. Population recovery from 66 to 800+, hard-ground subspecies, conservation history, and where to see them."
+  keywords="kanha barasingha, swamp deer kanha, hard ground barasingha, kanha deer species, barasingha conservation"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/wildlife/barasingha/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha Barasingha 2026 — The Swamp Deer Conservation Success Story</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <Hero
+      src="/images/Untitled-design-3.webp"
+      alt="Hard-ground Barasingha (swamp deer) in Kanha National Park meadows"
+      caption="Kanha's Barasingha population recovered from 66 animals in 1970 to 800+ today"
+    />
+
+    <section class="answer-block">
+      <p>
+        Kanha's Barasingha (Rucervus duvaucelii branderi), also called the swamp deer, is a unique hard-ground
+        subspecies found <strong>only at Kanha National Park</strong>. By 1970, the population had crashed to
+        just <strong>66 animals</strong> due to habitat loss and disease, threatening extinction. Through
+        dedicated conservation efforts including habitat management, veterinary care, and breeding programs,
+        the population has recovered to approximately <strong>800-850 individuals</strong> today. Herds are
+        commonly spotted grazing in Kanha Zone meadows, particularly around Sonph, Maasahi, Hallon, and Banjar.
+        This recovery represents one of the world's most successful ungulate conservation stories and remains
+        a flagship achievement for Kanha alongside tiger conservation.
+      </p>
+    </section>
+
+    <Backlink       title="Plan Your Kanha Jungle Safari Package"
+      description="Looking for complete Kanha jungle safari packages with accommodation, meals, and forest permits? Wildmark Resort near Khatia Gate offers all-inclusive Kanha safari booking."
+      anchorText="Book Kanha Jungle Safari Package"
+      ctaText="Kanha Safari Booking Online"
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Barasingha Wildlife Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      secondaryAnchor="Best Time for Kanha Barasingha"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Wildlife FAQ"
+    />
+
+    <h2>What is Barasingha?</h2>
+
+    <p>
+      Barasingha (Rucervus duvaucelii) means "twelve-horned" in Hindi, referring to the typical antler count of
+      males (which can have 10-14 tines). The species is divided into three subspecies:
+    </p>
+
+    <ul>
+      <li><strong>Hard-ground Barasingha (R. d. branderi):</strong> Found ONLY at Kanha; adapted for hard ground</li>
+      <li><strong>Soft-ground Barasingha (R. d. duvaucelii):</strong> Found in Uttar Pradesh, Madhya Pradesh, Assam</li>
+      <li><strong>Eastern Swamp Deer (R. d. ranjitsinhi):</strong> Found only in Manas (Assam), critically endangered</li>
+    </ul>
+
+    <p>
+      Kanha's hard-ground subspecies is distinguished by its unique hard hooves adapted for the park's hard,
+      dry meadows rather than the swampy habitats that soft-ground Barasingha prefer. This adaptation made the
+      Kanha population particularly vulnerable when meadows began degrading.
+    </p>
+
+    <h2>The Barasingha Conservation Story</h2>
+
+    <p>
+      The Barasingha conservation story at Kanha is one of the most remarkable species recovery efforts in
+      conservation history.
+    </p>
+
+    <h3>Pre-1970 Crisis</h3>
+    <p>
+      Before focused conservation efforts, Kanha's Barasingha population declined precipitously. Habitat
+      degradation from grazing, fire, and vegetation succession reduced the open meadows that Barasingha
+      depend on. By 1970, only <strong>66 animals</strong> remained — a critical low that threatened the
+      entire subspecies with extinction.
+    </p>
+
+    <h3>Conservation Interventions (1970-Present)</h3>
+    <p>
+      Kanha's forest department and conservation partners implemented a multi-pronged recovery strategy:
+    </p>
+
+    <ol>
+      <li><strong>Meadow management:</strong> Controlled burning, grass cutting, and grazing management to maintain open meadow habitats</li>
+      <li><strong>Veterinary care:</strong> Treatment of diseased animals, parasite control, and captive breeding for injured individuals</li>
+      <li><strong>Habitat expansion:</strong> Restoration of degraded meadows to create new grazing areas</li>
+      <li><strong>Predator-prey balance:</strong> Management of tiger and leopard predation pressure</li>
+      <li><strong>Research and monitoring:</strong> Scientific tracking, population censuses, and genetic studies</li>
+    </ol>
+
+    <h3>Population Recovery Timeline</h3>
+
+    <table>
+      <thead>
+        <tr><th>Year</th><th>Population</th><th>Key Event</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1970</td><td>66</td><td>Crisis low; conservation intervention begins</td></tr>
+        <tr><td>1980</td><td>120</td><td>First major recovery milestone</td></tr>
+        <tr><td>1990</td><td>300+</td><td>Population crosses crisis threshold</td></tr>
+        <tr><td>2000</td><td>500+</td><td>Subspecies considered safe</td></tr>
+        <tr><td>2010</td><td>700+</td><td>Stable, growing population</td></tr>
+        <tr><td>2024</td><td>800-850</td><td>Conservation success established</td></tr>
+      </tbody>
+    </table>
+
+    <Backlink       title="See Barasingha on Kanha Safari"
+      description="Wildmark Resort near Khatia Gate offers morning safaris to Kanha Zone meadows where Barasingha herds are commonly spotted. Multi-day packages available."
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Barasingha Wildlife Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      secondaryAnchor="Best Time for Kanha Barasingha"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Wildlife FAQ"
+    />
+
+    <h2>Where to See Barasingha at Kanha</h2>
+
+    <p>
+      Barasingha are most easily spotted in <strong>Kanha Zone meadows</strong>, accessed via the main Khatia
+      Gate. The park's iconic meadows attract herds of Barasingha that graze in open grasslands, particularly
+      during morning and late afternoon hours.
+    </p>
+
+    <h3>Top Barasingha Viewing Locations</h3>
+    <ul>
+      <li><strong>Sonph Meadow:</strong> Reliable Barasingha sightings, especially during summer</li>
+      <li><strong>Maasahi Meadow:</strong> Smaller herds, excellent photography</li>
+      <li><strong>Hallon Meadow:</strong> Large herds, scenic landscapes</li>
+      <li><strong>Banjar Meadow:</strong> Mixed herds with chital and sambar</li>
+      <li><strong>Kisli Zone Edges:</strong> Forest-meadow transition areas</li>
+    </ul>
+
+    <h2>Barasingha Behavior and Biology</h2>
+
+    <h3>Physical Characteristics</h3>
+    <p>
+      Adult male Barasingha stand 130-140 cm at the shoulder and weigh 170-200 kg. Their most distinctive
+      feature is the multi-tined antlers (typically 10-14 tines, sometimes up to 20). Females are smaller,
+      weighing 120-150 kg, and generally antlerless.
+    </p>
+
+    <h3>Social Behavior</h3>
+    <p>
+      Barasingha live in herds typically ranging from 5-30 animals. Herds are matriarchal, with dominant females
+      leading grazing patterns. Males join herds during rutting season (October-November) and form bachelor
+      groups outside breeding periods.
+    </p>
+
+    <h3>Diet and Grazing</h3>
+    <p>
+      Barasingha are grazers, primarily feeding on grasses, herbs, and aquatic plants. Their preference for
+      short, fresh grass makes them dependent on well-managed meadows. They typically graze during morning
+      and late afternoon, resting in shaded forest edges during midday heat.
+    </p>
+
+    <h3>Reproduction</h3>
+    <p>
+      Barasingha breed from October to February, with peak activity in November-December. After a gestation
+      period of approximately 240-270 days, females give birth to one or two fawns between June and August.
+      Fawns remain hidden in vegetation for the first few weeks before joining the herd.
+    </p>
+
+    <h2>Conservation Status</h2>
+
+    <p>
+      The hard-ground Barasingha is classified as <strong>Vulnerable</strong> by the IUCN, with the entire
+      global population existing within Kanha National Park. While the population has recovered significantly,
+      the subspecies remains entirely dependent on Kanha's continued habitat management. Any major habitat
+      disruption — disease outbreak, catastrophic fire, or significant predator imbalance — could threaten
+      the population again.
+    </p>
+
+    <h2>Best Time to See Barasingha</h2>
+
+    <p>
+      Barasingha are visible year-round at Kanha, but certain seasons offer better viewing opportunities:
+    </p>
+
+    <ul>
+      <li><strong>Winter (November-February):</strong> Cool weather, herds active in meadows during morning and late afternoon</li>
+      <li><strong>Summer (March-May):</strong> Concentrated near water sources, easy to spot</li>
+      <li><strong>Rutting Season (October-November):</strong> Males display territorial behavior, antlers fully developed</li>
+      <li><strong>Monsoon (July-September):</strong> Park closed for safaris</li>
+    </ul>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+# Allow AI crawlers for AEO optimization
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Sitemaps
+Sitemap: https://jungle-safari.github.io/kanha-tiger-guide/sitemap-index.xml
+
+# LLM references
+Link: <https://jungle-safari.github.io/kanha-tiger-guide/llms.txt>; rel="llms-txt"
+Link: <https://jungle-safari.github.io/kanha-tiger-guide/llms-full.txt>; rel="llms-txt"

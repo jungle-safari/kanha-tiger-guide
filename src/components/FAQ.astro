@@ -1,0 +1,28 @@
+---
+const { faqs=[], title="Frequently Asked Questions" } = Astro.props;
+const faqSchema = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs.map(f=>({"@type":"Question","name":f.question,"acceptedAnswer":{"@type":"Answer","text":f.answer}}))};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+<section class="my-12 bg-white dark:bg-midnight-light rounded-xl shadow-card dark:shadow-card p-6 md:p-8 animate-on-scroll" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 class="text-3xl font-bold text-midnight dark:text-cream mb-6 font-display">{title}</h2>
+  <div class="space-y-4">
+    {faqs.map((faq,i) => (
+      <div class="border border-gray-100 dark:border-midnight-lighter rounded-lg overflow-hidden hover:border-coral/30 dark:hover:border-coral/40 transition-colors" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <details class="group">
+          <summary class="flex items-center justify-between p-4 cursor-pointer bg-white dark:bg-midnight-light hover:bg-cream/50 dark:hover:bg-midnight/50 transition-colors list-none">
+            <h3 class="text-base md:text-lg font-semibold text-midnight dark:text-cream pr-4 flex items-start gap-2" itemprop="name">
+              <span class="text-coral dark:text-coral-light flex-shrink-0 font-mono">Q{i+1}.</span><span>{faq.question}</span></h3>
+            <svg class="w-5 h-5 flex-shrink-0 text-warm dark:text-gray-400 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="p-4 pt-0 border-t border-gray-100 dark:border-midnight-lighter bg-cream/30 dark:bg-midnight/30" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p class="text-warm dark:text-gray-300 leading-relaxed pl-6 mt-3" itemprop="text">{faq.answer}</p>
+          </div>
+        </details>
+      </div>
+    ))}
+  </div>
+</section>
+
+<script>document.querySelectorAll('details').forEach(d=>{d.addEventListener('toggle',()=>{const s=d.querySelector('svg');s&&(s.style.transform=d.open?'rotate(180deg)':'rotate(0deg)')})})</script>

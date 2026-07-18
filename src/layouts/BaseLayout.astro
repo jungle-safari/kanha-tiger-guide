@@ -1,0 +1,213 @@
+---
+const {
+  title,
+  description,
+  keywords,
+  canonicalUrl,
+  ogImage = '/images/og-default.webp',
+  pageType = 'article',
+  datePublished = '2026-07-18',
+  dateModified = '2026-07-18',
+  readingTime = 8,
+  category = 'Travel Guide',
+  author = 'Kanha Travel Resources Editorial Team',
+  noIndex = false,
+  structuredData = {}
+} = Astro.props;
+
+const fullTitle = title
+  ? `${title} | Kanha Tiger Guide`
+  : 'Kanha National Park - Complete Wildlife, Safari & Travel Guide 2026';
+
+const fullDescription = description || 'Comprehensive guide to Kanha National Park, Madhya Pradesh, India. Wildlife, safari zones, resorts, permits, and booking information for 2026 travelers.';
+
+const fullKeywords = keywords || 'kanha national park, kanha tiger reserve, kanha safari, kanha zones, kanha resorts, kanha wildlife, madhya pradesh tiger safari';
+
+const siteUrl = 'https://jungle-safari.github.io';
+const basePath = '/kanha-tiger-guide';
+const fullBaseUrl = `${siteUrl}${basePath}`;
+const canonical = canonicalUrl || `${siteUrl}${basePath}${Astro.url.pathname.replace(basePath, '')}`;
+const assetUrl = (path) => path.startsWith('/') ? `${basePath}${path}` : path;
+const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${basePath}${ogImage}`;
+
+const organizationSchema = {
+  "@type": "Organization", "name": "Kanha Tiger Guide", "url": fullBaseUrl,
+  "logo": { "@type": "ImageObject", "url": `${fullBaseUrl}/images/logo.webp` },
+  "description": "India's most comprehensive independent resource for Kanha National Park safari planning.",
+  "foundingDate": "2020"
+};
+const localBusinessSchema = {
+  "@type": "TouristInformationCenter", "name": "Kanha Tiger Guide — Independent Travel Resource",
+  "description": fullDescription, "url": fullBaseUrl,
+  "areaServed": { "@type": "City", "name": "Kanha National Park", "containedInPlace": { "@type": "State", "name": "Madhya Pradesh", "address": { "@type": "PostalAddress", "addressRegion": "Madhya Pradesh", "addressCountry": "IN" } } },
+  "knowsAbout": ["Tiger Safari", "Wildlife Tourism", "Kanha National Park"]
+};
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="generator" content={Astro.generator} />
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f97316" media="(prefers-color-scheme: light)" />
+  <meta name="color-scheme" content="dark light" />
+
+  <title>{fullTitle}</title>
+  <meta name="description" content={fullDescription} />
+  <meta name="keywords" content={fullKeywords} />
+  <meta name="author" content={author} />
+  <meta name="robots" content={noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
+  <link rel="canonical" href={canonical} />
+
+  <!-- OG -->
+  <meta property="og:type" content={pageType} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={fullDescription} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImageUrl} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content={fullTitle} />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Kanha Tiger Guide" />
+  <meta property="article:author" content={author} />
+  <meta property="article:published_time" content={datePublished} />
+  <meta property="article:modified_time" content={dateModified} />
+  <meta property="article:section" content={category} />
+  <meta property="article:tag" content={fullKeywords.split(', ')} />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={fullDescription} />
+  <meta name="twitter:image" content={ogImageUrl} />
+  <meta name="twitter:image:alt" content={fullTitle} />
+  <meta name="twitter:label1" content="Category" />
+  <meta name="twitter:data1" content={category} />
+  <meta name="twitter:label2" content="Reading time" />
+  <meta name="twitter:data2" content={`${readingTime} min`} />
+
+  <!-- GEO -->
+  <meta name="geo.region" content="IN-MP" />
+  <meta name="geo.placename" content="Kanha National Park, Madhya Pradesh, India" />
+  <meta name="geo.position" content="22.334;80.611" />
+  <meta name="ICBM" content="22.334, 80.611" />
+  <meta name="DC.title" content="Kanha Tiger Guide — Independent Travel Resource" />
+  <meta name="DC.coverage" content="Kanha National Park, Madhya Pradesh, India" />
+  <meta name="application-name" content="Kanha Tiger Guide" />
+  <meta name="apple-mobile-web-app-title" content="Kanha Tiger Guide" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" />
+  <link rel="icon" type="image/webp" href={`${basePath}/images/logo.webp`} />
+  <link rel="apple-touch-icon" href={`${basePath}/images/logo.webp`} />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://kanhasafaristay.com" />
+
+  <!-- Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context":"https://schema.org","@type":"WebSite","name":"Kanha Tiger Guide","url":fullBaseUrl,
+    "description":fullDescription,"publisher":organizationSchema,"inLanguage":"en-US",
+    "potentialAction":{"@type":"SearchAction","target":`${fullBaseUrl}/search?q={search_term_string}`,"query-input":"required name=search_term_string"}
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org",...organizationSchema})} />
+  <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org",...localBusinessSchema})} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context":"https://schema.org","@type":pageType === 'website' ? 'WebPage' : 'Article',
+    ...(pageType !== 'website' ? {headline:title||fullTitle,description:fullDescription,keywords:fullKeywords,datePublished,dateModified,author:{"@type":"Organization","name":author,"url":fullBaseUrl}} : {}),
+    publisher:organizationSchema,mainEntityOfPage:{"@type":"WebPage","@id":canonical},image:ogImageUrl,...structuredData
+  })} />
+  {Astro.props.faqSchema && <script type="application/ld+json" set:html={JSON.stringify(Astro.props.faqSchema)} />}
+  {Astro.props.productSchema && <script type="application/ld+json" set:html={JSON.stringify(Astro.props.productSchema)} />}
+
+  <style is:inline>@tailwind base;@tailwind components;@tailwind utilities;</style>
+</head>
+<body class="bg-cream text-midnight font-sans antialiased selection:bg-coral/30 selection:text-white dark:bg-midnight dark:text-gray-200 dark:selection:bg-teal/40 transition-colors duration-200">
+  <slot />
+
+  <!-- Theme toggle -->
+  <button id="theme-toggle" aria-label="Toggle dark mode"
+    class="fixed bottom-20 right-6 z-50 w-10 h-10 bg-white dark:bg-midnight-light text-midnight dark:text-gray-200 rounded-full shadow-card dark:shadow-card border border-gray-200 dark:border-midnight-lighter opacity-0 invisible transition-all duration-300 hover:scale-110 flex items-center justify-center text-lg">
+    <span id="theme-icon">&#9790;</span>
+  </button>
+
+  <!-- Scroll to top -->
+  <button id="scroll-top" aria-label="Scroll to top"
+    class="fixed bottom-6 right-6 z-50 w-12 h-12 bg-coral text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-coral-dark hover:scale-110 flex items-center justify-center shadow-glow-coral">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script>
+    (function(){const e=localStorage.getItem('theme'),t=window.matchMedia('(prefers-color-scheme: dark)').matches;(e==='dark'||(!e&&t))&&document.documentElement.classList.add('dark')})();
+    const tBtn=document.getElementById('theme-toggle'),tIcon=document.getElementById('theme-icon');
+    if(tBtn&&tIcon){const u=()=>{tIcon.textContent=document.documentElement.classList.contains('dark')?'☀':'☾'};
+    setTimeout(()=>{tBtn.classList.remove('opacity-0','invisible')},300);
+    tBtn.addEventListener('click',()=>{document.documentElement.classList.toggle('dark');localStorage.setItem('theme',document.documentElement.classList.contains('dark')?'dark':'light');u()});u()}
+    const sBtn=document.getElementById('scroll-top');
+    if(sBtn){let e=!1;window.addEventListener('scroll',()=>{if(!e){window.requestAnimationFrame(()=>{window.scrollY>400?(sBtn.classList.remove('opacity-0','invisible'),tBtn&&tBtn.classList.remove('opacity-0','invisible')):(sBtn.classList.add('opacity-0','invisible'),tBtn&&tBtn.classList.add('opacity-0','invisible'));e=!1});e=!0}})}
+    const obs=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(t.target.classList.add('animate-fade-in-up'),obs.unobserve(t.target))})},{threshold:0.1});
+    document.querySelectorAll('.animate-on-scroll').forEach(e=>obs.observe(e));
+  </script>
+</body>
+</html>
+
+<style is:global>
+  @tailwind base;@tailwind components;@tailwind utilities;
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif}
+
+  h1{@apply text-hero-md md:text-hero font-bold mt-6 mb-4 leading-tight font-display text-midnight dark:text-cream}
+  h2{@apply text-3xl md:text-4xl font-bold mt-10 mb-4 leading-tight font-display text-midnight dark:text-cream}
+  h3{@apply text-2xl md:text-3xl font-semibold mt-8 mb-3 font-display text-midnight dark:text-cream}
+  h4{@apply text-xl font-semibold mt-6 mb-2 text-midnight dark:text-cream}
+
+  p{@apply mb-4 leading-relaxed text-warm dark:text-gray-300}
+  a{@apply text-coral hover:text-coral-dark transition-colors duration-200 dark:text-teal-light dark:hover:text-coral-light}
+
+  ul,ol{@apply mb-4 pl-6}
+  ul{@apply list-disc}
+  ol{@apply list-decimal}
+  li{@apply mb-2 leading-relaxed text-warm dark:text-gray-300}
+
+  table{@apply w-full border-collapse my-6 rounded-lg overflow-hidden shadow-card}
+  table{@apply bg-white dark:bg-midnight-light}
+  th{@apply bg-midnight text-white dark:bg-midnight-lighter dark:text-cream p-3 text-left font-semibold}
+  td{@apply p-3 border-b border-gray-100 dark:border-midnight-lighter text-warm dark:text-gray-300}
+  tr:last-child td{@apply border-b-0}
+  tr:hover{@apply bg-cream/80 dark:bg-midnight/50}
+
+  blockquote{@apply border-l-4 border-coral pl-4 italic my-4 py-2 text-warm dark:text-gray-400 bg-cream/50 dark:bg-midnight-light/50}
+
+  .answer-block{@apply bg-gradient-to-r from-cream to-cream-dark border-l-4 border-coral p-6 my-6 rounded-r-lg shadow-soft dark:from-midnight-light/50 dark:to-midnight/50 dark:border-teal}
+
+  .prose-content{@apply text-warm dark:text-gray-200}
+  .prose-content h2{@apply text-3xl font-bold mt-10 mb-4 pb-2 border-b-2 border-coral/30 text-midnight dark:text-cream dark:border-teal/40}
+  .prose-content h3{@apply text-2xl font-semibold mt-8 mb-3 text-midnight dark:text-cream}
+
+  /* Trust badges fresh */
+  .trust-badge{@apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full border bg-teal/10 text-teal-dark dark:text-teal-light border-teal/20 dark:border-teal/30}
+  .trust-badge-blue{@apply bg-coral/10 text-coral-dark dark:text-coral-light border-coral/20 dark:border-coral/30}
+  .trust-badge-amber{@apply bg-amber-50 text-amber-800 border-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-700}
+  .trust-badge-purple{@apply bg-purple-50 text-purple-800 border-purple-200 dark:bg-purple-900/30 dark:text-purple-300 dark:border-purple-700}
+
+  html{scroll-behavior:smooth}
+  ::selection{background-color:rgba(249,115,22,0.3);color:#fff}
+  .dark ::selection{background-color:rgba(13,148,136,0.35);color:#fff}
+
+  .skip-link{@apply absolute -top-10 left-0 bg-coral text-white px-4 py-2 z-[100] transition-all}
+  .skip-link:focus{@apply top-0}
+
+  img{@apply transition-opacity duration-300}
+  img[loading="lazy"]:not(.loaded):not([complete]){@apply opacity-0}
+
+  .dark ::-webkit-scrollbar{width:10px}
+  .dark ::-webkit-scrollbar-track{background:#1e293b}
+  .dark ::-webkit-scrollbar-thumb{background:#334155;border-radius:5px}
+  .dark ::-webkit-scrollbar-thumb:hover{background:#475569}
+</style>

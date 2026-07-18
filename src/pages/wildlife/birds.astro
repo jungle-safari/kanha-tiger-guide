@@ -1,0 +1,281 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Wildlife', href: '/wildlife/' },
+  { label: 'Birds', href: '/wildlife/birds/' }
+];
+
+const faqs = [
+  {
+    question: "How many bird species are at Kanha National Park?",
+    answer: "Kanha National Park has recorded over 300 bird species across its four zones. These include resident species, winter migrants from Central Asia and the Himalayas, and local migrants. Sarhi Zone and Kisli Zone are the most productive for birdwatching, with dense forest habitats supporting diverse avian communities."
+  },
+  {
+    question: "When is the best time for birdwatching at Kanha?",
+    answer: "The best time for birdwatching at Kanha is November through February, when winter migrants join resident species. Early morning safaris (6:00-9:00 AM) produce the best birding as birds are most active. Sarhi Zone and Kisli Zone offer the best bird diversity with forest and edge habitats."
+  },
+  {
+    question: "Which zone is best for birds at Kanha?",
+    answer: "Sarhi Zone is the least visited and offers the best birdwatching experience with quiet trails and dense forest habitats. Kisli Zone is also excellent with mature Sal forests and waterhole-adjacent bird activity. Kanha Zone meadows attract grassland bird species like Indian Peafowl and Painted Spurfowl."
+  },
+  {
+    question: "What are the iconic bird species at Kanha?",
+    answer: "Iconic Kanha birds include the Indian Peafowl (state bird of Madhya Pradesh), Crested Serpent Eagle, Changeable Hawk Eagle, White-bellied Woodpecker, Indian Pitta (winter migrant), Asian Paradise Flycatcher, and various owl species. Raptors are particularly diverse with over 30 species recorded."
+  },
+  {
+    question: "Can I do dedicated birdwatching tours at Kanha?",
+    answer: "Yes, Kanha offers dedicated birdwatching tours and packages, particularly through naturalists and resorts with birding expertise. Wildmark Resort and similar properties can arrange specialized birding-focused stays with extended morning sessions, expert guides, and visits to productive birding habitats."
+  }
+];
+
+const relatedPages = [
+  { title: 'Tigers', description: 'Apex predator of Kanha', href: '/kanha-tiger-guide/wildlife/tigers/' },
+  { title: 'Sarhi Zone', description: 'Best zone for birdwatching', href: '/kanha-tiger-guide/safari-zones/sarhi-zone/' },
+  { title: 'Best Time to Visit', description: 'Seasonal wildlife viewing guide', href: '/kanha-tiger-guide/travel-info/best-time/' },
+  { title: 'Travel Info', description: 'How to reach and plan your trip', href: '/kanha-tiger-guide/travel-info/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Birds 2026 - 300+ Species, Birdwatching Guide & Best Zones"
+  description="Complete birdwatching guide for Kanha National Park. 300+ species including raptors, woodpeckers, flycatchers, and winter migrants. Best zones, seasons, and tips for birding."
+  keywords="kanha birds, kanha birdwatching, kanha bird species, kanha raptors, kanha birds list"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/wildlife/birds/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha Birds 2026 — 300+ Species, Birdwatching Guide & Best Zones</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <Hero
+      src="/images/Untitled-design-3-1.webp"
+      alt="Birdlife at Kanha National Park - over 300 species of birds"
+      caption="Kanha hosts over 300 bird species including raptors, woodpeckers, and winter migrants"
+    />
+
+    <section class="answer-block">
+      <p>
+        Kanha National Park hosts over <strong>300 recorded bird species</strong> across its four zones,
+        making it one of central India's premier birdwatching destinations. The bird list includes resident
+        species, winter migrants from Central Asia and the Himalayas, and local migrants. Iconic species
+        include the <strong>Indian Peafowl</strong> (state bird of Madhya Pradesh), Crested Serpent Eagle,
+        White-bellied Woodpecker, Indian Pitta (winter), Asian Paradise Flycatcher, and over 30 raptor
+        species. The best time for birdwatching is <strong>November through February</strong> during winter
+        migration. Sarhi Zone offers the quietest, most productive birding, while Kisli Zone's mature Sal
+        forests harbor diverse forest species.
+      </p>
+    </section>
+
+    <Backlink       title="Best Kanha Tiger Safari Packages 2026"
+      description="Get the best Kanha tiger safari packages starting from ₹X,XXX per person. Wildmark Resort near Khatia Gate provides comfortable stays with safari permits, jeep, and guide included."
+      anchorText="View Kanha Safari Package Deals"
+      ctaText="Kanha Tiger Safari Booking"
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Birds Wildlife Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      secondaryAnchor="Best Time for Kanha Birding"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Birds FAQ"
+    />
+
+    <h2>Bird Diversity at Kanha</h2>
+
+    <p>
+      Kanha's 940 sq km landscape supports exceptional bird diversity through varied habitats — Sal forests,
+      bamboo thickets, meadows, water bodies, and edge environments. The park's location on the central Indian
+      plateau places it on major migration routes, attracting winter visitors from the Himalayas and Central Asia.
+    </p>
+
+    <h3>Habitat Types</h3>
+    <ul>
+      <li><strong>Dense Sal forests:</strong> Forest interior species, woodpeckers, owls</li>
+      <li><strong>Bamboo thickets:</strong> Specialized bamboo species, warblers</li>
+      <li><strong>Meadows (Dadars):</strong> Ground birds, partridges, pipits</li>
+      <li><strong>Water bodies:</strong> Waders, ducks, kingfishers</li>
+      <li><strong>Forest edges:</strong> Flycatchers, warblers, babblers</li>
+    </ul>
+
+    <h2>Iconic Bird Species at Kanha</h2>
+
+    <h3>Raptors (30+ species)</h3>
+    <p>
+      Kanha hosts an impressive raptor diversity with over 30 species recorded. Most commonly sighted:
+    </p>
+
+    <ul>
+      <li><strong>Crested Serpent Eagle:</strong> Most commonly seen raptor; soars over forests and meadows</li>
+      <li><strong>Changeable Hawk Eagle:</strong> Forest hunter; often perched mid-canopy</li>
+      <li><strong>Black-shouldered Kite:</strong> Open habitat hunter; hovers over meadows</li>
+      <li><strong>Shikra:</strong> Small accipiter; hunts in forest edges</li>
+      <li><strong>Oriental Honey Buzzard:</strong> Migrant species; visible in winter</li>
+      <li><strong>White-eyed Buzzard:</strong> Common winter visitor</li>
+    </ul>
+
+    <h3>Woodpeckers (8+ species)</h3>
+    <p>
+      Kanha's mature forests support diverse woodpecker populations:
+    </p>
+
+    <ul>
+      <li><strong>White-bellied Woodpecker:</strong> Large, distinctive, forest interior</li>
+      <li><strong>Rufous Woodpecker:</strong> Bamboo specialist</li>
+      <li><strong>Black-rumped Flameback:</strong> Common, widespread</li>
+      <li><strong>Yellow-crowned Woodpecker:</strong> Smaller, forest edges</li>
+      <li><strong>Brown-capped Pygmy Woodpecker:</strong> Tiny, often missed</li>
+    </ul>
+
+    <h3>Flycatchers (15+ species)</h3>
+    <ul>
+      <li><strong>Asian Paradise Flycatcher:</strong> Spectacular long-tailed male, summer visitor</li>
+      <li><strong>Verditer Flycatcher:</strong> Winter migrant, blue plumage</li>
+      <li><strong>Tickell's Blue Flycatcher:</strong> Resident, forest streams</li>
+      <li><strong>Red-breasted Flycatcher:</strong> Common winter visitor</li>
+      <li><strong>White-browed Fantail:</strong> Year-round, very active</li>
+    </ul>
+
+    <h3>Owls and Nightjars (12+ species)</h3>
+    <ul>
+      <li><strong>Indian Scops Owl:</strong> Small, common, nocturnal calls</li>
+      <li><strong>Mottled Wood Owl:</strong> Forest species, often heard at dusk</li>
+      <li><strong>Brown Fish Owl:</strong> Large, waterhole habitat</li>
+      <li><strong>Jungle Owlet:</strong> Small, vocal, forest interior</li>
+      <li><strong>Savanna Nightjar:</strong> Ground nester, evening activity</li>
+    </ul>
+
+    <Backlink       title="Birding Packages at Kanha"
+      description="Wildmark Resort near Khatia Gate can arrange specialized birding-focused stays with expert naturalist guides and extended morning sessions in productive birding habitats."
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Birds Wildlife Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      secondaryAnchor="Best Time for Kanha Birding"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Birds FAQ"
+    />
+
+    <h2>Best Zones for Birdwatching</h2>
+
+    <h3>Sarhi Zone — Premier Birding Destination</h3>
+    <p>
+      Sarhi Zone is the least-visited of Kanha's four zones, accessed via Sarhi Gate (30 km east of Khatia).
+      The zone offers quiet trails, dense forest, and minimal visitor disturbance — ideal for birdwatching.
+      Species commonly seen include Brown Fish Owl, various woodpeckers, forest flycatchers, and secretive
+      species often missed in busier zones.
+    </p>
+
+    <h3>Kisli Zone — Forest Birding</h3>
+    <p>
+      Kisli Zone's mature Sal forests and waterhole edges support exceptional forest bird diversity. Early
+      morning drives through Kisli typically produce 40-60 species. The zone is accessed via Khatia Gate.
+    </p>
+
+    <h3>Kanha Zone — Meadow and Edge Species</h3>
+    <p>
+      Kanha Zone meadows attract ground-dwelling species like Indian Peafowl, Red Junglefowl, Painted Spurfowl,
+      and various pipits. Forest edges harbor mixed-species feeding flocks with warblers, flycatchers, and
+      babblers.
+    </p>
+
+    <h2>Best Time for Birdwatching</h2>
+
+    <table>
+      <thead>
+        <tr><th>Season</th><th>Months</th><th>Bird Activity</th><th>Recommendation</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Winter</td><td>Nov-Feb</td><td>Peak season with migrants</td><td>Best overall</td></tr>
+        <tr><td>Summer</td><td>Mar-May</td><td>Residents, breeding plumage</td><td>Good for residents</td></tr>
+        <tr><td>Post-monsoon</td><td>Oct</td><td>Residents active, returning migrants</td><td>Good for photography</td></tr>
+        <tr><td>Monsoon</td><td>Jul-Sep</td><td>Park closed</td><td>Not applicable</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Winter Migrants at Kanha</h3>
+    <p>
+      Kanha's winter (November-February) brings several notable migrants from the Himalayas and Central Asia:
+    </p>
+
+    <ul>
+      <li>Indian Pitta</li>
+      <li>Verditer Flycatcher</li>
+      <li>Red-breasted Flycatcher</li>
+      <li>Taiga Flycatcher</li>
+      <li>Black Redstart</li>
+      <li>Forest Wagtail</li>
+      <li>Common Rosefinch</li>
+      <li>Oriental Honey Buzzard</li>
+      <li>Steppe Eagle</li>
+    </ul>
+
+    <h2>Birdwatching Tips at Kanha</h2>
+
+    <ol>
+      <li><strong>Early morning is best:</strong> 6:00-9:00 AM peak activity</li>
+      <li><strong>Stay quiet:</strong> Move slowly, avoid sudden movements</li>
+      <li><strong>Listen for calls:</strong> Birds often heard before seen</li>
+      <li><strong>Use binoculars:</strong> 8x42 or 10x42 ideal for forest viewing</li>
+      <li><strong>Hire local guides:</strong> Naturalists know seasonal hotspots</li>
+      <li><strong>Visit waterholes:</strong> Concentrated bird activity at water sources</li>
+      <li><strong>Check mixed flocks:</strong> Forest flocks often contain multiple species</li>
+    </ol>
+
+    <h2>Endemic and Rare Species</h2>
+
+    <p>
+      While Kanha doesn't host species found nowhere else, it supports several species of conservation concern:
+    </p>
+
+    <ul>
+      <li><strong>Indian Vulture:</strong> Critically endangered, occasionally seen</li>
+      <li><strong>Forest Owlet:</strong> Critically endangered, rediscovered in central India</li>
+      <li><strong>Indian Skimmer:</strong> Endangered, rarely seen at water bodies</li>
+      <li><strong>Lesser Florican:</strong> Endangered, very rare</li>
+    </ul>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

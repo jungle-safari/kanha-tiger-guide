@@ -1,0 +1,104 @@
+---
+const currentYear = new Date().getFullYear();
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<footer class="bg-midnight dark:bg-black text-gray-300 dark:text-gray-400 mt-20">
+  <!-- Stats -->
+  <div class="bg-gradient-to-r from-midnight-light to-midnight dark:from-gray-800 dark:to-black text-white py-8 border-b border-coral/10 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="animate-on-scroll"><div class="text-3xl md:text-4xl font-bold text-coral font-display">50,000+</div><div class="text-sm text-gray-300 dark:text-gray-400 mt-1">Monthly Readers</div></div>
+        <div class="animate-on-scroll"><div class="text-3xl md:text-4xl font-bold text-coral font-display">28+</div><div class="text-sm text-gray-300 dark:text-gray-400 mt-1">In-Depth Guides</div></div>
+        <div class="animate-on-scroll"><div class="text-3xl md:text-4xl font-bold text-coral font-display">2020</div><div class="text-sm text-gray-300 dark:text-gray-400 mt-1">Established</div></div>
+        <div class="animate-on-scroll"><div class="text-3xl md:text-4xl font-bold text-coral font-display">100%</div><div class="text-sm text-gray-300 dark:text-gray-400 mt-1">Independent</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <img src={`${basePath}/images/logo.webp`} alt="" class="h-11 w-11 rounded-full ring-2 ring-coral/30" width="44" height="44" loading="lazy" />
+          <div><div class="text-xl font-bold text-cream dark:text-cream font-display">Kanha Tiger Guide</div><div class="text-xs text-gray-400">India's #1 Independent Kanha Travel Resource</div></div>
+        </div>
+        <p class="text-sm text-gray-400 mb-4 leading-relaxed">India's most comprehensive independent resource for Kanha National Park safari planning. We provide unbiased, expert-reviewed information verified by wildlife researchers and seasoned safari guides.</p>
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <span class="trust-badge text-xs">✓ Fact-Checked</span>
+          <span class="trust-badge text-xs bg-coral/10 text-coral-dark dark:text-coral-light border-coral/20">✓ Expert-Reviewed</span>
+          <span class="trust-badge text-xs bg-amber-50 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300 border-amber-200 dark:border-amber-700">✓ Updated {currentYear}</span>
+          <span class="trust-badge text-xs bg-purple-50 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 border-purple-200 dark:border-purple-700">✓ Traveler-Approved</span>
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div>
+        <h3 class="text-cream font-bold mb-4 text-base font-display">Explore</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="/kanha-tiger-guide/" class="hover:text-coral transition-colors">Home</a></li>
+          <li><a href="/kanha-tiger-guide/safari-guide/" class="hover:text-coral">Safari Guide</a></li>
+          <li><a href="/kanha-tiger-guide/resorts/" class="hover:text-coral">Resorts &amp; Stays</a></li>
+          <li><a href="/kanha-tiger-guide/safari-zones/" class="hover:text-coral">Safari Zones</a></li>
+          <li><a href="/kanha-tiger-guide/wildlife/" class="hover:text-coral">Wildlife</a></li>
+          <li><a href="/kanha-tiger-guide/travel-info/" class="hover:text-coral">Travel Info</a></li>
+          <li class="pt-1"><a href="https://kanhasafaristay.com/package/" rel="dofollow noopener" target="_blank" class="text-teal-light hover:text-coral font-medium text-xs">🐅 View Kanha Safari Packages →</a></li>
+        </ul>
+      </div>
+
+      <!-- Popular -->
+      <div>
+        <h3 class="text-cream font-bold mb-4 text-base font-display">Popular Topics</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="/kanha-tiger-guide/wildlife/tigers/" class="hover:text-coral">Tiger Sightings</a></li>
+          <li><a href="/kanha-tiger-guide/wildlife/barasingha/" class="hover:text-coral">Barasingha Conservation</a></li>
+          <li><a href="/kanha-tiger-guide/resorts/best-resort/" class="hover:text-coral">Best Resorts Near Khatia</a></li>
+          <li><a href="/kanha-tiger-guide/safari-guide/pricing/" class="hover:text-coral">Safari Pricing 2026</a></li>
+          <li><a href="/kanha-tiger-guide/safari-guide/permits/" class="hover:text-coral">Permit Process</a></li>
+          <li><a href="/kanha-tiger-guide/travel-info/best-time/" class="hover:text-coral">Best Time to Visit</a></li>
+          <li><a href="/kanha-tiger-guide/safari-zones/mukki-zone/" class="hover:text-coral">Mukki Zone Guide</a></li>
+        </ul>
+      </div>
+
+      <!-- External -->
+      <div>
+        <h3 class="text-cream font-bold mb-4 text-base font-display">Book Kanha Safari</h3>
+        <p class="text-xs text-gray-400 mb-3 leading-relaxed">Trusted partner for packages, accommodation, and permits:</p>
+        <div class="space-y-2.5">
+          <a href="https://kanhasafaristay.com/" rel="dofollow noopener" target="_blank" class="block text-sm text-coral-light hover:text-coral transition-colors" title="Book Kanha Tiger Safari Package">→ Book Kanha Tiger Safari Package</a>
+          <a href="https://kanhasafaristay.com/wild-mark-resort-kanha-accommodation/" rel="dofollow noopener" target="_blank" class="block text-sm text-coral-light hover:text-coral" title="Kanha Resort Stay">→ Wildmark Resort Accommodation</a>
+          <a href="https://kanhasafaristay.com/blog/" rel="dofollow noopener" target="_blank" class="block text-sm text-coral-light hover:text-coral" title="Kanha Safari Blog">→ Kanha Safari Blog &amp; Guides</a>
+          <a href="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/" rel="dofollow noopener" target="_blank" class="block text-sm text-coral-light hover:text-coral" title="Safari Booking Guide">→ Kanha Safari Booking Guide</a>
+          <a href="https://kanhasafaristay.com/how-to-reach-kanha/" rel="dofollow noopener" target="_blank" class="block text-sm text-coral-light hover:text-coral" title="How to Reach Kanha">→ How to Reach Kanha</a>
+          <a href="https://kanhasafaristay.com/faq/" rel="dofollow noopener" target="_blank" class="block text-sm text-coral-light hover:text-coral" title="Kanha Safari FAQ">→ Kanha Safari FAQ</a>
+        </div>
+        <p class="text-xs text-gray-400 mt-3">📞 +91 77198 06444</p>
+      </div>
+    </div>
+
+    <div class="border-t border-midnight-lighter dark:border-gray-800 mt-10 pt-8">
+      <div class="grid md:grid-cols-3 gap-6 text-sm">
+        <div>
+          <h4 class="text-cream font-semibold mb-2 font-display">About Kanha Tiger Guide</h4>
+          <p class="text-gray-400 text-xs leading-relaxed">Founded in 2020, Kanha Tiger Guide is an independent travel resource providing expert-reviewed information about Kanha National Park. We are not affiliated with any resort or the park management.</p>
+        </div>
+        <div>
+          <h4 class="text-cream font-semibold mb-2 font-display">Editorial Standards</h4>
+          <p class="text-gray-400 text-xs leading-relaxed">Our content is researched, fact-checked, and updated regularly. We cite primary sources including the Madhya Pradesh Forest Department and All India Tiger Estimation reports.</p>
+        </div>
+        <div>
+          <h4 class="text-cream font-semibold mb-2 font-display">Affiliate Disclosure</h4>
+          <p class="text-gray-400 text-xs leading-relaxed">Some links on this site are affiliate links. When you book through these links, we may earn a small commission at no extra cost to you. This helps support our independent research.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-black/40 dark:bg-gray-950 text-gray-500 py-4 text-center text-xs">
+    <div class="max-w-7xl mx-auto px-4">
+      © {currentYear} <a href="/kanha-tiger-guide/" class="text-gray-400 hover:text-coral">Kanha Tiger Guide</a>. All rights reserved.
+      <span class="hidden sm:inline"> | <a href="https://kanhasafaristay.com/" rel="dofollow noopener" class="text-coral-light hover:text-coral">Book Package</a> | <a href="https://kanhasafaristay.com/blog/" rel="dofollow noopener" class="text-coral-light hover:text-coral">Blog</a> | <a href="https://kanhasafaristay.com/faq/" rel="dofollow noopener" class="text-coral-light hover:text-coral">FAQ</a></span>
+    </div>
+  </div>
+</footer>

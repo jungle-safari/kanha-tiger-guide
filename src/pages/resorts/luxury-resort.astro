@@ -1,0 +1,279 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Resorts', href: '/resorts/' },
+  { label: 'Luxury Resort', href: '/resorts/luxury-resort/' }
+];
+
+const faqs = [
+  {
+    question: "What are the luxury resorts at Kanha?",
+    answer: "Top luxury resorts at Kanha include Taj Banjaar Tola (Taj Safaris), Waghoba Wilderness Lodge, Kanha Earth Lodge, and a handful of boutique properties. These offer premium amenities like private villas, spa services, fine dining, exclusive safari experiences, and personalized butler service at ₹7,000-₹30,000+ per night."
+  },
+  {
+    question: "How much do luxury Kanha resorts cost?",
+    answer: "Luxury Kanha resorts range from ₹7,000-₹15,000 per night for premium mid-luxury, ₹15,000-₹25,000 for high luxury, and ₹25,000-₹50,000+ for ultra-luxury. Most luxury packages are all-inclusive with meals, safaris, and premium experiences. Taj Banjaar Tola typically costs ₹30,000-₹50,000 per night per person."
+  },
+  {
+    question: "Are luxury Kanha resorts worth the price?",
+    answer: "Luxury Kanha resorts offer exceptional experiences including private safari vehicles, expert naturalists, premium dining, spa services, and exclusive locations away from crowds. They're worth it for special occasions, anniversaries, or travelers seeking premium experiences. For most visitors, mid-range options like Wildmark Resort provide excellent value."
+  },
+  {
+    question: "What's included in luxury Kanha resort packages?",
+    answer: "Luxury packages typically include: premium accommodation (villas or luxury cottages), all meals (often with chef-curated menus), all safaris with private vehicles and expert guides, spa and wellness services, cultural experiences, nature walks, and personalized butler service. Some include airport transfers."
+  }
+];
+
+const relatedPages = [
+  { title: 'Best Resort', description: 'Top overall picks', href: '/kanha-tiger-guide/resorts/best-resort/' },
+  { title: 'Near Khatia Gate', description: 'Closest to gate', href: '/kanha-tiger-guide/resorts/near-khatia-gate/' },
+  { title: 'Budget Resort', description: 'Affordable options', href: '/kanha-tiger-guide/resorts/budget-resort/' },
+  { title: 'Safari Guide', description: 'Plan your safari', href: '/kanha-tiger-guide/safari-guide/' }
+];
+---
+
+<BaseLayout
+  title="Luxury Resorts at Kanha 2026 - Premium Jungle Lodges"
+  description="Top luxury resorts at Kanha National Park. Taj Banjaar Tola, Waghoba, Kanha Earth Lodge and other premium properties for high-end travelers."
+  keywords="luxury resort kanha, kanha luxury resort, taj kanha resort, waghoba kanha, kanha premium resort"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/resorts/luxury-resort/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Luxury Resorts at Kanha 2026 — Premium Jungle Lodges</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        Luxury resorts at Kanha National Park offer premium experiences including private safari vehicles,
+        expert naturalist guides, fine dining, spa services, and exclusive access to wildlife-rich areas.
+        Top luxury properties include <strong>Taj Banjaar Tola</strong> (Taj Safaris), Waghoba Wilderness
+        Lodge, Kanha Earth Lodge, and a handful of boutique properties. Prices range from ₹7,000-₹15,000
+        per night for premium mid-luxury to ₹25,000-₹50,000+ for ultra-luxury experiences. Most luxury
+        packages are all-inclusive with meals, safaris, spa services, and personalized butler attention.
+        While mid-range options like Wildmark Resort offer better value for most travelers, luxury
+        resorts deliver exceptional experiences for special occasions and discerning guests.
+      </p>
+    </section>
+
+    <Backlink       title="Reserve Your Kanha Safari Holiday Package"
+      description="Plan your Kanha safari holiday with all-inclusive packages at Wildmark Resort. Includes AC rooms, multi-cuisine dining, swimming pool, and tiger safari permits."
+      anchorText="Reserve Kanha Safari Holiday"
+      ctaText="Kanha Tiger Safari Package 2026"
+      primaryUrl="https://kanhasafaristay.com/"
+      primaryAnchor="Reserve Luxury Kanha Resort"
+      secondaryUrl="https://kanhasafaristay.com/blog/where-to-stay-near-kanha-national-park/"
+      secondaryAnchor="Luxury Kanha Accommodation Guide"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Luxury Resort FAQ"
+    />
+
+    <h2>Top Luxury Resorts at Kanha</h2>
+
+    <h3>1. Taj Banjaar Tola (Taj Safaris) — Ultra-Luxury</h3>
+
+    <ul>
+      <li><strong>Brand:</strong> Taj Safaris (Tata Group hospitality)</li>
+      <li><strong>Location:</strong> Banjaar Tola, near Mukki Gate (Mukki Zone access)</li>
+      <li><strong>Property:</strong> Two luxury camps with 18 tented suites</li>
+      <li><strong>Amenities:</strong> Private decks, plunge pools, spa, fine dining, butler service</li>
+      <li><strong>Safari:</strong> Private vehicles with expert naturalists</li>
+      <li><strong>Price:</strong> ₹30,000-₹50,000 per person per night (all-inclusive)</li>
+      <li><strong>Best For:</strong> Honeymoons, special occasions, luxury travelers</li>
+      <li><strong>Unique:</strong> Located on the Banjaar River with Mukki Zone access</li>
+    </ul>
+
+    <h3>2. Waghoba Wilderness Lodge — Boutique Luxury</h3>
+
+    <ul>
+      <li><strong>Property:</strong> 8 luxury cottage suites</li>
+      <li><strong>Location:</strong> Near Mukki Gate, inside buffer zone</li>
+      <li><strong>Amenities:</strong> Private sit-outs, spa, library, organic garden dining</li>
+      <li><strong>Safari:</strong> Private vehicles, expert guides</li>
+      <li><strong>Price:</strong> ₹25,000-₹35,000 per person per night (all-inclusive)</li>
+      <li><strong>Best For:</strong> Discerning travelers seeking intimate experiences</li>
+      <li><strong>Unique:</strong> Strong conservation focus and naturalist expertise</li>
+    </ul>
+
+    <h3>3. Kanha Earth Lodge — Eco-Luxury</h3>
+
+    <ul>
+      <li><strong>Property:</strong> 12 luxury bungalows in 16 acres</li>
+      <li><strong>Location:</strong> Near Khatia Gate area</li>
+      <li><strong>Amenities:</strong> Private bungalows, organic dining, nature activities</li>
+      <li><strong>Safari:</strong> Shared or private vehicles with expert guides</li>
+      <li><strong>Price:</strong> ₹15,000-₹25,000 per person per night (all-inclusive)</li>
+      <li><strong>Best For:</strong> Eco-conscious luxury travelers</li>
+      <li><strong>Unique:</strong> Sustainable practices, organic gardens</li>
+    </ul>
+
+    <h3>4. Shergarh Tented Camp — Premium Tented Luxury</h3>
+
+    <ul>
+      <li><strong>Property:</strong> Luxury tented accommodation</li>
+      <li><strong>Location:</strong> Near Kanha Zone (Mukki range)</li>
+      <li><strong>Amenities:</strong> Luxury tents with modern amenities, dining, bonfires</li>
+      <li><strong>Safari:</strong> Private vehicles with expert naturalists</li>
+      <li><strong>Price:</strong> ₹12,000-₹18,000 per person per night (all-inclusive)</li>
+      <li><strong>Best For:</strong> Travelers seeking authentic jungle camping with luxury</li>
+    </ul>
+
+    <Backlink       title="Considering Mid-Range Instead?"
+      description="Wildmark Resort offers excellent mid-range accommodation with most luxury amenities at a fraction of the price. Less than 1 km from Khatia Gate with safari packages from ₹X,XXX per person."
+      primaryUrl="https://kanhasafaristay.com/"
+      primaryAnchor="Reserve Luxury Kanha Resort"
+      secondaryUrl="https://kanhasafaristay.com/blog/where-to-stay-near-kanha-national-park/"
+      secondaryAnchor="Luxury Kanha Accommodation Guide"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Luxury Resort FAQ"
+    />
+
+    <h2>What Makes Luxury Resorts Special</h2>
+
+    <h3>Private Safari Experiences</h3>
+    <p>
+      Unlike shared jeep safaris at standard resorts, luxury properties offer:
+    </p>
+
+    <ul>
+      <li><strong>Private vehicles:</strong> No sharing with other guests</li>
+      <li><strong>Expert naturalists:</strong> Top guides with deep expertise</li>
+      <li><strong>Flexible timing:</strong> Customizable safari start times</li>
+      <li><strong>Extended hours:</strong> Longer safari durations in some packages</li>
+      <li><strong>Special access:</strong> Some zones or areas with restricted public access</li>
+    </ul>
+
+    <h3>Premium Dining</h3>
+    <ul>
+      <li><strong>Chef-curated menus:</strong> Multi-course meals with international and Indian cuisine</li>
+      <li><strong>Dietary accommodation:</strong> Vegan, gluten-free, allergen-friendly options</li>
+      <li><strong>Wine and beverages:</strong> Premium selections (some packages)</li>
+      <li><strong>Outdoor dining:</strong> Bush dinners, riverside setups</li>
+      <li><strong>Private dining:</strong> Romantic dinners for couples</li>
+    </ul>
+
+    <h3>Spa and Wellness</h3>
+    <ul>
+      <li><strong>Forest spa treatments:</strong> Massages and therapies in natural settings</li>
+      <li><strong>Yoga and meditation:</strong> Guided sessions at scenic locations</li>
+      <li><strong>Wellness programs:</strong> Multi-day detox and relaxation packages</li>
+    </ul>
+
+    <h3>Exclusive Experiences</h3>
+    <ul>
+      <li><strong>Nature walks:</strong> Guided walks with expert naturalists</li>
+      <li><strong>Cultural programs:</strong> Tribal village visits, local performances</li>
+      <li><strong>Birding sessions:</strong> Specialized birding with ornithologists</li>
+      <li><strong>Conservation activities:</strong> Park management talks and behind-the-scenes access</li>
+      <li><strong>Photography workshops:</strong> With professional wildlife photographers</li>
+    </ul>
+
+    <h2>Luxury Resort Price Comparison</h2>
+
+    <table>
+      <thead>
+        <tr><th>Resort</th><th>Price per Person/Night</th><th>Category</th><th>Unique Feature</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Taj Banjaar Tola</td><td>₹30,000-₹50,000</td><td>Ultra-luxury</td><td>Taj hospitality, Mukki Zone access</td></tr>
+        <tr><td>Waghoba Wilderness Lodge</td><td>₹25,000-₹35,000</td><td>Boutique luxury</td><td>Conservation focus, naturalist expertise</td></tr>
+        <tr><td>Kanha Earth Lodge</td><td>₹15,000-₹25,000</td><td>Eco-luxury</td><td>Sustainable practices, organic gardens</td></tr>
+        <tr><td>Shergarh Tented Camp</td><td>₹12,000-₹18,000</td><td>Premium tented</td><td>Authentic jungle camping experience</td></tr>
+        <tr><td>Banjaar Tola by Taj</td><td>₹30,000-₹50,000</td><td>Ultra-luxury</td><td>Riverside luxury</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Who Should Choose Luxury Resorts?</h2>
+
+    <h3>Special Occasions</h3>
+    <p>
+      Honeymoons, anniversaries, milestone birthdays, and romantic getaways justify luxury pricing for
+      the once-in-a-lifetime experience.
+    </p>
+
+    <h3>Time-Constrained Travelers</h3>
+    <p>
+      Visitors with limited time benefit from luxury resorts' all-inclusive packages and private safaris
+      that maximize wildlife viewing chances.
+    </p>
+
+    <h3>Luxury Travel Enthusiasts</h3>
+    <p>
+      Travelers who consistently choose premium accommodations will appreciate the quality, service,
+      and exclusive experiences at luxury Kanha resorts.
+    </p>
+
+    <h3>Conservation Supporters</h3>
+    <p>
+      Many luxury resorts contribute significantly to conservation efforts. Staying at properties like
+      Waghoba and Taj Safaris directly supports wildlife protection.
+    </p>
+
+    <h2>Who Should Choose Mid-Range (Wildmark Resort)?</h2>
+
+    <ul>
+      <li><strong>Most visitors:</strong> Mid-range offers excellent value and amenities</li>
+      <li><strong>Families:</strong> Better value when accommodating multiple family members</li>
+      <li><strong>First-time visitors:</strong> Sufficient comfort without premium pricing</li>
+      <li><strong>Repeat visitors:</strong> Familiar with Kanha; luxury doesn't add much value</li>
+      <li><strong>Wildlife-focused:</strong> Wildlife viewing quality is similar across price tiers</li>
+    </ul>
+
+    <h2>Booking Luxury Resorts</h2>
+
+    <ul>
+      <li><strong>Book directly:</strong> Best rates, exclusive offers, and direct communication</li>
+      <li><strong>Book 60-90 days ahead:</strong> Peak season fills up early</li>
+      <li><strong>Check inclusions:</strong> Confirm what's included (safaris, meals, transfers, spa)</li>
+      <li><strong>Special requests:</strong> Dietary needs, celebrations, room preferences</li>
+      <li><strong>Compare packages:</strong> Some luxury resorts offer multi-night discounts</li>
+    </ul>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

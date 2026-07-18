@@ -1,0 +1,289 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Safari Zones', href: '/safar-zones/' },
+  { label: 'Sarhi Zone', href: '/safar-zones/sarhi-zone/' }
+];
+
+const faqs = [
+  {
+    question: "Why visit Sarhi Zone at Kanha?",
+    answer: "Sarhi Zone is the least-visited of Kanha's four zones, accessed via Sarhi Gate (30 km east of Khatia). The zone offers quiet trails, dense forest, minimal visitor disturbance, and excellent birdwatching opportunities. It's ideal for repeat visitors, birders, and those seeking solitude away from busier zones."
+  },
+  {
+    question: "How do I book Sarhi Zone safari?",
+    answer: "Sarhi Zone requires a separate permit from Khatia Gate zones. Bookings can be made through the Madhya Pradesh Forest Department portal or via resort packages. Wildmark Resort near Khatia Gate can arrange Sarhi Zone day trips with transfers (30 km drive)."
+  },
+  {
+    question: "What is the best time to visit Sarhi Zone?",
+    answer: "Sarhi Zone is excellent year-round, but winter months (November-February) are particularly good for birdwatching when winter migrants join resident species. The zone's quiet trails and minimal visitor pressure create ideal conditions for photography and contemplation."
+  },
+  {
+    question: "Can I see tigers in Sarhi Zone?",
+    answer: "Yes, though tiger sightings are less frequent than in Kanha or Mukki zones. Sarhi has 10-15 tigers distributed across its 200 sq km. When tigers are spotted, they often produce excellent viewing due to the zone's minimal visitor pressure."
+  }
+];
+
+const relatedPages = [
+  { title: 'Kanha Zone', description: 'Core meadows and Barasingha', href: '/kanha-tiger-guide/safari-zones/kanha-zone/' },
+  { title: 'Mukki Zone', description: 'Highest tiger density', href: '/kanha-tiger-guide/safari-zones/mukki-zone/' },
+  { title: 'Kisli Zone', description: 'Dense Sal forest sightings', href: '/kanha-tiger-guide/safari-zones/kisli-zone/' },
+  { title: 'Birds', description: '300+ bird species at Kanha', href: '/kanha-tiger-guide/wildlife/birds/' }
+];
+---
+
+<BaseLayout
+  title="Sarhi Zone 2026 - Quiet Birdwatching & Solitude at Kanha"
+  description="Sarhi Zone at Kanha - the least-visited, most peaceful zone. Accessed via Sarhi Gate (30 km east of Khatia). Ideal for birdwatching, photography, and quiet wildlife experiences."
+  keywords="sarhi zone, sarhi gate kanha, kanha sarhi zone, sarhi zone safari, sarhi zone birdwatching"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/safari-zones/sarhi-zone/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Sarhi Zone 2026 — Quiet Birdwatching & Solitude at Kanha</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        <strong>Sarhi Zone</strong> is the smallest and least-visited of Kanha National Park's four safari
+        zones, accessed via <strong>Sarhi Gate</strong> located 30 km east of the main Khatia Gate. Covering
+        approximately 200 sq km of mixed forest and grassland habitat, Sarhi hosts 10-15 tigers and is
+        considered the <strong>premier birdwatching destination at Kanha</strong> with 200+ recorded bird
+        species including winter migrants. The zone's lower visitor pressure (typically 5-10 vehicles per
+        shift versus 30-40 at Khatia Gate) creates ideal conditions for quiet wildlife viewing, photography,
+        and encounters with shy forest species. Sarhi Zone requires a separate permit from Khatia Gate zones
+        and is best suited for repeat visitors, birders, and those seeking solitude away from busier zones.
+      </p>
+    </section>
+
+    <Backlink       title="Plan Your Kanha Jungle Safari Package"
+      description="Looking for complete Kanha jungle safari packages with accommodation, meals, and forest permits? Wildmark Resort near Khatia Gate offers all-inclusive Kanha safari booking."
+      anchorText="Book Kanha Jungle Safari Package"
+      ctaText="Kanha Safari Booking Online"
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-zones-guide-kanha-mukki-kisli-sarhi/"
+      primaryAnchor="Sarhi Zone Safari Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Sarhi Zone Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Sarhi Zone FAQ"
+    />
+
+    <h2>Sarhi Zone Overview</h2>
+
+    <table>
+      <thead>
+        <tr><th>Feature</th><th>Details</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Access Gate</strong></td><td>Sarhi Gate (30 km east of Khatia)</td></tr>
+        <tr><td><strong>Area</strong></td><td>~200 sq km</td></tr>
+        <tr><td><strong>Tiger Population</strong></td><td>10-15 individuals</td></tr>
+        <tr><td><strong>Bird Species</strong></td><td>200+ recorded</td></tr>
+        <tr><td><strong>Terrain</strong></td><td>Mixed forest, grasslands, water sources</td></tr>
+        <tr><td><strong>Visitor Pressure</strong></td><td>Low (5-10 vehicles per shift)</td></tr>
+        <tr><td><strong>Best For</strong></td><td>Birdwatching, photography, repeat visitors, solitude</td></tr>
+        <tr><td><strong>Drive from Khatia</strong></td><td>30 km, approximately 1 hour</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Why Sarhi Zone is Special</h2>
+
+    <h3>Minimal Visitor Pressure</h3>
+    <p>
+      Sarhi Zone typically sees 5-10 vehicles per safari shift, compared to 30-40 at Khatia Gate zones.
+      This minimal disturbance creates opportunities for:
+    </p>
+
+    <ul>
+      <li>Extended wildlife viewing without traffic congestion</li>
+      <li>Photography without crowds</li>
+      <li>Wildlife that may be more relaxed and visible</li>
+      <li>Quiet, contemplative safari experiences</li>
+      <li>Better chances of seeing shy forest species</li>
+    </ul>
+
+    <h3>Birdwatching Paradise</h3>
+    <p>
+      Sarhi Zone is widely regarded as Kanha's premier birdwatching destination. The combination of mixed
+      forest, grasslands, and water sources supports exceptional bird diversity. Birders regularly record
+      60-80 species per morning safari in Sarhi.
+    </p>
+
+    <h3>Forest Wildlife</h3>
+    <p>
+      The zone's quieter environment produces sightings of shy forest species including:
+    </p>
+
+    <ul>
+      <li>Indian Pitta (winter)</li>
+      <li>Forest Owlet</li>
+      <li>Various woodpeckers in mature Sal forest</li>
+      <li>Brown Fish Owl at waterholes</li>
+      <li>Sloth Bears foraging in forest areas</li>
+    </ul>
+
+    <Backlink       title="Book Sarhi Zone Safari"
+      description="Wildmark Resort near Khatia Gate offers Sarhi Zone day trip packages with transfers, permits, jeep, and expert birding/naturalist guides."
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-zones-guide-kanha-mukki-kisli-sarhi/"
+      primaryAnchor="Sarhi Zone Safari Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      secondaryAnchor="Book Sarhi Zone Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Sarhi Zone FAQ"
+    />
+
+    <h2>Wildlife in Sarhi Zone</h2>
+
+    <h3>Tigers (10-15)</h3>
+    <p>
+      Sarhi hosts 10-15 tigers distributed across its 200 sq km. Tiger sightings are less frequent than
+      in Kanha or Mukki zones, but when they occur, the zone's minimal visitor pressure allows for
+      extended, intimate viewing experiences. Tiger territory here overlaps with productive prey areas
+      and perennial water sources.
+    </p>
+
+    <h3>Leopards</h3>
+    <p>
+      Sarhi's forest and rocky areas support a small but stable leopard population. The zone's quiet
+      environment means leopards may be more visible here than in busier zones.
+    </p>
+
+    <h3>Birdlife (200+ species)</h3>
+    <p>
+      Sarhi's exceptional bird diversity includes forest interior species, waterhole birds, raptors,
+      and winter migrants. Birding highlights include:
+    </p>
+
+    <ul>
+      <li><strong>Forest Species:</strong> White-bellied Woodpecker, Heart-spotted Woodpecker, Malabar Trogon</li>
+      <li><strong>Raptors:</strong> Crested Serpent Eagle, Changeable Hawk Eagle, Oriental Honey Buzzard</li>
+      <li><strong>Flycatchers:</strong> Asian Paradise Flycatcher, Verditer Flycatcher, Red-breasted Flycatcher</li>
+      <li><strong>Winter Migrants:</strong> Indian Pitta, Forest Wagtail, Taiga Flycatcher</li>
+      <li><strong>Owls:</strong> Indian Scops Owl, Mottled Wood Owl, Jungle Owlet</li>
+    </ul>
+
+    <h3>Other Wildlife</h3>
+    <ul>
+      <li>Sloth Bears (common in summer)</li>
+      <li>Wild Dogs (occasional packs)</li>
+      <li>Gaur herds (smaller than other zones)</li>
+      <li>Chital and Sambar deer</li>
+      <li>Various reptiles and amphibians</li>
+    </ul>
+
+    <h2>Best Time to Visit Sarhi Zone</h2>
+
+    <table>
+      <thead>
+        <tr><th>Season</th><th>Months</th><th>Highlights</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Winter</td><td>Nov-Feb</td><td>Best birdwatching with migrants, pleasant weather</td></tr>
+        <tr><td>Summer</td><td>Mar-May</td><td>Sloth bears, tigers at waterholes</td></tr>
+        <tr><td>Post-monsoon</td><td>Oct</td><td>Lush green, active wildlife</td></tr>
+        <tr><td>Monsoon</td><td>Jul-Sep</td><td>Park closed</td></tr>
+      </tbody>
+    </table>
+
+    <h2>How to Reach Sarhi Zone</h2>
+
+    <p>
+      Sarhi Zone is accessed via Sarhi Gate, located 30 km east of Khatia Gate (the main tourist area where
+      most accommodations are located). The drive takes approximately 1 hour and passes through tribal
+      villages and forest landscapes.
+    </p>
+
+    <h3>Transfer Options</h3>
+    <ul>
+      <li><strong>From Khatia Gate Resorts:</strong> Most visitors arrange day trips with transfers arranged by their resort</li>
+      <li><strong>Sarhi Gate Accommodation:</strong> Limited options exist near Sarhi Gate for those wanting to stay closer</li>
+      <li><strong>Self-Drive:</strong> Possible with proper directions and 4x4 vehicle</li>
+    </ul>
+
+    <h2>Sarhi Zone Safari Logistics</h2>
+
+    <table>
+      <thead>
+        <tr><th>Aspect</th><th>Details</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Permit Cost</strong></td><td>₹X,XXX (Indian) / ₹X,XXX (foreign)</td></tr>
+        <tr><td><strong>Jeep Cost</strong></td><td>₹X,XXX-₹X,XXX</td></tr>
+        <tr><td><strong>Safari Duration</strong></td><td>3-4 hours per shift</td></tr>
+        <tr><td><strong>Best Shift</strong></td><td>Morning (best for birds and active wildlife)</td></tr>
+        <tr><td><strong>Advance Booking</strong></td><td>15-30 days (less crowded than Khatia zones)</td></tr>
+        <tr><td><strong>Group Size</strong></td><td>Maximum 6 per jeep + driver + guide</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Sarhi Zone for Repeat Visitors</h2>
+
+    <p>
+      Sarhi Zone is particularly popular among repeat Kanha visitors who have already experienced the
+      busier Khatia Gate zones. The zone offers:
+    </p>
+
+    <ul>
+      <li>Different perspective on Kanha's ecosystems</li>
+      <li>Quiet, contemplative safari experiences</li>
+      <li>Exceptional birdwatching opportunities</li>
+      <li>Photography without crowds</li>
+      <li>Chance to see species less common in busier zones</li>
+    </ul>
+
+    <h2>Booking Sarhi Zone Safari</h2>
+
+    <p>
+      Sarhi Zone can be booked through the Madhya Pradesh Forest Department portal or via resort packages.
+      Wildmark Resort near Khatia Gate offers Sarhi Zone day trip arrangements including transfers, permits,
+      jeep, and naturalist guides.
+    </p>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,322 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Kanha National Park', href: '/' },
+  { label: 'Photos', href: '/kanha-national-park/photos/' }
+];
+
+const faqs = [
+  {
+    question: "What kind of photos can I take at Kanha National Park?",
+    answer: "Kanha offers exceptional photography opportunities including tiger portraits, Barasingha herds in meadows, leopard sightings, diverse bird species, scenic landscapes with meadows and forests, gaur herds, and cultural elements like tribal villages and resort architecture. Photography is permitted in all zones with a small camera fee (₹200 for still, ₹1,500 for video)."
+  },
+  {
+    question: "Can I take professional camera equipment on safari?",
+    answer: "Yes, professional cameras with large telephoto lenses are allowed at Kanha. There may be an additional fee for professional equipment. Safari jeeps accommodate camera gear well, and many serious photographers visit Kanha specifically for tiger photography. Bring lenses of 200-600mm for best results."
+  },
+  {
+    question: "What are the best photo opportunities at Kanha?",
+    answer: "Best photo opportunities include: tigers at waterholes (summer), Barasingha herds in meadows (year-round), leopard sightings on forest roads, gaur herds in forest clearings, raptor birds on bare branches, misty morning meadow landscapes, and golden hour light on wildlife. Morning safaris offer the best photography light."
+  },
+  {
+    question: "Where can I see Kanha National Park photos online?",
+    answer: "Official Kanha photos are available on Madhya Pradesh Forest Department websites, tourism portals, resort websites (like Wildmark Resort), and wildlife photography platforms. National Geographic, BBC Wildlife, and conservation organizations regularly publish Kanha photography from award-winning photographers."
+  }
+];
+
+const relatedPages = [
+  { title: 'Tigers', description: 'Tiger photography guide', href: '/kanha-tiger-guide/wildlife/tigers/' },
+  { title: 'Barasingha', description: 'Swamp deer photography', href: '/kanha-tiger-guide/wildlife/barasingha/' },
+  { title: 'Safari Guide', description: 'Safari planning', href: '/kanha-tiger-guide/safari-guide/' },
+  { title: 'Kanha Zone', description: 'Best photography zone', href: '/kanha-tiger-guide/safari-zones/kanha-zone/' }
+];
+---
+
+<BaseLayout
+  title="Kanha National Park Photos 2026 - Wildlife & Landscape Gallery"
+  description="Photo guide for Kanha National Park. Best photography opportunities for tigers, Barasingha, birds, and landscapes. Camera tips and equipment recommendations."
+  keywords="kanha national park photos, kanha photos, kanha tiger photos, kanha wildlife photos, kanha landscape photography"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/kanha-national-park/photos/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha National Park Photos 2026 — Wildlife & Landscape Photography Guide</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        Kanha National Park offers some of India's best wildlife and landscape photography opportunities.
+        The park's iconic meadows (Hallon, Banjar, Sonph, Maasahi), diverse wildlife including tigers,
+        leopards, Barasingha, and 300+ bird species, combined with excellent morning light, make Kanha
+        a photographer's paradise. Whether you're a serious wildlife photographer with professional gear
+        or a casual visitor with a smartphone, Kanha provides memorable photo opportunities. Morning
+        safaris offer the best light and most active wildlife, while afternoon safaris provide warmer
+        golden hour tones. Camera fees are reasonable (₹200 for still photography, ₹1,500 for video).
+      </p>
+    </section>
+
+    <Backlink       title="Book Kanha Tiger Safari Stay at Khatia Gate"
+      description="For the best Kanha tiger safari packages near Khatia Gate — including AC accommodation, all meals, forest permits, and guided jeep tours — check Kanha Safari Stay at Wildmark Resort."
+      anchorText="Book Kanha Tiger Safari Package"
+      ctaText="Reserve Kanha Resort Stay"
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Wildlife Photography Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      secondaryAnchor="Best Time for Kanha Photos"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Photography FAQ"
+    />
+
+    <h2>Photography Opportunities by Subject</h2>
+
+    <h3>Tiger Photography</h3>
+
+    <p>
+      Kanha is among India's top destinations for tiger photography:
+    </p>
+
+    <h4>Best Tiger Photo Opportunities</h4>
+    <ul>
+      <li><strong>Tigers at Waterholes:</strong> Most reliable summer shots (March-May)</li>
+      <li><strong>Meadow Sightings:</strong> Tigers walking through open grasslands</li>
+      <li><strong>Forest Crossings:</strong> Tigers crossing safari tracks</li>
+      <li><strong>Morning Light:</strong> Beautiful soft light on orange-black coats</li>
+      <li><strong>Cubs with Mothers:</strong> Family interactions (seasonal)</li>
+      <li><strong>Marking Behavior:</strong> Scratching trees, scent marking</li>
+    </ul>
+
+    <h4>Recommended Camera Settings for Tigers</h4>
+    <ul>
+      <li><strong>Shutter Speed:</strong> 1/500s or faster (1/1000s+ for action)</li>
+      <li><strong>Aperture:</strong> f/5.6-f/8 for sharp subjects with blurred backgrounds</li>
+      <li><strong>ISO:</strong> 400-1600 depending on light</li>
+      <li><strong>Focus:</strong> Continuous autofocus (AI Servo / AF-C)</li>
+      <li><strong>Burst Mode:</strong> High-speed continuous shooting</li>
+    </ul>
+
+    <h3>Barasingha Photography</h3>
+
+    <p>
+      The hard-ground Barasingha offers excellent photography subjects:
+    </p>
+
+    <ul>
+      <li><strong>Herd Scenes:</strong> Groups of 10-30 animals grazing in meadows</li>
+      <li><strong>Males with Antlers:</strong> Stunning multi-tined antler displays (especially October-November)</li>
+      <li><strong>Does with Fawns:</strong> Tender family moments</li>
+      <li><strong>Meadow Landscapes:</strong> Barasingha against scenic backgrounds</li>
+      <li><strong>Behavior:</strong> Drinking, grazing, alert poses</li>
+    </ul>
+
+    <h3>Bird Photography</h3>
+
+    <p>
+      Kanha's 300+ bird species provide diverse photography subjects:
+    </p>
+
+    <ul>
+      <li><strong>Raptors in Flight:</strong> Eagles, hawks, falcons</li>
+      <li><strong>Woodpeckers:</strong> On tree trunks</li>
+      <li><strong>Indian Peafowl:</strong> Display and foraging</li>
+      <li><strong>Flycatchers:</strong> Perched on branches</li>
+      <li><strong>Owl Photography:</strong> Nocturnal (special night sessions)</li>
+    </ul>
+
+    <h3>Landscape Photography</h3>
+
+    <p>
+      Kanha's landscapes are world-famous:
+    </p>
+
+    <ul>
+      <li><strong>Misty Meadows:</strong> Early morning fog over grasslands</li>
+      <li><strong>Sal Forest Light:</strong> Dappled forest light effects</li>
+      <li><strong>Banjar River:</strong> Reflections and water scenes</li>
+      <li><strong>Sunset/Sunrise:</strong> At entry gates and open areas</li>
+      <li><strong>Seasonal Variations:</strong> Green post-monsoon, golden summer</li>
+    </ul>
+
+    <Backlink       title="Photography Safari Packages"
+      description="Wildmark Resort can arrange specialized photography-focused safari packages with extended morning sessions, expert guides who know animal patterns, and accommodation close to productive areas."
+      primaryUrl="https://kanhasafaristay.com/blog/wildlife-of-kanha-national-park-beyond-the-tiger/"
+      primaryAnchor="Kanha Wildlife Photography Guide"
+      secondaryUrl="https://kanhasafaristay.com/blog/best-time-to-visit-kanha-national-park-for-tiger-safari/"
+      secondaryAnchor="Best Time for Kanha Photos"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Photography FAQ"
+    />
+
+    <h2>Camera Equipment Recommendations</h2>
+
+    <h3>For Casual Visitors (Smartphone/Compact Camera)</h3>
+    <ul>
+      <li>Smartphone with good zoom capability</li>
+      <li>Compact camera with 10x+ optical zoom</li>
+      <li>Portable tripod or monopod</li>
+      <li>Extra battery and memory cards</li>
+      <li>Lens cleaning cloth</li>
+    </ul>
+
+    <h3>For Enthusiasts (DSLR/Mirrorless)</h3>
+    <ul>
+      <li>200-600mm telephoto lens (essential for tigers)</li>
+      <li>100-400mm as versatile alternative</li>
+      <li>Wide-angle lens for landscapes</li>
+      <li>Bean bag for jeep support (not tripod in vehicles)</li>
+      <li>Multiple batteries and memory cards</li>
+    </ul>
+
+    <h3>For Professionals</h3>
+    <ul>
+      <li>600mm prime lens ideal</li>
+      <li>1.4x teleconverter for 840mm reach</li>
+      <li>Dual camera bodies</li>
+      <li>Fast memory cards (high burst rate)</li>
+      <li>External flash (where permitted)</li>
+    </ul>
+
+    <h2>Photography Tips for Kanha</h2>
+
+    <h3>Composition Tips</h3>
+    <ul>
+      <li><strong>Rule of Thirds:</strong> Position wildlife off-center for dynamic shots</li>
+      <li><strong>Eye-Level Shots:</strong> Wait for opportunities when wildlife is at your level</li>
+      <li><strong>Negative Space:</strong> Use sky or meadow for breathing room</li>
+      <li><strong>Environmental Context:</strong> Include habitat in wildlife shots</li>
+      <li><strong>Behavior Moments:</strong> Capture interactions and behaviors</li>
+    </ul>
+
+    <h3>Technical Tips</h3>
+    <ul>
+      <li><strong>Fast Shutter Speed:</strong> Essential for moving wildlife</li>
+      <li><strong>Continuous Focus Mode:</strong> Track moving animals</li>
+      <li><strong>Exposure Compensation:</strong> Adjust for dark forest backgrounds</li>
+      <li><strong>Burst Mode:</strong> Capture peak action moments</li>
+      <li><strong>RAW Format:</strong> For maximum post-processing flexibility</li>
+    </ul>
+
+    <h3>Practical Safari Tips</h3>
+    <ul>
+      <li><strong>Bean Bag Over Tripod:</strong> More practical in vehicles</li>
+      <li><strong>Silent Shutter:</strong> Mirrorless cameras offer silent shooting</li>
+      <li><strong>Lens Ready:</strong> Pre-focus for quick action shots</li>
+      <li><strong>Battery Conservation:</strong> Cold mornings drain batteries faster</li>
+      <li><strong>Memory Management:</strong> Carry multiple cards to avoid running out</li>
+    </ul>
+
+    <h2>Photography Regulations</h2>
+
+    <h3>Camera Fees</h3>
+    <table>
+      <tbody>
+        <tr><td>Still Photography (basic)</td><td>₹200</td></tr>
+        <tr><td>Video Camera</td><td>₹1,500</td></tr>
+        <tr><td>Professional Equipment</td><td>Variable (check with resort)</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Photography Rules</h3>
+    <ul>
+      <li><strong>No Flash Photography:</strong> Can disturb wildlife and other visitors</li>
+      <li><strong>Stay in Vehicle:</strong> Photos only from inside the jeep</li>
+      <li><strong>No Drone Use:</strong> Drones prohibited inside park</li>
+      <li><strong>Respect Guides:</strong> Follow guide instructions on positioning</li>
+      <li><strong>Be Patient:</strong> Best shots come with waiting</li>
+    </ul>
+
+    <h2>Best Times for Different Photography</h2>
+
+    <h3>Seasonal Photography Calendar</h3>
+    <table>
+      <thead>
+        <tr><th>Season</th><th>Best Photography For</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Summer (Mar-May)</td><td>Tigers at waterholes, dramatic light</td></tr>
+        <tr><td>Monsoon (Jul-Sep)</td><td>Park closed</td></tr>
+        <tr><td>Post-Monsoon (Oct)</td><td>Lush green landscapes, clear skies</td></tr>
+        <tr><td>Winter (Nov-Feb)</td><td>Bird photography, misty mornings</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Daily Photography Times</h3>
+    <ul>
+      <li><strong>6:00-8:00 AM:</strong> Best light, active wildlife, soft tones</li>
+      <li><strong>8:00-10:00 AM:</strong> Continued good light, wildlife viewing</li>
+      <li><strong>3:00-5:00 PM:</strong> Warmer afternoon light, predators active</li>
+      <li><strong>5:00-6:30 PM:</strong> Golden hour, dramatic silhouettes</li>
+    </ul>
+
+    <h2>Famous Kanha Photography Locations</h2>
+
+    <h3>Most Photographed Spots</h3>
+    <ul>
+      <li><strong>Hallon Meadow:</strong> Iconic tiger-with-meadow shots</li>
+      <li><strong>Sonph Meadow:</strong> Barasingha herd photography</li>
+      <li><strong>Banjar River:</strong> Waterhole and reflection shots</li>
+      <li><strong>Kisli Forest Roads:</strong> Leopard and forest bird photography</li>
+      <li><strong>Sulkum Dongar:</strong> High-elevation landscape shots</li>
+    </ul>
+
+    <h2>Sharing and Selling Photos</h2>
+
+    <p>
+      Most Kanha photography is for personal use. For commercial use:
+    </p>
+
+    <ul>
+      <li>Special permits required from Forest Department</li>
+      <li>Some commercial photography fees apply</li>
+      <li>Documentary work needs advance arrangement</li>
+      <li>Stock photography requires permits</li>
+      <li>Resorts can advise on commercial photography permits</li>
+    </ul>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

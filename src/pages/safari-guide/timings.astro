@@ -1,0 +1,279 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Backlink from '../../components/Backlink.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import ResourcesHub from '../../components/ResourcesHub.astro';
+import Hero from '../../components/Hero.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Testimonials from '../../components/Testimonials.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Safari Guide', href: '/safar-guide/' },
+  { label: 'Timings', href: '/safar-guide/timings/' }
+];
+
+const faqs = [
+  {
+    question: "What are the safari timings at Kanha?",
+    answer: "Kanha offers two safari shifts daily: Morning safari (entry at sunrise around 6:00 AM, exit by 11:00 AM) and afternoon safari (entry at 3:00 PM, exit by sunset around 6:30 PM). Timings vary slightly by season — sunrise shifts adjust throughout the year. Each safari lasts approximately 3-4 hours inside the park."
+  },
+  {
+    question: "Which safari shift is better for tiger sightings?",
+    answer: "Morning safaris are generally considered better for tiger sightings due to cooler temperatures, more active wildlife, and better photography light. However, afternoon safaris can produce excellent sightings, particularly at waterholes during summer (March-May) when tigers come to drink."
+  },
+  {
+    question: "What is the best time of year for Kanha safari?",
+    answer: "The best time of year is March through May when summer heat (35-45°C) draws tigers to waterholes, making them more visible. Winter months (November-February) offer pleasant weather with moderate sightings. The park is closed during monsoon (July-September)."
+  },
+  {
+    question: "Do safari timings change with seasons?",
+    answer: "Yes, safari timings adjust with sunrise and sunset times throughout the year. Morning safari entry shifts from 6:00 AM in winter to 5:30 AM in summer. Afternoon safari entry adjusts from 2:30 PM in winter to 3:30 PM in summer. Specific timings are confirmed at the time of booking."
+  }
+];
+
+const relatedPages = [
+  { title: 'Jungle Safari', description: 'What to expect', href: '/kanha-tiger-guide/safari-guide/jungle-safari/' },
+  { title: 'Safari Booking', description: 'How to book', href: '/kanha-tiger-guide/safari-guide/booking/' },
+  { title: 'Permits', description: 'Permit process', href: '/kanha-tiger-guide/safari-guide/permits/' },
+  { title: 'Best Time to Visit', description: 'Seasonal guide', href: '/kanha-tiger-guide/travel-info/best-time/' }
+];
+---
+
+<BaseLayout
+  title="Kanha Safari Timings 2026 - Morning & Afternoon Shift Schedule"
+  description="Complete guide to Kanha safari timings. Daily morning and afternoon shift schedule, seasonal variations, and best times for tiger sightings throughout the year."
+  keywords="kanha safari timings, kanha safari time, kanha morning safari, kanha afternoon safari, kanha safari schedule"
+  canonicalUrl="https://jungle-safari.github.io/kanha-tiger-guide/safari-guide/timings/"
+>
+  <Header />
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+
+    <Breadcrumb items={breadcrumbs} />
+
+    <h1>Kanha Safari Timings 2026 — Morning & Afternoon Shift Schedule</h1>
+
+        <TrustBar category="Travel Guide" readingTime={8} />
+
+        <p class="text-lg italic text-gray-600 mb-6">Last updated: July 18, 2026</p>
+
+    <section class="answer-block">
+      <p>
+        Kanha National Park operates two daily safari shifts during open season (October 1 to June 30):
+        <strong>Morning safari</strong> with entry at sunrise (~6:00 AM in winter, 5:30 AM in summer) and
+        exit by 11:00 AM, and <strong>afternoon safari</strong> with entry at 3:00 PM (2:30 PM in winter,
+        3:30 PM in summer) and exit at sunset (~6:30 PM). Each safari lasts 3-4 hours inside the park.
+        Morning safaris are generally considered better for tiger sightings due to cooler temperatures and
+        more active wildlife, while afternoon safaris offer different opportunities particularly at
+        waterholes. The park is closed during monsoon from July 1 to September 30.
+      </p>
+    </section>
+
+    <Backlink       title="Plan Your Kanha Jungle Safari Package"
+      description="Looking for complete Kanha jungle safari packages with accommodation, meals, and forest permits? Wildmark Resort near Khatia Gate offers all-inclusive Kanha safari booking."
+      anchorText="Book Kanha Jungle Safari Package"
+      ctaText="Kanha Safari Booking Online"
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      primaryAnchor="Kanha Safari Timings & Permits"
+      secondaryUrl="https://kanhasafaristay.com/"
+      secondaryAnchor="Reserve Kanha Morning Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Safari Timing FAQ"
+    />
+
+    <h2>Daily Safari Schedule</h2>
+
+    <table>
+      <thead>
+        <tr><th>Shift</th><th>Entry Time</th><th>Exit Time</th><th>Duration</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Morning Safari</strong></td>
+          <td>Sunrise (~5:30-6:00 AM)</td>
+          <td>~11:00 AM</td>
+          <td>3-4 hours</td>
+        </tr>
+        <tr>
+          <td><strong>Afternoon Safari</strong></td>
+          <td>~3:00 PM</td>
+          <td>Sunset (~6:30 PM)</td>
+          <td>3-4 hours</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Seasonal Timing Variations</h2>
+
+    <h3>Winter (November-February)</h3>
+    <ul>
+      <li><strong>Morning Safari:</strong> Entry 6:00-6:30 AM (delayed sunrise), Exit 11:00-11:30 AM</li>
+      <li><strong>Afternoon Safari:</strong> Entry 2:30 PM, Exit 5:30-6:00 PM</li>
+      <li><strong>Temperature:</strong> 10-25°C, cold mornings</li>
+      <li><strong>Notes:</strong> Carry warm layers for morning shift</li>
+    </ul>
+
+    <h3>Summer (March-May)</h3>
+    <ul>
+      <li><strong>Morning Safari:</strong> Entry 5:30-6:00 AM (early sunrise), Exit 10:30-11:00 AM</li>
+      <li><strong>Afternoon Safari:</strong> Entry 3:30 PM, Exit 6:30-7:00 PM</li>
+      <li><strong>Temperature:</strong> 25-45°C, hot afternoons</li>
+      <li><strong>Notes:</strong> Carry water and sun protection</li>
+    </ul>
+
+    <h3>Post-Monsoon (October)</h3>
+    <ul>
+      <li><strong>Morning Safari:</strong> Entry 6:00 AM, Exit 11:00 AM</li>
+      <li><strong>Afternoon Safari:</strong> Entry 3:00 PM, Exit 6:00 PM</li>
+      <li><strong>Temperature:</strong> 20-30°C, pleasant weather</li>
+      <li><strong>Notes:</strong> Lush green landscapes, active wildlife</li>
+    </ul>
+
+    <h2>Which Safari Shift is Better?</h2>
+
+    <table>
+      <thead>
+        <tr><th>Factor</th><th>Morning Safari</th><th>Afternoon Safari</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Tiger Sighting Probability</td><td>Higher (85%+ peak season)</td><td>Good (70-80% peak season)</td></tr>
+        <tr><td>Photography Light</td><td>Excellent soft light</td><td>Warm golden light</td></tr>
+        <tr><td>Temperature Comfort</td><td>Cool, comfortable</td><td>Hot in summer</td></tr>
+        <tr><td>Wildlife Activity</td><td>Peak activity at dawn</td><td>Active at dusk, waterhole visits</td></tr>
+        <tr><td>Bird Watching</td><td>Excellent</td><td>Good</li></tr>
+        <tr><td>Permit Availability</td><td>More popular, book early</td><td>Slightly easier availability</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Why Morning Safaris Are Preferred</h3>
+    <ul>
+      <li>Tigers more active in cooler morning temperatures</li>
+      <li>Better photography light (soft, warm tones)</li>
+      <li>Wildlife at water sources before heat sets in</li>
+      <li>Bird activity at peak in early morning</li>
+      <li>Less crowded at popular viewing spots</li>
+    </ul>
+
+    <h3>When Afternoon Safaris Excel</h3>
+    <ul>
+      <li>Tigers emerging for evening waterhole visits in summer</li>
+      <li>Better for photographers wanting golden hour light</li>
+      <li>Leopard activity increases in late afternoon</li>
+      <li>Less rushed, more relaxed pace</li>
+      <li>Often easier permit availability</li>
+    </ul>
+
+    <Backlink       title="Book Your Preferred Safari Shift"
+      description="Wildmark Resort offers both morning and afternoon safari packages. Specify your preference when booking and the resort will arrange permits accordingly."
+      primaryUrl="https://kanhasafaristay.com/blog/kanha-safari-booking-guide-permits-timings-rules-tips/"
+      primaryAnchor="Kanha Safari Timings & Permits"
+      secondaryUrl="https://kanhasafaristay.com/"
+      secondaryAnchor="Reserve Kanha Morning Safari"
+      tertiaryUrl="https://kanhasafaristay.com/faq/"
+      tertiaryAnchor="Kanha Safari Timing FAQ"
+    />
+
+    <h2>Full-Day Safari Option</h2>
+
+    <p>
+      Some operators and resorts offer full-day safaris combining morning and afternoon shifts with a break
+      in between. This option provides:
+    </p>
+
+    <ul>
+      <li>Maximum wildlife viewing time (6-8 hours total)</li>
+      <li>Two meals served in the park (at designated rest houses)</li>
+      <li>Highest probability of tiger sightings</li>
+      <li>Premium pricing (typically 2x single shift cost)</li>
+      <li>Subject to permit availability for both shifts</li>
+    </ul>
+
+    <h2>Safari Day Timing Details</h2>
+
+    <h3>Morning Safari Timeline</h3>
+    <ol>
+      <li><strong>5:00 AM:</strong> Wake-up call at resort</li>
+      <li><strong>5:15-5:30 AM:</strong> Light breakfast at resort</li>
+      <li><strong>5:30-5:45 AM:</strong> Departure to Khatia Gate</li>
+      <li><strong>5:45-6:00 AM:</strong> Arrival at gate, entry formalities</li>
+      <li><strong>6:00 AM:</strong> Gate opens, safari begins</li>
+      <li><strong>6:15-7:00 AM:</strong> Drive to core wildlife areas</li>
+      <li><strong>7:00-10:30 AM:</strong> Active wildlife viewing</li>
+      <li><strong>10:30-11:00 AM:</strong> Exit park, return to resort</li>
+      <li><strong>11:30 AM:</strong> Full breakfast at resort</li>
+    </ol>
+
+    <h3>Afternoon Safari Timeline</h3>
+    <ol>
+      <li><strong>2:00 PM:</strong> Lunch at resort</li>
+      <li><strong>2:30 PM:</strong> Departure to Khatia Gate</li>
+      <li><strong>2:45-3:00 PM:</strong> Arrival at gate, entry formalities</li>
+      <li><strong>3:00 PM:</strong> Gate opens, safari begins</li>
+      <li><strong>3:15-4:00 PM:</strong> Drive to wildlife areas</li>
+      <li><strong>4:00-6:00 PM:</strong> Wildlife viewing at waterholes</li>
+      <li><strong>6:00-6:30 PM:</strong> Exit park, return to resort</li>
+      <li><strong>7:00 PM:</strong> Dinner at resort</li>
+    </ol>
+
+    <h2>Gate-Specific Timings</h2>
+
+    <h3>Khatia Gate (Kanha & Kisli Zones)</h3>
+    <p>
+      The main gate with the most flexible timing and the largest concentration of resorts nearby. Both
+      morning and afternoon shifts operate from Khatia Gate throughout the season.
+    </p>
+
+    <h3>Mukki Gate (Mukki Zone)</h3>
+    <p>
+      60 km south of Khatia Gate. Same daily shift timings, but visitors need to factor in the 1.5-2 hour
+      drive from Khatia Gate area resorts. Some visitors stay near Mukki Gate for easier access.
+    </p>
+
+    <h3>Sarhi Gate (Sarhi Zone)</h3>
+    <p>
+      30 km east of Khatia Gate. Same shift timings with 1-hour drive from Khatia Gate area. Limited
+      accommodation near the gate.
+    </p>
+
+    <h2>Park Closure Periods</h2>
+
+    <ul>
+      <li><strong>Monsoon Closure:</strong> July 1 to September 30 (safaris not permitted)</li>
+      <li><strong>Maintenance Days:</strong> Occasionally closed on Wednesdays for park maintenance</li>
+      <li><strong>National Holidays:</strong> Limited safari availability on Indian national holidays</li>
+    </ul>
+
+    <FAQ faqs={faqs} />
+
+        <Testimonials />
+
+        <AuthorBox />
+      <ResourcesHub />
+
+      <RelatedPages pages={relatedPages} />
+
+        </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-32">
+          <Sidebar currentPath={Astro.url.pathname} />
+        </div>
+      </div>
+    </div>
+
+    <RelatedPages pages={relatedPages} />
+
+  </main>
+
+  <Footer />
+</BaseLayout>

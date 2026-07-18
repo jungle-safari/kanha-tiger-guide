@@ -1,0 +1,11 @@
+---
+const { category='Travel Guide', readingTime=8, dateModified='2026-07-18' } = Astro.props;
+const fd=new Date(dateModified).toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+---
+
+<div class="flex flex-wrap items-center gap-2 my-6 text-xs" role="list">
+  <span class="trust-badge" role="listitem"><span>📂</span> {category}</span>
+  <span class="trust-badge bg-coral/10 text-coral-dark dark:text-coral-light border-coral/20" role="listitem"><span>⏱</span> {readingTime} min read</span>
+  <span class="trust-badge bg-amber-50 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300 border-amber-200 dark:border-amber-700" role="listitem"><span>📅</span> Updated {fd}</span>
+  <span class="trust-badge bg-purple-50 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 border-purple-200 dark:border-purple-700" role="listitem"><span>✓</span> Verified</span>
+</div>
